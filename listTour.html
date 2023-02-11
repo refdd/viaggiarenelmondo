@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+
+    <link rel="stylesheet" href="css/listtours/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- normalizer.css -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div class="container-sm">
+      <nav class="nav_container row flex-nowrap py-2">
+        <!-- image  -->
+        <div class="imgae_logo col col-md-2">
+          <img src="./image/Go Elite Logo 1.svg" alt="" />
+        </div>
+        <!-- links -->
+        <ul class="links_container col-md-7">
+          <li class="active">
+            <a href=""> Home </a>
+          </li>
+          <li>
+            <a href="listTour.html"> LUXURY EGYPT TOURS </a>
+          </li>
+          <li>
+            <a href="listTour.html">MOROCCO TOURS </a>
+          </li>
+          <li>
+            <a href="/"> ABOUT US </a>
+          </li>
+          <li>
+            <a href="/"> BLOG </a>
+          </li>
+        </ul>
+        <!-- buttom inquery -->
+        <div class="buttom_inquri col col-md-3">
+          <button>inqueri</button>
+        </div>
+        <!-- menue bar icon  -->
+        <div class="menu_bar col">
+          <i
+            class="fa fa-bars"
+            aria-hidden="true"
+            id="menu"
+            style="font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-times"
+            aria-hidden="true"
+            id="close"
+            style="font-size: 27px"
+          ></i>
+        </div>
+        <!-- menue bar box -->
+        <ul class="menu_container">
+          <li class="active">
+            <a href="/"> Home </a>
+          </li>
+          <li>
+            <a href="listTour.html">LUXURY EGYPT TOURS </a>
+          </li>
+          <li>
+            <a href="listTour.html">MOROCCO TOURS </a>
+          </li>
+          <li>
+            <a href="listTour.html"> MOROCCO TOURS </a>
+          </li>
+          <li>
+            <a href="/"> ABOUT US </a>
+          </li>
+          <li>
+            <a href="/"> BLOG </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ADHeader -->
+    <div class="ADHeader_container">
+      <div class="Ad_Header">
+        <div class="AD-Header_content">
+          CAIRO NILE CRUISE & HURGHADA HOLIDAY TOUR
+        </div>
+        <div class="IqueryAndPrice">
+          <div class="price_AD">
+            <div class="Start_From">Startng From</div>
+            <div class="price_Number">$7839</div>
+          </div>
+          <div class="btn_inqure">
+            <button>Inquire Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header landPage -->
+    <div class="landPageHeader">
+      <div class="landingPageContent">
+        <p>EGYPT</p>
+        <div class="but_landing"></div>
+      </div>
+    </div>
+    <!-- filter and secrch  -->
+    <div>
+      <div
+        class="container-sm position-relative d-flex justify-content-center align-content-center"
+      >
+        <div class="positonBox">
+          <!-- layout desktop-->
+          <div
+            class="filter_search align-items-center justify-content-center row gap-3"
+          >
+            <!--date   -->
+            <div
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
+            >
+              <i class="fa fa-calendar"></i>
+              <div class="contentbox d-flex gap-1 flex-column">
+                <span>Departing Between</span>
+                <input
+                  type="text"
+                  name="daterange"
+                  value="01/01/2018 - 01/15/2018"
+                />
+              </div>
+            </div>
+            <!-- duration -->
+            <div
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
+            >
+              <i class="fa fa-clock"></i>
+              <div class="contentbox d-flex gap-1 flex-column">
+                <span>Duration</span>
+                <div class="searchPlaceHolder">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="3 - 8 nights"
+                    aria-label="First name"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- duration -->
+            <div
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
+            >
+              <div
+                class="d-flex gap-2 align-items-center justify-content-center"
+              >
+                <i class="fa fa-user-circle"></i>
+                <div class="contentbox d-flex gap-1 flex-column">
+                  <span>Duration</span>
+                  <div class="searchPlaceHolder">
+                    <button class="p-2 buttonDuration">
+                      2 adults, 1 children
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="counderFilter">
+                <!-- counter box  -->
+                <div class="counterbox">
+                  <div
+                    class="counter d-flex flex-column gap-3 align-items-center"
+                  >
+                    <!-- adults -->
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100"
+                    >
+                      <span class="textCounter"> Adults </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
+                      >
+                        <img
+                          onclick="removeCounter('adults')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="adultsFilter"
+                          type="text"
+                          name="adults"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounterFilter('adults')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100"
+                    >
+                      <span class="textCounter"> Children </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
+                      >
+                        <img
+                          onclick="removeCounter('Children')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="ChildrenFilter"
+                          type="text"
+                          name="Children"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounterFilter('Children')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center w-100"
+                    >
+                      <span class="textCounter"> Infants </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2 border rounded-3"
+                      >
+                        <img
+                          onclick="removeCounter('Infants')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="InfantsFilter"
+                          type="text"
+                          name="Infants"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounterFilter('Infants')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <!-- buton done -->
+                    <div
+                      class="buttoncounter d-flex justify-content-center align-items-center p-2 w-100"
+                    >
+                      <button>Done</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  sort By -->
+            <div
+              class="boxFilter_search dayBox d-flex gap-2 align-items-center justify-content-center col"
+            >
+              <div class="contentbox d-flex gap-1 flex-column">
+                <span>Sort by</span>
+                <div class="searchPlaceHolder">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Price (Highest)"
+                    aria-label="First name"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- button Search -->
+            <div class="buttonBox col">
+              <div class="buttonSearch">
+                <button>Search</button>
+              </div>
+            </div>
+          </div>
+          <!-- mobile layout  -->
+          <div class="searchSection">
+            <div class="filter d-flex flex-column gap-3">
+              <div class="filterBox">
+                <div class="d-flex justify-content-between">
+                  <span class="content-search"> Filter</span>
+                  <img src="image/Sort by.svg" alt="" />
+                </div>
+                <div class="searchPlaceHolder">New Year Offers</div>
+              </div>
+              <div class="filter_Box">
+                <div class="filterBox">
+                  <div class="d-flex justify-content-between flex-column gap-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        Romantic Tours
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        Luxury Egypt Tours
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        Honeymoon Tours
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        Christmas Offers
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        New Year Offers
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        Easter Offers
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                      <label
+                        class="form-check-label contentfilterChackBox"
+                        for="flexCheckDefault"
+                      >
+                        Romantic Tours
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sortBy d-flex flex-column gap-3">
+              <div class="sortBox">
+                <div class="d-flex justify-content-between">
+                  <span class="content-search"> Sort By</span>
+                  <img src="image/Sort by.svg" alt="" />
+                </div>
+                <div class="searchPlaceHolder">Price (Highest)</div>
+              </div>
+              <div
+                class="box_Sort flex-column gap-3 align-items-center justify-content-center"
+              >
+                <!-- date -->
+                <div class="sortBox dateFilter">
+                  <div class="d-flex justify-content-between">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <span class="content-search">Departing Between</span>
+                  </div>
+                  <div class="searchPlaceHolder">
+                    <input
+                      type="text"
+                      placeholder="Feb 3 - Feb 12"
+                      onfocus="(this.type='date')"
+                      onblur="(this.type='text')"
+                    />
+                  </div>
+                </div>
+                <!-- Duration -->
+                <div class="sortBox dateDuration">
+                  <div class="d-flex gap-3">
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    <span class="content-search">Duration</span>
+                  </div>
+                  <div class="searchPlaceHolder">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="3 - 8 nights"
+                      aria-label="First name"
+                    />
+                  </div>
+                </div>
+                <!-- Travelers -->
+                <div class="sortBox dateDuration">
+                  <div class="d-flex gap-3">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span class="content-search">Travelers</span>
+                  </div>
+                  <div class="searchPlaceHolder">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="2 adults,"
+                      aria-label="First name"
+                    />
+                  </div>
+                </div>
+                <!-- button Search -->
+                <div class="buttonBox">
+                  <div class="buttonSearch">
+                    <button>Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- list tour Section  -->
+    <div class="container-sm pt-5 mt-4">
+      <div class="row">
+        <div
+          class="d-none d-md-flex flex-md-column col-md-3 pt-2"
+          style="border-top: 1.5px solid #dedede"
+        >
+          <h6 class="headerFilter">Filter By</h6>
+          <ul class="row gap-4 pl-0">
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Luxury Nile Cruises
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Luxury Egypt Tours
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Honeymoon Tours
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Christmas Offers
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  New Year Offers
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Easter Offers
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Romantic Tours
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Excursions
+                </label>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-content-center">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label
+                  class="form-check-label contentChackBox"
+                  for="flexCheckDefault"
+                >
+                  Packages
+                </label>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-9">
+          <div class="row gap-3 gap-md-5">
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="singleTour.html">
+              <div class="d-flex cardList" style="cursor: pointer">
+                <!-- image -->
+                <div class="imageCard">
+                  <img src="image/destination1.jpg" alt="" />
+                </div>
+                <!-- content -->
+                <div
+                  class="d-flex flex-column gap-2 justify-content-center justify-content-md-start gap-md-3 p-md-3 flex-grow-1 p-2"
+                >
+                  <!-- tille and  reat -->
+                  <div
+                    class="d-flex justify-content-between align-content-center titelcard"
+                  >
+                    <div>CAIRO, PYRAMIDS</div>
+                    <div class="d-flex align-items-center gap-1">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <!-- duration -->
+                  <div class="duration">
+                    Imperial Cities (08 Days / 07 Nights)
+                  </div>
+                  <p>8 Days | Private Tour</p>
+                  <!-- prise -->
+                  <div
+                    class="d-flex align-content-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column priseListCard">
+                      <span>from</span>
+                      <span>$7897</span>
+                    </div>
+                    <!-- button -->
+                    <div class="viewButton">
+                      <button>View Tour</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- F and Q -->
+    <div class="container-sm">
+      <div class="headerSection">
+        <div class="header">FREQUENTLY ASKED QUESTIONS</div>
+      </div>
+      <!-- faq section -->
+      <div class="accordion mt-5" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Can I travel safely with confidence to the middle east?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is
+              shown by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Can I travel safely with confidence to the middle east?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Can I travel safely with confidence to the middle east?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the appropriate
+              classes that we use to style each element. These classes control
+              the overall appearance, as well as the showing and hiding via CSS
+              transitions. You can modify any of this with custom CSS or
+              overriding our default variables. It's also worth noting that just
+              about any HTML can go within the <code>.accordion-body</code>,
+              though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section -->
+    <div class="container-sm">
+      <div class="footerSection">
+        <div class="footer row">
+          <!-- logo footer -->
+          <div class="logoFooter col">
+            <img src="image/footeLogo.png" alt="" />
+          </div>
+          <div class="linksAndcontactUs col">
+            <div class="row px-2">
+              <!-- links -->
+              <div class="footerLinks col-6">
+                <ul class="links">
+                  <li>home</li>
+                  <li>Luxury Egypt Tour</li>
+                  <li>Dubai Tour</li>
+                  <li>Morocco Tour</li>
+                  <li>About Us</li>
+                  <li>Blog</li>
+                </ul>
+              </div>
+              <!-- contact us footer -->
+              <div class="contactUsFooter col-6">
+                <div>contact us</div>
+                <ul class="coutactUs">
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/488278/mail.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <p>mohamedrefat@gmail.com</p>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/473600/facebook.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <span>Go Elite Club Travel</span>
+                  </li>
+                  <li class="">
+                    <div class="iconSocil">
+                      <img
+                        src="https://www.svgrepo.com/show/474324/instagram.svg"
+                        width="15px"
+                        height="15px"
+                        alt=""
+                      />
+                    </div>
+                    <span>goelite.club</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyRightSection">
+      <div>Copyright © GoElite Club 2021. All right reserved.</div>
+      <div>Terms and Privacy Policy</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
