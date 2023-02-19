@@ -525,7 +525,21 @@ thead tr {
   line-height: 16px;
   color: #ffffff;
 }
-
+.fotorama__wrap .fotorama__pointer {
+  border-radius: 15px;
+}
+.fotorama__thumb {
+  border-radius: 15px;
+}
+.fotorama1676740941234 .fotorama__thumb-border {
+  border-radius: 15px;
+}
+.fotorama1676741244378 .fotorama__nav--thumbs .fotorama__nav__frame {
+  margin-right: 12px;
+}
+/* .fotorama__thumb-border {
+  margin-right: 12px;
+} */
 /* responsev singel tour */
 @media only screen and (min-width: 786px) {
   .carousel-item img {
@@ -535,6 +549,10 @@ thead tr {
     top: auto;
     bottom: 114px;
     left: 10px;
+  }
+  .fotorama__wrap .fotorama__pointer {
+    cursor: pointer;
+    margin-bottom: 24px;
   }
   .carousel-caption.contentHeader p {
     font-family: "Josefin Sans";

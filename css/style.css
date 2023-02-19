@@ -863,6 +863,73 @@ div#accordionExample {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
+.imgTourCard {
+}
+.tourCard {
+  min-width: 300px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 15px;
+  border-radius: 15px;
+}
+.tourCard .descTourCard {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  color: #777;
+}
+.tourCard i {
+  font-size: 18px;
+  font-weight: 00;
+  color: #0f6292;
+}
+.tourCard .butBookNow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 15px;
+  background-color: #e90064;
+  border-radius: 20px;
+  box-shadow: #b3005e 0px 2px 1px, #b3005e 0px 4px 2px, #b3005e 0px 8px 4px,
+    #b3005e 0px 1px 1px, #b3005e 0px 1px 1px;
+  transition: ease-in-out 0.4s;
+}
+.tourCard .price {
+  font-size: 20px;
+  font-family: "josefin Sans";
+  font-weight: 700;
+  color: #2c4755;
+}
+.tourCard .butBookNow button {
+  font-size: 16px;
+  font-family: "josefin Sans";
+  font-weight: 700;
+  color: #ffffff;
+}
+.tourCard .duration span:nth-of-type(1),
+.tourCard .size span:nth-of-type(1) {
+  font-family: "josefin Sans";
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c4755;
+}
+.tourCard .duration span:nth-of-type(2),
+.tourCard .size span:nth-of-type(2) {
+  font-family: "josefin Sans";
+  font-size: 14px;
+  color: #777;
+}
+
+.tourCard .textTour {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c4755;
+}
+.imgTourCard img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
 /* responsev navbar */
 @media only screen and (max-width: 786px) {
   .nav_container {
@@ -961,8 +1028,8 @@ div#accordionExample {
 /* responsev landing header */
 @media only screen and (min-width: 786px) {
   .landPageHeader {
-    background-image: url("../image/Photo_larg.jpg");
-    height: 500px;
+    background-image: url("../image/header.jpg");
+    height: 725px;
     background-position: center;
   }
   .landingPageContent {
@@ -1133,5 +1200,35 @@ div#accordionExample {
   .coutactUs li p {
     overflow-wrap: break-word;
     width: auto;
+  }
+  .tourCard {
+    min-width: 350px;
+  }
+  .tourCard .butBookNow {
+    padding: 15px 32px;
+  }
+  .tourCard .butBookNow:hover {
+    box-shadow: #e90064 0px 2px 1px, #e90064 0px 4px 2px, #e90064 0px 8px 4px,
+      #e90064 0px 1px 1px, #e90064 0px 1px 1px;
+  }
+  .tourCard .textTour {
+    font-size: 20px;
+  }
+  .tourCard .descTourCard {
+    font-size: 18px;
+  }
+  .tourCard .duration span:nth-of-type(1),
+  .tourCard .size span:nth-of-type(1) {
+    font-size: 17px;
+  }
+  .tourCard .duration span:nth-of-type(2),
+  .tourCard .size span:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .tourCard .butBookNow button {
+    font-size: 17px;
+  }
+  .tourCard .price {
+    font-size: 25px;
   }
 }

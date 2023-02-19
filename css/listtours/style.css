@@ -65,7 +65,7 @@
   cursor: pointer;
 }
 .positonBox {
-  position: absolute;
+  /* position: absolute; */
   top: -45px;
 }
 .imageCard {
@@ -188,6 +188,19 @@
   font-size: 20px;
   line-height: 30px;
   color: #3d3d3d;
+}
+.fromHeader {
+  position: absolute;
+  top: 45px;
+  right: 32px;
+  width: 400px;
+}
+.headerTour {
+  font-family: "josefin Sans";
+  font-weight: 700;
+  font-size: 55px;
+  color: #3d3d3d;
+  margin-right: 50px;
 }
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
@@ -354,8 +367,5 @@
     width: 130px;
     background: #01a8c3;
     border-radius: 5px;
-  }
-  .positonBox {
-    top: -94px;
   }
 }
