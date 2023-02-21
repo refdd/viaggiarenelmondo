@@ -930,6 +930,70 @@ div#accordionExample {
   height: auto;
   border-radius: 15px;
 }
+.articelsHeader {
+}
+.articelsHeader p {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.articelsHeader .text {
+  color: #555555;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.articles {
+}
+.articles .titel_one {
+  font-family: "josefin Sans";
+  color: #9a9a9a;
+  font-size: 14px;
+}
+.articles .mainTitle {
+  color: #555555;
+  font-size: 20px;
+  font-family: "josefin Sans";
+  font-weight: 700;
+}
+
+.articles .artDesc {
+  font-family: "josefin Sans";
+  color: #9a9a9a;
+  font-size: 14px;
+}
+.articles .reedMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  background-color: #e27d60;
+  width: 200px;
+  height: 44px;
+  border-radius: 30px;
+}
+.articles .reedMore button {
+  font-family: "josefin Sans";
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #ffff;
+}
+.imgArticle {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+.imgArticle img {
+  max-width: 100%;
+  width: 100%;
+  height: 270px;
+  transition: ease-in-out 0.2s;
+  object-fit: cover;
+}
+.imgArticle img:hover {
+  transform: scale(1.2);
+}
 /* responsev navbar */
 @media only screen and (max-width: 786px) {
   .nav_container {
@@ -1230,5 +1294,25 @@ div#accordionExample {
   }
   .tourCard .price {
     font-size: 25px;
+  }
+  .imgArticle {
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+  }
+  .imgArticle.down {
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+  }
+  .imgArticle img {
+    height: 330px;
+  }
+  .articles .titel_one {
+    font-size: 22px;
+  }
+  articles .mainTitle {
+    font-size: 25px;
+  }
+  .articles .artDesc {
+    font-size: 16px;
   }
 }
