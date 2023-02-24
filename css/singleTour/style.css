@@ -5,7 +5,7 @@
 }
 
 .carousel-caption.contentHeader p {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -21,7 +21,7 @@
   color: #ffffff;
 }
 .infoTour ul li span {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -50,7 +50,7 @@
   display: block;
 }
 .tapsTour li {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -74,7 +74,7 @@
   object-fit: cover;
 }
 .content_overview {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -83,7 +83,7 @@
   color: #3d3d3d;
 }
 .header_included {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -92,7 +92,7 @@
 }
 .included_section li span,
 .exincluded_section li span {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -113,7 +113,7 @@
 .headerInquery {
   background: #01a8c3;
   padding: 20px;
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -229,7 +229,7 @@
   transform: scale(0.9);
 }
 .buttoncounter button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -238,7 +238,7 @@
   color: #ffffff;
 }
 .contextFormInauire {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -262,7 +262,7 @@
   transform: scale(0.9);
 }
 .bottonInqueryFrom button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -271,7 +271,7 @@
   color: #ffffff;
 }
 .headerItinerary .content span {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -299,7 +299,7 @@
   border-radius: 8px !important;
 }
 .itineraryDay .headerday {
-  font-family: "Josefin Sans" !important;
+  font-family: "Cairo", sans-serif !important;
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 16px !important;
@@ -330,7 +330,7 @@
   padding: 0 12.9715px;
 }
 .contentAccommmedation div:nth-of-type(1) span:nth-of-type(1) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.9715px;
@@ -339,7 +339,7 @@
   color: #3d3d3d;
 }
 .contentAccommmedation div:nth-of-type(1) span:nth-of-type(2) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10.64769px;
@@ -348,7 +348,7 @@
   color: #7a7a7a;
 }
 .tabletext {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.9715px;
@@ -360,7 +360,7 @@
   width: 100%;
 }
 .roomType span {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10.3772px;
@@ -372,7 +372,7 @@
   height: 150px;
 }
 .seconsText span:nth-of-type(1) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.9715px;
@@ -388,7 +388,7 @@ thead tr {
   background: #f5f5f5;
 }
 .seconsText span:nth-of-type(2) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 8.64769px;
@@ -397,7 +397,7 @@ thead tr {
   color: #7a7a7a;
 }
 .priseAccommmedation span {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20.7545px;
@@ -406,7 +406,7 @@ thead tr {
   color: #3d3d3d;
 }
 .headerInfo {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -429,7 +429,7 @@ thead tr {
   border-radius: 10px;
 }
 .formRview .header {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -437,7 +437,7 @@ thead tr {
   color: #3d3d3d;
 }
 .rateText {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -488,7 +488,7 @@ thead tr {
 
 /* end rate star */
 .ReviewTitle {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -496,7 +496,7 @@ thead tr {
   color: #3d3d3d;
 }
 .recommend {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -518,7 +518,7 @@ thead tr {
   transform: scale(0.9);
 }
 .formRview .buttomSubmit button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -555,7 +555,7 @@ thead tr {
     margin-bottom: 24px;
   }
   .carousel-caption.contentHeader p {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -564,7 +564,7 @@ thead tr {
     color: #ffffff;
   }
   .infoTour ul li span {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
@@ -580,7 +580,7 @@ thead tr {
     line-height: 17px;
   }
   .content_overview {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

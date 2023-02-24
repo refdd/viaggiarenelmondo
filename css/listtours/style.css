@@ -3,7 +3,7 @@
   gap: 5px;
 }
 .contentfilterChackBox {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -47,7 +47,7 @@
 }
 
 .content-search {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -56,7 +56,7 @@
   cursor: pointer;
 }
 .searchPlaceHolder {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -84,7 +84,7 @@
   box-shadow: 0px 2.02056px 2.02056px rgba(0, 0, 0, 0.1);
 }
 .cardList p {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10.1028px;
@@ -95,7 +95,7 @@
   color: #3d3d3d;
 }
 .titelcard div:nth-of-type(1) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.1233px;
@@ -109,7 +109,7 @@
   color: #ffe234;
 }
 .duration {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.1233px;
@@ -120,7 +120,7 @@
 }
 
 .priseListCard span:nth-of-type(1) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10.1028px;
@@ -140,7 +140,7 @@
 }
 
 .priseListCard span:nth-of-type(2) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20.2056px;
@@ -164,7 +164,7 @@
   transform: scale(0.9);
 }
 .viewButton button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.1233px;
@@ -173,7 +173,7 @@
   color: #ffffff;
 }
 .contentChackBox {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -182,7 +182,7 @@
   color: #3d3d3d;
 }
 .headerFilter {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -196,7 +196,7 @@
   width: 400px;
 }
 .headerTour {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 55px;
   color: #3d3d3d;
@@ -204,7 +204,7 @@
 }
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -267,7 +267,7 @@
     font-size: 21px;
   }
   .filter_search .contentbox span:nth-of-type(1) {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -276,7 +276,7 @@
     text-align: center;
   }
   .filter_search .contentbox span:nth-of-type(2) {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -322,7 +322,7 @@
     display: block;
   }
   .textCounter {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -350,7 +350,7 @@
     transform: scale(0.9);
   }
   .buttoncounter button {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;

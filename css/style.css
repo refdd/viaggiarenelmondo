@@ -7,6 +7,14 @@
   --main-duration: 0.5s;
 }
 /* End Variables */
+.lauoutVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000038;
+}
 /* start global rouls css */
 * {
   box-sizing: border-box;
@@ -32,8 +40,7 @@ li {
   list-style: none !important;
 }
 body {
-  font-family: "Josefin Sans", sans-serif;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Cairo", sans-serif; */
   overflow-x: hidden;
 }
 /* nav bar */
@@ -52,7 +59,7 @@ body {
   justify-content: center;
 }
 .links_container li {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -92,7 +99,7 @@ body {
   cursor: pointer;
 }
 .buttom_inquri button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -122,7 +129,7 @@ body {
   padding: 16px 21px;
 }
 .AD-Header_content {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -142,7 +149,7 @@ body {
   width: 30%;
 }
 .Start_From {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -150,7 +157,7 @@ body {
   color: #ffffff;
 }
 .price_Number {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -168,7 +175,7 @@ body {
   border-radius: 5px;
 }
 .btn_inqure button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -192,7 +199,7 @@ body {
   transform: translate(-50%, -50%);
 }
 .landingPageContent p {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -213,7 +220,7 @@ body {
   background: #01a8c3 !important;
   opacity: 0.5;
   border-radius: 5px;
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.1233px;
@@ -235,7 +242,7 @@ body {
   padding-top: 60px;
 }
 .headerSection .header {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -244,7 +251,7 @@ body {
   color: #3d3d3d;
 }
 .headerSection .description {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -313,7 +320,7 @@ body {
 .card_content .titleAndReate .title {
   width: 90px;
   height: 8px;
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -333,7 +340,7 @@ body {
 }
 .card_content .cities {
   margin: 0;
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -343,7 +350,7 @@ body {
   color: #3d3d3d;
 }
 .card_content .days {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -359,7 +366,7 @@ body {
   width: 100%;
 }
 .price span:nth-of-type(1) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10.62698px;
@@ -371,7 +378,7 @@ body {
   text-transform: capitalize;
 }
 .price span:nth-of-type(2) {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14.254px;
@@ -398,7 +405,7 @@ body {
   border-radius: 5px;
 }
 .card_content .priceAndView .viewBtn button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -457,7 +464,7 @@ body {
 }
 .imagefull_H .image_content span,
 .imageRight .image_content span {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -484,7 +491,7 @@ body {
   align-items: center;
 }
 .titelAndStar .titel {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14.6583px;
@@ -500,7 +507,7 @@ body {
   color: #ffe234;
 }
 .review .place {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.2153px;
@@ -614,7 +621,7 @@ slider css
   transform: scale(0.9);
 }
 .btnAddReview button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.1233px;
@@ -630,7 +637,7 @@ div#accordionExample {
   gap: 26px;
 }
 .accordion-button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -736,7 +743,7 @@ div#accordionExample {
   transform: translate(-50%, -50%);
 }
 .carousel-caption.contentHeader.sleiderHome p {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -802,7 +809,7 @@ div#accordionExample {
   text-align: center;
 }
 .dateFilter .content-search {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -855,7 +862,7 @@ div#accordionExample {
   display: none;
 }
 .button_moblie button {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -873,7 +880,7 @@ div#accordionExample {
   border-radius: 15px;
 }
 .tourCard .descTourCard {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-size: 16px;
   color: #777;
 }
@@ -895,32 +902,32 @@ div#accordionExample {
 }
 .tourCard .price {
   font-size: 20px;
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   color: #2c4755;
 }
 .tourCard .butBookNow button {
   font-size: 16px;
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
   color: #ffffff;
 }
 .tourCard .duration span:nth-of-type(1),
 .tourCard .size span:nth-of-type(1) {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #2c4755;
 }
 .tourCard .duration span:nth-of-type(2),
 .tourCard .size span:nth-of-type(2) {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-size: 14px;
   color: #777;
 }
 
 .tourCard .textTour {
-  font-family: "Josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #2c4755;
@@ -948,19 +955,19 @@ div#accordionExample {
 .articles {
 }
 .articles .titel_one {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   color: #9a9a9a;
   font-size: 14px;
 }
 .articles .mainTitle {
   color: #555555;
   font-size: 20px;
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-weight: 700;
 }
 
 .articles .artDesc {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   color: #9a9a9a;
   font-size: 14px;
 }
@@ -975,7 +982,7 @@ div#accordionExample {
   border-radius: 30px;
 }
 .articles .reedMore button {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
@@ -1016,7 +1023,7 @@ div#accordionExample {
 }
 /* review Section  */
 .reviewSection {
-  background-color: #dbeef3;
+  background-color: #bef0cb;
 }
 .contentReview .header {
   font-size: 30px;
@@ -1033,15 +1040,31 @@ div#accordionExample {
   color: #5d646d;
   line-height: 30px;
 }
+/* .tripAdviser {
+  background-image: url("../image/tripadvisor.jpg");
+  width: 100%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 40px;
+} */
+.tripAdviser {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.tripAdviser img {
+  max-width: 100%;
+  width: 69%;
+  height: 62px;
+}
 .buttonExplore {
   padding-left: 20px;
   padding-right: 20px;
-  background: linear-gradient(
-    90deg,
-    rgb(29 74 117) 0%,
-    rgb(59 112 165) 50%,
-    rgb(97 149 197) 100%
-  );
+  background: linear-gradient(90deg, #00af87 0%, #00af87 50%, #00af87 100%);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -1094,7 +1117,7 @@ div#accordionExample {
 }
 
 .reviewContent .testi__desc {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
@@ -1119,7 +1142,7 @@ div#accordionExample {
   cursor: pointer;
 }
 .author_content .autthor-bio .name {
-  font-family: "josefin Sans";
+  font-family: "Cairo", sans-serif;
   color: #0d233e;
   font-size: 20px;
   font-weight: 500;
@@ -1190,7 +1213,7 @@ div#accordionExample {
     background-color: #fff;
   }
   .menu_container li {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1219,7 +1242,8 @@ div#accordionExample {
     display: none;
   }
   .headerSection .header {
-    font-size: 20px;
+    font-size: 30px;
+    margin-bottom: 11px;
   }
   .headerSection .description {
     font-size: 24px;
@@ -1238,7 +1262,7 @@ div#accordionExample {
     top: 50%;
   }
   .landingPageContent p {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 52px;
@@ -1314,7 +1338,7 @@ div#accordionExample {
   }
   .imagefull_H .image_content span,
   .imageRight .image_content span {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -1379,7 +1403,7 @@ div#accordionExample {
     font-size: 16px;
   }
   .carousel-caption.contentHeader.sleiderHome p {
-    font-family: "Josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -1454,7 +1478,7 @@ div#accordionExample {
     font-size: 16px;
   }
   .reviewContent .testi__desc {
-    font-family: "josefin Sans";
+    font-family: "Cairo", sans-serif;
     font-size: 22px;
     line-height: 35px;
   }
@@ -1487,5 +1511,12 @@ div#accordionExample {
   }
   .splide__arrow i {
     font-size: 20px;
+  }
+  .tripAdviser {
+  }
+  .tripAdviser img {
+    max-width: 100%;
+    width: 38%;
+    height: 62px;
   }
 }
