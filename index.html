@@ -19,7 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,700;1,700&family=Roboto:ital,wght@0,300;0,900;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/singleTour/style.css" />
     <link
@@ -31,7 +34,7 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="container-sm">
+    <div class="container-sm py-4">
       <nav class="nav_container row flex-nowrap py-2">
         <!-- image  -->
         <div class="imgae_logo col col-md-2">
@@ -49,15 +52,18 @@
             <a href="listTour.html">Tour Egitto</a>
           </li>
           <li>
-            <a href="/"> ABOUT US </a>
+            <a href="/"> About us </a>
           </li>
           <li>
-            <a href="/"> BLOG </a>
+            <a href="/"> Blog </a>
           </li>
         </ul>
-        <!-- buttom inquery -->
-        <div class="buttom_inquri col col-md-3">
-          <button>inqueri</button>
+        <!-- icon socail -->
+        <div class="socail d-md-flex gap-3 align-content-center d-none">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-youtube"></i>
         </div>
         <!-- menue bar icon  -->
         <div class="menu_bar col">
@@ -143,30 +149,8 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="image/destination3.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption contentHeader sleiderHome">
-            <div class="landingPageContent">
-              <p>Elevate hospitality to new levels</p>
-              <div class="but_landing">
-                <button>View Tour</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="image/destination3.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption contentHeader sleiderHome">
-            <div class="landingPageContent">
-              <p>Elevate hospitality to new levels</p>
-              <div class="but_landing">
-                <button>View Tour</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
+      <div class="carousel-inner header">
+        <div class="carousel-item header active">
           <img src="image/destination3.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption contentHeader sleiderHome">
             <div class="landingPageContent">
@@ -1304,6 +1288,183 @@
         </div>
       </div>
     </div>
+    <!-- review section -->
+    <div class="container mt-4">
+      <div class="reviewSection p-3 p-md-5">
+        <div class="row gy-3">
+          <div class="col-12 col-md-4">
+            <div
+              class="contentReview d-flex flex-column gap-3 align-items-md-center"
+            >
+              <div class="header">How Good is Egypt Tours Portal?</div>
+              <div class="desc">
+                Egypt Tours Portal prides itself on being the best travel agency
+                in Egypt as proven by our numerous positive reviews.
+              </div>
+              <div class="buttonExplore">
+                <button>Explore All</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8">
+            <div id="new-product" class="splide">
+              <div class="splide__arrows d-none d-md-block">
+                <button class="splide__arrow splide__arrow--prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    <div
+                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
+                    >
+                      <div class="reviewContent">
+                        <p class="testi__desc">
+                          This review is a late, but I had to provide some
+                          feedback. My brother and I went on vacation in October
+                          2022 and booked with Egypt Tours Portal. With on-line
+                          sc...<a
+                            rel="nofollow"
+                            href="https://www.youtube.com/watch?v=ShMfhK_ZTQI"
+                            >Read More</a
+                          >
+                        </p>
+                      </div>
+                      <div
+                        class="author_content d-flex align-items-center gap-4"
+                      >
+                        <div class="author_img">
+                          <img src="image/athor (1).jpg" alt="" />
+                        </div>
+                        <div class="autthor-bio d-flex flex-column gap-2">
+                          <div class="name">Timmy Lovett</div>
+                          <div class="author_mate">2023-11-22 09:00:13</div>
+                          <div class="reate d-flex align-items-center gap-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div
+                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
+                    >
+                      <div class="reviewContent">
+                        <p class="testi__desc">
+                          This review is a late, but I had to provide some
+                          feedback. My brother and I went on vacation in October
+                          2022 and booked with Egypt Tours Portal. With on-line
+                          sc...<a
+                            rel="nofollow"
+                            href="https://www.youtube.com/watch?v=ShMfhK_ZTQI"
+                            >Read More</a
+                          >
+                        </p>
+                      </div>
+                      <div
+                        class="author_content d-flex align-items-center gap-4"
+                      >
+                        <div class="author_img">
+                          <img src="image/athor (1).jpg" alt="" />
+                        </div>
+                        <div class="autthor-bio d-flex flex-column gap-2">
+                          <div class="name">Timmy Lovett</div>
+                          <div class="author_mate">2023-11-22 09:00:13</div>
+                          <div class="reate d-flex align-items-center gap-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div
+                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
+                    >
+                      <div class="reviewContent">
+                        <p class="testi__desc">
+                          This review is a late, but I had to provide some
+                          feedback. My brother and I went on vacation in October
+                          2022 and booked with Egypt Tours Portal. With on-line
+                          sc...<a
+                            rel="nofollow"
+                            href="https://www.youtube.com/watch?v=ShMfhK_ZTQI"
+                            >Read More</a
+                          >
+                        </p>
+                      </div>
+                      <div
+                        class="author_content d-flex align-items-center gap-4"
+                      >
+                        <div class="author_img">
+                          <img src="image/athor (1).jpg" alt="" />
+                        </div>
+                        <div class="autthor-bio d-flex flex-column gap-2">
+                          <div class="name">Timmy Lovett</div>
+                          <div class="author_mate">2023-11-22 09:00:13</div>
+                          <div class="reate d-flex align-items-center gap-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="splide__slide">
+                    <div
+                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
+                    >
+                      <div class="reviewContent">
+                        <p class="testi__desc">
+                          This review is a late, but I had to provide some
+                          feedback. My brother and I went on vacation in October
+                          2022 and booked with Egypt Tours Portal. With on-line
+                          sc...<a
+                            rel="nofollow"
+                            href="https://www.youtube.com/watch?v=ShMfhK_ZTQI"
+                            >Read More</a
+                          >
+                        </p>
+                      </div>
+                      <div
+                        class="author_content d-flex align-items-center gap-4"
+                      >
+                        <div class="author_img">
+                          <img src="image/athor (1).jpg" alt="" />
+                        </div>
+                        <div class="autthor-bio d-flex flex-column gap-2">
+                          <div class="name">Timmy Lovett</div>
+                          <div class="author_mate">2023-11-22 09:00:13</div>
+                          <div class="reate d-flex align-items-center gap-2">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- footer section -->
     <div class="container-sm">
       <div class="footerSection">
@@ -1400,8 +1561,11 @@
         },
       });
     </script>
+    <script src="js/reviewSlider.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
   </body>
 </html>
