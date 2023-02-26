@@ -1155,7 +1155,116 @@ div#accordionExample {
   font-size: 23px;
   color: #ffdc64;
 }
+.imageBlog {
+}
+.imageBlog .marktAuter {
+  top: 11px;
+  left: 0;
+  padding: 5px 30px 5px 20px;
+  background-color: #f2f1ea;
+}
+.imageBlog .marktAuter span {
+  color: #878787;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.imageBlog img {
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
+  transform: translateZ(20px);
+  transform-style: preserve-3d;
+  transform: rotateY(0) rotateX(0);
+  object-fit: cover;
+}
+.contentBlog {
+}
+.contentBlog .duration span,
+.contentBlog .autherBy span {
+  color: #878787;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+}
+.contentBlog .duration i,
+.contentBlog .autherBy i {
+  color: #878787;
+  font-size: 20px;
+}
+.contentBlog .descBlog {
+  color: #1e1e1e;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 32px;
+  cursor: pointer;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+  cursor: pointer;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(175, 170, 170, 0.8);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+@keyframes changeAnimation {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(7px);
+    transition: ease-in-out;
+  }
+}
+#blogContainer .splide__arrows {
+  display: none;
+}
+.imageBlog {
+  animation-duration: 2s;
+  transition-duration: 3s;
+  animation-name: changeAnimation;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.imageBlog * {
+  pointer-events: none;
+}
+.highlight {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 30%;
+  background-color: #0000001a;
+  filter: brightness(70%) blur(20px);
+  color: #333;
+  font-weight: bold;
+  left: -20%;
+  top: -13%;
+}
 /* responsev navbar */
+@media only screen and (max-width: 590px) {
+  .imageBlog {
+    pointer-events: none;
+  }
+}
 @media only screen and (max-width: 786px) {
   .nav_container {
     justify-content: start;
