@@ -1157,13 +1157,13 @@ div#accordionExample {
 }
 .imageBlog {
 }
-.imageBlog .marktAuter {
+.marktAuter {
   top: 11px;
   left: 0;
   padding: 5px 30px 5px 20px;
   background-color: #f2f1ea;
 }
-.imageBlog .marktAuter span {
+.marktAuter span {
   color: #878787;
   font-style: italic;
   font-size: 18px;
