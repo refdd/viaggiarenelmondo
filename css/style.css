@@ -667,7 +667,6 @@ div#accordionExample {
   max-width: 100%;
   width: 255px;
   height: 106px;
-  border-radius: 50%;
   cursor: pointer;
 }
 .linksAndcontactUs {
@@ -894,10 +893,10 @@ div#accordionExample {
   justify-content: center;
   align-items: center;
   padding: 14px 15px;
-  background-color: #e90064;
+  background-color: #003366;
   border-radius: 20px;
-  box-shadow: #b3005e 0px 2px 1px, #b3005e 0px 4px 2px, #b3005e 0px 8px 4px,
-    #b3005e 0px 1px 1px, #b3005e 0px 1px 1px;
+  box-shadow: #003366 0px 2px 1px, #003366 0px 4px 2px, #003366 0px 8px 4px,
+    #003366 0px 1px 1px, #003366 0px 1px 1px;
   transition: ease-in-out 0.4s;
 }
 .tourCard .price {
@@ -976,10 +975,17 @@ div#accordionExample {
   justify-content: center;
   align-items: center;
   padding: 5px 20px;
-  background-color: #e27d60;
+  background-color: #003366;
   width: 200px;
   height: 44px;
   border-radius: 30px;
+  transition: ease-in-out 0.4s;
+}
+.articles .reedMore:hover {
+  background-color: #01a8c3;
+}
+.articles .reedMore:hover button {
+  color: #fff;
 }
 .articles .reedMore button {
   font-family: "Cairo", sans-serif;
@@ -1023,7 +1029,7 @@ div#accordionExample {
 }
 /* review Section  */
 .reviewSection {
-  background-color: #bef0cb;
+  background-color: #01a8c3;
 }
 .contentReview .header {
   font-size: 30px;
@@ -1037,7 +1043,7 @@ div#accordionExample {
 }
 .contentReview .desc {
   font-size: 18px;
-  color: #5d646d;
+  color: #fff;
   line-height: 30px;
 }
 /* .tripAdviser {
@@ -1064,7 +1070,7 @@ div#accordionExample {
 .buttonExplore {
   padding-left: 20px;
   padding-right: 20px;
-  background: linear-gradient(90deg, #00af87 0%, #00af87 50%, #00af87 100%);
+  background: linear-gradient(90deg, #003366 0%, #003366 50%, #003366 100%);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -1258,6 +1264,13 @@ div#accordionExample {
   font-weight: bold;
   left: -20%;
   top: -13%;
+}
+/* blog header */
+.headerblog {
+  color: #555555;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
 }
 /* responsev navbar */
 @media only screen and (max-width: 590px) {
@@ -1506,7 +1519,6 @@ div#accordionExample {
     max-width: 100%;
     width: 387px;
     height: 154px;
-    border-radius: 50%;
   }
   .searchPlaceHolder input::placeholder {
     font-size: 16px;
@@ -1543,8 +1555,7 @@ div#accordionExample {
     padding: 15px 32px;
   }
   .tourCard .butBookNow:hover {
-    box-shadow: #e90064 0px 2px 1px, #e90064 0px 4px 2px, #e90064 0px 8px 4px,
-      #e90064 0px 1px 1px, #e90064 0px 1px 1px;
+    background-color: #01a8c3;
   }
   .tourCard .textTour {
     font-size: 20px;
@@ -1596,7 +1607,7 @@ div#accordionExample {
   }
   .contentReview .desc {
     font-size: 23px;
-    color: #5d646d;
+    color: #fff;
     line-height: 38px;
   }
   .buttonExplore button {
