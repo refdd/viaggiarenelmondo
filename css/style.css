@@ -1328,7 +1328,7 @@ div#accordionExample {
     font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 21px;
+    font-size: 15px;
     line-height: 21px;
     color: #ffffff;
     margin-right: 7px;
@@ -1360,7 +1360,7 @@ div#accordionExample {
     font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
     color: #ffffff;
   }
