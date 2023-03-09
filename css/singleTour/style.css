@@ -35,13 +35,13 @@
   height: 300px;
 }
 .tapsTour {
-  background: #e5e5e5;
-  padding: 8px 8px 0 !important;
+  background: #01a8c3;
+  padding: 10px !important;
   position: absolute;
   top: 0;
-  width: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  left: 12px;
+  transform: translate(-0%, 0%);
 }
 .layoutviews {
   display: none;
@@ -55,17 +55,18 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
-  color: #3d3d3d;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   cursor: pointer;
-  padding: 12px 5px 0 !important;
+  border-radius: 10px;
 }
 .tapsTour li.active {
-  background: #ffffff;
-  height: 40px;
+  background: #003366;
+  padding: 8px;
+  color: #ffff;
 }
 .video_container {
   height: 263px;
@@ -112,7 +113,7 @@
 }
 .headerInquery {
   background: #01a8c3;
-  padding: 20px;
+  padding: 14px;
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -131,10 +132,7 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-.startDate,
-.endDate {
-  width: 48%;
-}
+
 .startDate,
 .endDate,
 .textArea {
@@ -241,10 +239,16 @@
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: #7a7a7a;
+}
+.flightFelid {
+  display: none;
+}
+.flightFelid.active {
+  display: block;
 }
 .form-group textarea::placeholder {
   font-family: "Roboto";
@@ -292,6 +296,7 @@
   width: 30px;
   height: 30px;
   color: white;
+  display: none !important;
 }
 .itineraryDay {
   background: #f5f5f5 !important;
@@ -303,9 +308,10 @@
   font-style: normal !important;
   font-weight: 700 !important;
   font-size: 16px !important;
-  line-height: 10px !important;
-  color: #3d3d3d !important;
+  line-height: 34px !important;
+  color: #003366 !important;
 }
+
 .headerAccommmedation {
   background: #f5f5f5;
   border-width: 0.432384px;
@@ -572,8 +578,17 @@ thead tr {
     color: #ffffff;
   }
   .tapsTour {
-    background: #e5e5e5;
-    gap: 25px !important;
+    background: #01a8c3;
+    width: 95%;
+  }
+  .tapsTour {
+    background: #01a8c3;
+    padding: 10px !important;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .tapsTour li {
     font-size: 18px;
@@ -614,7 +629,22 @@ thead tr {
     padding: 22px;
   }
   .tapsTour li.active {
-    background: #ffffff;
-    height: 65px;
+    background: #003366;
+    color: #fff;
+    padding: 10px;
+  }
+  .itineraryDay .headerday {
+    font-family: "Cairo", sans-serif !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    line-height: 10px !important;
+    color: #3d3d3d !important;
+  }
+  .itineraryDay .headerday {
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    color: #3d3d3d !important;
   }
 }

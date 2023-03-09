@@ -176,16 +176,19 @@
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: #3d3d3d;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 1px;
 }
 .headerFilter {
   font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 30px;
   color: #3d3d3d;
 }
@@ -195,13 +198,28 @@
   right: 32px;
   width: 400px;
 }
+
+.f-header {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+.flightFelid {
+  display: none;
+}
+.flightFelid.active {
+  display: block;
+}
 .headerTour {
   font-family: "Cairo", sans-serif;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 30px;
   color: #3d3d3d;
-  margin-right: 50px;
 }
+.filterDropdown .accordion-item {
+  background-color: #ffffff;
+}
+
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
     font-family: "Cairo", sans-serif;
@@ -367,5 +385,11 @@
     width: 130px;
     background: #01a8c3;
     border-radius: 5px;
+  }
+  .headerTour {
+    font-family: "Cairo", sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    color: #3d3d3d;
   }
 }

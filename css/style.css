@@ -185,7 +185,7 @@ body {
 /* landing header */
 .landPageHeader {
   position: relative;
-  background-image: url(../image/Photo.jpg);
+  background-image: url(../image/Nile-Cruises.webp);
   background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
@@ -683,9 +683,9 @@ div#accordionExample {
 }
 .links {
   display: flex;
-  width: 100px;
+  width: 100%;
   flex-direction: column;
-  gap: 8px;
+  gap: 14px;
   padding-left: 0;
 }
 .contactUsFooter {
@@ -705,7 +705,6 @@ div#accordionExample {
   padding-left: 0;
 }
 .links li {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -857,7 +856,7 @@ div#accordionExample {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 92px;
+  height: 75px;
   background: #01a8c3;
   border-radius: 8px 8px 0px 0px;
   width: 100%;
@@ -877,6 +876,38 @@ div#accordionExample {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
+  background-color: #003366 !important;
+  padding: 14px;
+  border-radius: 8px;
+  animation: 2s 2s infinite wiggle;
+}
+
+@keyframes wiggle {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  15% {
+    transform: scale(1.15);
+  }
+  20% {
+    transform: scale(1.15) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1.15) rotate(2deg);
+  }
+  40% {
+    transform: scale(1.15) rotate(0);
+  }
 }
 .imgTourCard {
 }
@@ -990,7 +1021,8 @@ div#accordionExample {
   transition: ease-in-out 0.4s;
 }
 .articles .reedMore:hover {
-  background-color: #01a8c3;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .articles .reedMore:hover button {
   color: #fff;
@@ -1286,18 +1318,49 @@ div#accordionExample {
   width: 100%;
   left: 0;
 }
+.buttonSeeMore {
+  background-color: #01a8c3;
+  padding: 14px 20px;
+  width: 290px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+.buttonSeeMore button {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.buttonSeeMore:hover {
+  transform: scale(1.1);
+}
+
 /* responsev navbar */
 @media only screen and (max-width: 590px) {
   .imageBlog {
     pointer-events: none;
   }
+  .cardContainer {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    overflow-x: scroll;
+    margin: 0 5px;
+  }
+  .tourCard {
+    min-width: 282px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    margin-left: 15px;
+    border-radius: 15px;
+  }
+
+  /* faq section  */
+  div#accordionExample {
+    gap: 18px;
+  }
 }
 @media only screen and (max-width: 786px) {
-  .nav_container {
-    justify-content: start;
-    gap: 15px;
-    position: relative;
-  }
   .ADHeader_container {
     position: absolute;
     bottom: -88px;
@@ -1437,6 +1500,13 @@ div#accordionExample {
     width: 100%;
     left: 0;
   }
+  .buttonSeeMore {
+    padding: 14px 20px;
+    width: 300px;
+  }
+  .buttonSeeMore button {
+    font-size: 20px;
+  }
   .headerSection .header {
     font-size: 30px;
     margin-bottom: 11px;
@@ -1450,9 +1520,12 @@ div#accordionExample {
 /* responsev landing header */
 @media only screen and (min-width: 786px) {
   .landPageHeader {
-    background-image: url("../image/header.jpg");
-    height: 725px;
+    background-image: url(../image/Nile-Cruises.webp);
     background-position: center;
+    height: 100%;
+    background-size: cover;
+    height: 644px;
+    width: 100%;
   }
   .landingPageContent {
     top: 50%;
