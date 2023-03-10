@@ -34,10 +34,10 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="container-sm py-4">
-      <nav class="nav_container row gx-1 flex-nowrap py-2">
+    <div class="container-sm py-2">
+      <nav class="nav_container row gx-1 py-2 flex-md-nowrap">
         <!-- image  -->
-        <div class="imgae_logo col-4 col-md-2">
+        <div class="imgae_logo col-6 col-md-3">
           <img src="./image/newLoge.png" alt="" />
         </div>
         <!-- links -->
@@ -58,44 +58,38 @@
             <a href="listBlog.html"> Blog </a>
           </li>
         </ul>
+
         <!-- buttom inquery -->
-        <div class="buttom_inquri col col-md-3">
+        <div class="buttom_inquri col-3 row-cols-md-2">
           <button>inqueri</button>
         </div>
         <!-- menue bar icon  -->
-        <div class="menu_bar col">
-          <i
-            class="fa fa-bars"
-            aria-hidden="true"
-            id="menu"
-            style="font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-times"
-            aria-hidden="true"
-            id="close"
-            style="font-size: 27px"
-          ></i>
+        <div class="col-3 d-block d-md-none">
+          <div
+            class="iconMneu d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-bars"></i>
+            <img src="image/close-x.svg" alt="" />
+          </div>
         </div>
-        <!-- menue bar box -->
-        <ul class="menu_container">
-          <li class="active">
-            <a href="/"> Home </a>
-          </li>
-          <li>
-            <a href="listCrouse.html">Crociere Sul Nilo </a>
-          </li>
-          <li>
-            <a href="listTour.html">Tour Egitto </a>
-          </li>
-
-          <li>
-            <a href="/"> ABOUT US </a>
-          </li>
-          <li>
-            <a href="listBlog.html"> Blog </a>
-          </li>
-        </ul>
+        <!-- links menu -->
+        <div
+          class="col-12 menu_Bar d-flex flex-column mt-3 border-top gap-3 d-md-none"
+        >
+          <ul class="mb-0 linksMenu">
+            <li class="border-bottom py-2"><a href="/"> Home</a></li>
+            <li class="border-bottom py-2">
+              <a href="listCrouse.html"> Crociere Sul Nilo</a>
+            </li>
+            <li class="border-bottom py-2">
+              <a href="listTour.html"> Tour Egitto</a>
+            </li>
+            <li class="border-bottom py-2"><a href="/"> About us</a></li>
+            <li class="border-bottom border-3 py-2">
+              <a href="listBlog.html"> Blog</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
@@ -1656,7 +1650,7 @@
     </div>
 
     <!-- footer section -->
-    <div class="container-sm">
+    <div class="container-sm" id="footer">
       <div class="footerSection">
         <div class="footer row">
           <!-- logo footer -->

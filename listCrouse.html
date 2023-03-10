@@ -1142,6 +1142,210 @@
         </div>
       </div>
     </div>
+    <div class="container" id="from">
+      <div class="row">
+        <div class="col-12 d-block d-md-none">
+          <div class="inquireSection rounded-3 overflow-hidden border">
+            <div class="headerInquery text-center">INQUIRE NOW</div>
+            <div
+              class="form_inquire row gap-2 justify-content-center py-1 px-3"
+            >
+              <!-- name and email -->
+              <div class="row gx-1">
+                <div class="col-6">
+                  <input
+                    class="form-control col"
+                    type="text"
+                    placeholder="Name"
+                    aria-label="Name example"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email"
+                    aria-label="Email example"
+                  />
+                </div>
+              </div>
+              <div class="row gx-1">
+                <div class="col-6">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Nationality</option>
+                    <option value="1">egypt</option>
+                    <option value="2">cairo</option>
+                    <option value="3">paris</option>
+                  </select>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center">
+                    <select
+                      class="form-select code_selected"
+                      aria-label="Default select example"
+                    >
+                      <option selected>code</option>
+                      <option value="1">+1</option>
+                      <option value="2">+20</option>
+                      <option value="3">+23</option>
+                      <option value="3">+43</option>
+                      <option value="3">+80</option>
+                    </select>
+                    <input
+                      class="form-control inputCode"
+                      type="text"
+                      placeholder="Number"
+                      aria-label="Name example"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- date -->
+              <div class="d-flex gap-2 align-items-center">
+                <div class="startDate">
+                  <label>Arrival* </label>
+                  <div class="date">
+                    <input
+                      type="text"
+                      placeholder=" Arrival Date "
+                      onfocus="(this.type='date')"
+                    />
+                  </div>
+                </div>
+                <!-- end date -->
+                <div class="endDate">
+                  <label>Departure*</label>
+                  <div class="date">
+                    <input
+                      type="text"
+                      placeholder="Departure Date"
+                      onfocus="(this.type='date')"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- counter drobdown -->
+              <div class="drobdownCounter">
+                <div class="row gx-0 gy-1">
+                  <div class="col-12">
+                    <!-- adults -->
+                    <div
+                      class="d-flex justify-content-between gap-2 align-items-center w-100 border rounded-2 px-1"
+                    >
+                      <span class="textCounter"> Adults </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2"
+                      >
+                        <img
+                          onclick="removeCounter('adults')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="adults"
+                          type="text"
+                          name="adults"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounter('adults')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <!-- children -->
+                    <div
+                      class="d-flex justify-content-between gap-2 align-items-center w-100 border rounded-2 px-1"
+                    >
+                      <span class="textCounter"> Children </span>
+                      <div
+                        class="counterContainer d-flex justify-content-between align-items-center gap-2 p-2"
+                      >
+                        <img
+                          onclick="removeCounter('Children')"
+                          src="image/Minus.svg"
+                          id="mins"
+                          alt=""
+                        />
+                        <input
+                          id="Children"
+                          type="text"
+                          name="Children"
+                          class="form-control input-number book_all"
+                          value="0"
+                          min="1"
+                          max="100"
+                          readonly=""
+                        />
+                        <img
+                          onclick="addCounter('Children')"
+                          src="image/Plus.svg"
+                          id="plus"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fight chack box -->
+              <div class="d-flex gap-3 align-content-center">
+                <div class="form-check">
+                  <input
+                    onchange="openAndCloseFlightFiled(this)"
+                    class="form-check-input flightcheck"
+                    type="checkbox"
+                    value=""
+                    id="flightcheck"
+                  />
+                  <label
+                    class="form-check-label contextFormInauire"
+                    for="flexCheckDefault"
+                  >
+                    Add flight
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <input
+                  class="form-control flightFelid"
+                  type="text"
+                  placeholder="Aeroporti comodi per la partenza"
+                  aria-label="Name example"
+                />
+              </div>
+              <!-- text aera -->
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Your tour requirements"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div
+                class="bottonInqueryFrom w-100 d-flex justify-content-center align-items-center p-3 my-2"
+              >
+                <button>INQUIRE NOW!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- F and Q -->
     <div class="container-sm">
       <div class="headerSection">

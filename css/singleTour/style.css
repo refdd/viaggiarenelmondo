@@ -38,7 +38,7 @@
   background: #01a8c3;
   padding: 10px !important;
   position: absolute;
-  top: 0;
+  top: -23px;
   width: 100%;
   left: 12px;
   transform: translate(-0%, 0%);
@@ -547,9 +547,20 @@ thead tr {
   margin-right: 12px;
 } */
 /* responsev singel tour */
+@media only screen and (max-width: 786px) {
+  .sticky-Section {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+    z-index: 1020;
+  }
+}
 @media only screen and (min-width: 786px) {
   .carousel-item img {
     height: 500px;
+  }
+  .sticky-Section {
+    position: relative;
   }
   .carousel-caption.contentHeader {
     top: auto;

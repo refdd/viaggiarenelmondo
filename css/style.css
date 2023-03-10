@@ -52,7 +52,6 @@ body {
 .links_container {
   list-style: none;
   display: flex;
-  width: 70%;
   gap: 30px;
   padding-left: 0 !important;
   margin-bottom: 0;
@@ -1298,12 +1297,13 @@ div#accordionExample {
   height: 100%;
   width: 100%;
   border-radius: 30%;
-  background-color: #0000001a;
+  background-color: #c2bfbf1a;
   filter: brightness(70%) blur(20px);
   color: #333;
   font-weight: bold;
   left: -20%;
   top: -13%;
+  display: none;
 }
 /* blog header */
 .headerblog {
@@ -1435,7 +1435,7 @@ div#accordionExample {
     font-size: 14px;
   }
   .imgae_logo {
-    width: 60%;
+    /* width: 60%; */
   }
   .menu_bar {
     display: flex;
@@ -1490,6 +1490,53 @@ div#accordionExample {
   }
   .fa-times.show {
     display: block;
+  }
+  .iconMneu {
+    cursor: pointer;
+  }
+  .iconMneu i {
+    font-size: 29px;
+    color: #3d3d3d;
+    cursor: pointer;
+    display: block;
+  }
+  .iconMneu i.active {
+    font-size: 29px;
+    color: #3d3d3d;
+    cursor: pointer;
+    display: none;
+  }
+  .iconMneu img {
+    width: 41px;
+    display: none;
+  }
+  .iconMneu img.active {
+    width: 41px;
+    display: block;
+  }
+  .linksMenu li {
+    font-size: 17px;
+    font-weight: 600;
+    color: #1e1e1e;
+    transition: ease-in-out 0.3s;
+  }
+  .menu_Bar {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+    overflow: hidden;
+    max-height: 0;
+  }
+  .menu_Bar.active {
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    transition: max-height 1s;
+    overflow: hidden;
+    max-height: 250px;
   }
 }
 /* responsev Ad header */

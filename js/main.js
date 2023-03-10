@@ -1,6 +1,4 @@
 // selecter
-const menuIcon = document.querySelector(".menu_bar");
-const menu = document.querySelector(".menu_container");
 const cardContainer = document.querySelector(".cardContainer");
 const inputCounter = document.querySelector(".inputCounter");
 const counterbox = document.querySelector(".counterbox");
@@ -25,17 +23,20 @@ const adults = document.getElementById("adults");
 const InfantsFilter = document.getElementById("InfantsFilter");
 const ChildrenFilter = document.getElementById("ChildrenFilter");
 const adultsFilter = document.getElementById("adultsFilter");
+const icombare = document.querySelector(".iconMneu i");
+const iconClose = document.querySelector(".iconMneu img");
+const menu_Bar = document.querySelector(".menu_Bar");
 // event
 buttonDuration &&
   buttonDuration.addEventListener("click", () => {
     counderFilter.classList.toggle("active");
   });
-// scroll to form position
-mobileButton &&
-  mobileButton.addEventListener("click", () => {
-    fromInquery.scrollIntoView({ behavior: "smooth" });
-    mobileButton.classList.add("close");
-  });
+// // scroll to form position
+// mobileButton &&
+//   mobileButton.addEventListener("click", () => {
+//     fromInquery.scrollIntoView({ behavior: "smooth" });
+//     mobileButton.classList.add("close");
+//   });
 // open and close  filter box and Sort box
 filterbutton &&
   filterbutton.addEventListener("click", () => {
@@ -53,16 +54,19 @@ sortbutton &&
     box_Sort.classList.toggle("active");
     arrowSort.classList.toggle("rotate");
   });
-//
-menuIcon.addEventListener("click", () => {
-  // remove menu icon and add  cancel icon
-  const icon = document.getElementById("menu");
-  const close = document.getElementById("close");
-  icon.classList.toggle("close");
-  close.classList.toggle("show");
-  // show and hide menu
-  menu.classList.toggle("show");
-});
+//open and close manu bar
+icombare &&
+  icombare.addEventListener("click", () => {
+    icombare.classList.add("active");
+    iconClose.classList.add("active");
+    menu_Bar.classList.add("active");
+  });
+iconClose &&
+  iconClose.addEventListener("click", () => {
+    icombare.classList.remove("active");
+    iconClose.classList.remove("active");
+    menu_Bar.classList.remove("active");
+  });
 // scroll box
 
 const handleClick = (direction) => {
@@ -79,15 +83,13 @@ function add_and_remove_active_class() {
   //for in will not work with DOM elements
   taptour.forEach((elem, i) => {
     elem.addEventListener("click", () => {
-      // for (const lis of taptour) {
-      //   lis.classList.remove('active');
-      // }
       for (let index = 0; index < taptour.length; index++) {
         taptour[index].classList.remove("active");
         layoutviews[index].classList.remove("active");
       }
       elem.classList.add("active");
       layoutviews[i].classList.add("active");
+      layoutviews[i].scrollIntoView(true);
     });
   });
 }
