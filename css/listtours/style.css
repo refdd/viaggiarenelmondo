@@ -192,11 +192,14 @@
   line-height: 30px;
   color: #3d3d3d;
 }
-.fromHeader {
+
+.laoutListBlog {
   position: absolute;
-  top: 45px;
-  right: 32px;
-  width: 400px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000001a;
 }
 
 .f-header {
@@ -219,7 +222,26 @@
 .filterDropdown .accordion-item {
   background-color: #ffffff;
 }
-
+.headerList {
+  font-size: 24px;
+  font-family: "Cairo", sans-serif;
+  color: #183153;
+  line-height: 35px;
+  font-weight: 600;
+}
+.textBlog .contentListBlog {
+  font-size: 32px;
+  line-height: 1.12em;
+  font-weight: 700;
+  font-family: "cairo", sans-serif;
+  color: #ffffff;
+}
+.textBlog {
+  position: absolute;
+  bottom: 25px;
+  left: 13px;
+  width: 400px;
+}
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
     font-family: "Cairo", sans-serif;
@@ -229,6 +251,19 @@
     line-height: 61px;
     color: #ffffff;
     width: 750px;
+  }
+  .textBlog {
+    position: absolute;
+    bottom: 126px;
+    left: 32px;
+    width: 400px;
+  }
+  .textBlog .contentListBlog {
+    font-size: 50px;
+    line-height: 1.12em;
+    font-weight: 700;
+    font-family: "cairo", sans-serif;
+    color: #ffffff;
   }
   .searchSection {
     display: none;
