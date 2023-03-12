@@ -242,6 +242,12 @@
   left: 13px;
   width: 400px;
 }
+.fromHeader {
+  position: absolute;
+  top: 41px;
+  right: 35px;
+  width: 571px;
+}
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
     font-family: "Cairo", sans-serif;
