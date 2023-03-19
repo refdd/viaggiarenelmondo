@@ -1,0 +1,146 @@
+.howWE {
+  background-image: url(../../image/44.webp);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+.layoutImgAbout {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  opacity: 0.95;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  z-index: -1;
+}
+
+.headerAbout {
+  color: #81b8d4;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Cairo", sans-serif;
+  z-index: 5;
+}
+.headerTow {
+  color: #101218;
+  font-size: 18px;
+  font-weight: 500;
+  z-index: 5;
+  margin-left: 30px;
+}
+.headerTow .lineHeader {
+  left: -23px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #101218;
+}
+.howWE .desc {
+  z-index: 5;
+  color: gray;
+  line-height: 159%;
+}
+.howWE .serverAbout {
+  z-index: 5;
+}
+.howWE .serverAbout .header {
+  color: #0274be;
+  font-family: "Cairo", sans-serif;
+  font-size: 23px;
+  font-weight: 500;
+  width: fit-content;
+}
+.ImageAbout {
+}
+.ImageAbout img {
+  max-width: 100%;
+  width: 90%;
+  height: auto;
+}
+.howIt {
+  background-color: #212121;
+}
+.howitImg {
+  background-image: url(../../image/howit.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+.howitImg .layouthowitImg {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000045;
+}
+.howitHeader span:nth-of-type(1) {
+  font-size: 35px;
+  font-family: "Cairo", sans-serif;
+  color: #ffffff;
+  line-height: 46px;
+  font-weight: 500;
+}
+.howitHeader span:nth-of-type(2) {
+  font-family: "Cairo", sans-serif;
+
+  color: #81b8d4;
+  font-size: 35px;
+  font-weight: 500;
+}
+.howitHeader .line {
+  height: 3px;
+  width: 20%;
+  background-color: #bdbdbd;
+}
+.howitIcon {
+  padding: 35px 25px 28px 24px;
+  background-color: #ffffff;
+  border-radius: 60px 60px 60px 60px;
+  box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.17);
+  width: 39%;
+}
+.howitIcon i {
+  color: #81b8d4;
+  font-size: 30px;
+}
+.stepContent span:nth-of-type(1) {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+}
+.stepContent span:nth-of-type(2) {
+  text-align: center;
+  color: #bdbdbd;
+}
+@media only screen and (min-width: 786px) {
+  .ImageAbout img {
+    width: 90%;
+    max-width: 100%;
+    height: 450px;
+  }
+  .headerAbout {
+    font-size: 48px;
+  }
+  .headerTow {
+    font-size: 20px;
+  }
+  .howWE .serverAbout .header {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .howitImg {
+    background-image: url(../../image/howit.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .howitHeader span:nth-of-type(1) {
+    font-size: 48px;
+  }
+}
