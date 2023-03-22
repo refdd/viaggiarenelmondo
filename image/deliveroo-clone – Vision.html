@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://localhost:3333/vision -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused .cm-cursor {display: block;}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; left: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace:before {content: attr(data-display); position: absolute; pointer-events: none; color: #888;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼ1 .cm-selectionMatch {background-color: #99ff7780;}
+.ͼ1 .cm-searchMatch .cm-selectionMatch {background-color: transparent;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼt8 {color: #eb6ab7;}
+.ͼt9 {color: #5998fc;}
+.ͼta {color: #4fd97f;}
+.ͼtb {color: #f46e64;}
+.ͼtc {color: #d05afc;}
+.ͼtd {color: #d05afc;}
+.ͼte {color: #eb6ab7;}
+.ͼtf {color: #777f8c;}
+.ͼtg {font-weight: bold;}
+.ͼth {font-style: italic;}
+.ͼti {text-decoration: line-through;}
+.ͼtj {font-weight: bold; color: #5998fc;}
+.ͼtk {color: #d05afc;}
+.ͼtl {color: #dbb931;}
+.ͼtm {color: #fff;}
+.ͼt7 {color: #fff; background-color: #101112;}
+.ͼt7 .cm-content {caret-color: #4e91fc;}
+.ͼt7 .cm-editor {font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 0.8125rem; line-height: inherit;}
+.ͼt7 .cm-cursor, .ͼt7 .cm-dropCursor {border-left-color: #4e91fc;}
+.ͼt7.cm-focused .cm-selectionBackground, .ͼt7 .cm-selectionBackground, .ͼt7 .cm-content ::selection {background-color: #272a2e;}
+.ͼt7 .cm-panels {background-color: #101112; color: #fff;}
+.ͼt7 .cm-panels.cm-panels-top {border-bottom: 2px solid #3f434a;}
+.ͼt7 .cm-panels.cm-panels-bottom {border-top: 2px solid #3f434a;}
+.ͼv0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼuw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼus {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼuo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼuk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼug {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼuc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼu8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼu4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼtw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼsq {color: #eb6ab7;}
+.ͼsr {color: #5998fc;}
+.ͼss {color: #4fd97f;}
+.ͼst {color: #f46e64;}
+.ͼsu {color: #d05afc;}
+.ͼsv {color: #d05afc;}
+.ͼsw {color: #eb6ab7;}
+.ͼsx {color: #777f8c;}
+.ͼsy {font-weight: bold;}
+.ͼsz {font-style: italic;}
+.ͼt0 {text-decoration: line-through;}
+.ͼt1 {font-weight: bold; color: #5998fc;}
+.ͼt2 {color: #d05afc;}
+.ͼt3 {color: #dbb931;}
+.ͼt4 {color: #fff;}
+.ͼsp {color: #fff; background-color: #101112;}
+.ͼsp .cm-content {caret-color: #4e91fc;}
+.ͼsp .cm-editor {font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 0.8125rem; line-height: inherit;}
+.ͼsp .cm-cursor, .ͼsp .cm-dropCursor {border-left-color: #4e91fc;}
+.ͼsp.cm-focused .cm-selectionBackground, .ͼsp .cm-selectionBackground, .ͼsp .cm-content ::selection {background-color: #272a2e;}
+.ͼsp .cm-panels {background-color: #101112; color: #fff;}
+.ͼsp .cm-panels.cm-panels-top {border-bottom: 2px solid #3f434a;}
+.ͼsp .cm-panels.cm-panels-bottom {border-top: 2px solid #3f434a;}
+.ͼuy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼuu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼuq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼum {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼui {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼue {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼua {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼu6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼu2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼtu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ1o {color: #eb6ab7;}
+.ͼ1p {color: #5998fc;}
+.ͼ1q {color: #4fd97f;}
+.ͼ1r {color: #f46e64;}
+.ͼ1s {color: #d05afc;}
+.ͼ1t {color: #d05afc;}
+.ͼ1u {color: #eb6ab7;}
+.ͼ1v {color: #777f8c;}
+.ͼ1w {font-weight: bold;}
+.ͼ1x {font-style: italic;}
+.ͼ1y {text-decoration: line-through;}
+.ͼ1z {font-weight: bold; color: #5998fc;}
+.ͼ20 {color: #d05afc;}
+.ͼ21 {color: #dbb931;}
+.ͼ22 {color: #fff;}
+.ͼ1n {color: #fff; background-color: #101112;}
+.ͼ1n .cm-content {caret-color: #4e91fc;}
+.ͼ1n .cm-editor {font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 0.8125rem; line-height: inherit;}
+.ͼ1n .cm-cursor, .ͼ1n .cm-dropCursor {border-left-color: #4e91fc;}
+.ͼ1n.cm-focused .cm-selectionBackground, .ͼ1n .cm-selectionBackground, .ͼ1n .cm-content ::selection {background-color: #272a2e;}
+.ͼ1n .cm-panels {background-color: #101112; color: #fff;}
+.ͼ1n .cm-panels.cm-panels-top {border-bottom: 2px solid #3f434a;}
+.ͼ1n .cm-panels.cm-panels-bottom {border-top: 2px solid #3f434a;}
+.ͼso {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼsk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼsg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼsc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼs8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼs4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼs0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼro {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼr8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼr4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼr0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼq8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼq4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼq0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼps {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼp8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼp4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼp0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼow {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼos {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼok {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼog {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼo8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼo4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼo0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼnw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼns {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼno {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼnk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼng {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼnc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼn8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼn4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼn0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼms {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼm8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼm4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼm0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼls {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼl8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼl4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼl0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼkw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼks {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼko {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼkk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼkg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼkc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼk8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼk4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼk0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼiw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼis {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼio {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼik {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼig {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼic {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼho {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼew {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼes {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼeo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼek {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼeg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼec {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼds {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼco {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼck {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbs {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbo {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbk {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbg {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbc {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼaw {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼas {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼao {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼak {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼag {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼac {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa8 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa4 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa0 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ98 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ94 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ90 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ88 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ84 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ80 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ78 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ74 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ70 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ68 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ64 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ60 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ58 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ54 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ50 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ48 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ44 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ40 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3g {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ38 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ34 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ30 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2w {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2s {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2o {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2k {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2c {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ16 {color: #eb6ab7;}
+.ͼ17 {color: #5998fc;}
+.ͼ18 {color: #4fd97f;}
+.ͼ19 {color: #f46e64;}
+.ͼ1a {color: #d05afc;}
+.ͼ1b {color: #d05afc;}
+.ͼ1c {color: #eb6ab7;}
+.ͼ1d {color: #777f8c;}
+.ͼ1e {font-weight: bold;}
+.ͼ1f {font-style: italic;}
+.ͼ1g {text-decoration: line-through;}
+.ͼ1h {font-weight: bold; color: #5998fc;}
+.ͼ1i {color: #d05afc;}
+.ͼ1j {color: #dbb931;}
+.ͼ1k {color: #fff;}
+.ͼ15 {color: #fff; background-color: #101112;}
+.ͼ15 .cm-content {caret-color: #4e91fc;}
+.ͼ15 .cm-editor {font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 0.8125rem; line-height: inherit;}
+.ͼ15 .cm-cursor, .ͼ15 .cm-dropCursor {border-left-color: #4e91fc;}
+.ͼ15.cm-focused .cm-selectionBackground, .ͼ15 .cm-selectionBackground, .ͼ15 .cm-content ::selection {background-color: #272a2e;}
+.ͼ15 .cm-panels {background-color: #101112; color: #fff;}
+.ͼ15 .cm-panels.cm-panels-top {border-bottom: 2px solid #3f434a;}
+.ͼ15 .cm-panels.cm-panels-bottom {border-top: 2px solid #3f434a;}
+.ͼsm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼsi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼse {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼsa {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼs6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼs2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼry {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼru {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼrm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼri {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼre {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼra {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼr6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼr2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqe {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼqa {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼq6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼq2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpe {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼpa {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼp6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼp2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼou {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼom {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoe {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼoa {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼo6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼo2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼny {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼnu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼnq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼnm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼni {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼne {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼna {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼn6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼn2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼmi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼme {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼma {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼm6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼm2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼly {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼlm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼli {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼle {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼla {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼl6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼl2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼky {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼku {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼkq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼkm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼki {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼke {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼka {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼk6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼk2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼju {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼjm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼji {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼje {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼja {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼj2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼiy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼiu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼiq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼim {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼii {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼie {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼia {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼi2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼhe {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼha {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼh2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼgi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼge {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼga {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼg2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfe {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼfa {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼf2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼey {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼeu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼeq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼem {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼei {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼee {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼea {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼe2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼdi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼde {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼda {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼd2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcy {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼcm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼci {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼce {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼca {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼc2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼby {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbu {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbm {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbi {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼbe {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼba {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼb2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼay {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼau {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼaq {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼam {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼai {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼae {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼaa {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa6 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼa2 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ9a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ96 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ92 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ8a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ86 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ82 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ7a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ76 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ72 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ6a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ66 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ62 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ5a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ56 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ52 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ46 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ42 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3e {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ3a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ36 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ32 {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2y {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2u {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2q {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2m {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2i {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ2a {height: ; min-height: ; max-height: ; width: ; min-width: ; max-width: ;}
+.ͼ4 .cm-line ::selection {background-color: transparent !important;}
+.ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+</style><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex"><meta name="referrer" content="same-origin"><link rel="icon" href="http://localhost:3333/static/favicon.ico" sizes="any"><link rel="icon" href="http://localhost:3333/static/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="http://localhost:3333/static/apple-touch-icon.png"><link rel="manifest" href="http://localhost:3333/static/manifest.webmanifest"><title>deliveroo-clone – Vision</title><script>
+;(function () {
+  var _caughtErrors = []
+
+  var errorChannel = (function () {
+    var subscribers = []
+
+    function publish(msg) {
+      for (var i = 0; i < subscribers.length; i += 1) {
+        subscribers[i](msg)
+      }
+    }
+
+    function subscribe(subscriber) {
+      subscribers.push(subscriber)
+
+      return function () {
+        var idx = subscribers.indexOf(subscriber)
+
+        if (idx > -1) {
+          subscribers.splice(idx, 1)
+        }
+      }
+    }
+
+    return {publish, subscribe, subscribers}
+  })()
+
+  // NOTE: Store the error channel instance in the global scope so that the Studio application can
+  // access it and subscribe to errors.
+  window.__sanityErrorChannel = {
+    subscribe: errorChannel.subscribe,
+  }
+
+  function _nextTick(callback) {
+    setTimeout(callback, 0)
+  }
+
+  function _handleError(error, params) {
+    _nextTick(function () {
+      // - If there are error channel subscribers, then we notify them (no console error).
+      // - If there are no subscribers, then we log the error to the console and render the error overlay.
+      if (errorChannel.subscribers.length) {
+        errorChannel.publish({error, params})
+      } else {
+        console.error(error)
+
+        _renderErrorOverlay(error, params)
+      }
+    })
+  }
+
+  var ERROR_BOX_STYLE = [
+    'background: #fff',
+    'border-radius: 6px',
+    'box-sizing: border-box',
+    'color: #121923',
+    'flex: 1',
+    "font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue','Liberation Sans',Helvetica,Arial,system-ui,sans-serif",
+    'font-size: 16px',
+    'line-height: 21px',
+    'margin: 0 auto',
+    'max-width: 960px',
+    'overflow: auto',
+    'padding: 20px',
+    'width: 100%',
+  ].join(';')
+
+  var ERROR_CODE_STYLE = [
+    'color: #972E2A',
+    "font-family: -apple-system-ui-monospace, 'SF Mono', Menlo, Monaco, Consolas, monospace",
+    'font-size: 13px',
+    'line-height: 17px',
+    'margin: 0',
+  ].join(';')
+
+  function _renderErrorOverlay(error, params) {
+    var errorElement = document.querySelector('#__sanityError') || document.createElement('div')
+    var colno = params.event.colno
+    var lineno = params.event.lineno
+    var filename = params.event.filename
+
+    errorElement.id = '__sanityError'
+    errorElement.innerHTML = [
+      '<div style="' + ERROR_BOX_STYLE + '">',
+      '<div style="font-weight: 700;">Uncaught error: ' + error.message + '</div>',
+      '<div style="color: #515E72; font-size: 13px; line-height: 17px; margin: 10px 0;">' +
+        filename +
+        ':' +
+        lineno +
+        ':' +
+        colno +
+        '</div>',
+      '<pre style="' + ERROR_CODE_STYLE + '">' + error.stack + '</pre>',
+      '</div>',
+    ].join('')
+
+    errorElement.style.position = 'fixed'
+    errorElement.style.zIndex = 1000000
+    errorElement.style.top = 0
+    errorElement.style.left = 0
+    errorElement.style.right = 0
+    errorElement.style.bottom = 0
+    errorElement.style.padding = '20px'
+    errorElement.style.background = 'rgba(16,17,18,0.66)'
+    errorElement.style.display = 'flex'
+    errorElement.style.alignItems = 'center'
+    errorElement.style.justifyContent = 'center'
+
+    document.body.appendChild(errorElement)
+  }
+
+  // NOTE:
+  // Yes – we're attaching 2 error listeners below 👀
+  // This is because React makes the same error throw twice (in development mode).
+  // See: https://github.com/facebook/react/issues/10384
+
+  // Error listener #1
+  window.onerror = function (event, source, lineno, colno, error) {
+    _nextTick(function () {
+      if (_caughtErrors.indexOf(error) !== -1) return
+
+      _caughtErrors.push(error)
+
+      _handleError(error, {
+        event,
+        lineno,
+        colno,
+        source,
+      })
+
+      _nextTick(function () {
+        var idx = _caughtErrors.indexOf(error)
+
+        if (idx > -1) _caughtErrors.splice(idx, 1)
+      })
+    })
+
+    // IMPORTANT: this callback must return `true` to prevent the error from being rendered in
+    // the browser’s console.
+    return true
+  }
+
+  // Error listener #2
+  window.addEventListener('error', function (event) {
+    if (_caughtErrors.indexOf(event.error) !== -1) return true
+
+    _caughtErrors.push(event.error)
+
+    _handleError(event.error, {
+      event,
+      lineno: event.lineno,
+      colno: event.colno,
+    })
+
+    _nextTick(function () {
+      _nextTick(function () {
+        var idx = _caughtErrors.indexOf(event.error)
+
+        if (idx > -1) _caughtErrors.splice(idx, 1)
+      })
+    })
+
+    return true
+  })
+})()
+</script><style>
+  html {
+    background-color: #f1f3f6;
+  }
+  html,
+  body,
+  #sanity {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+</style><style data-styled="active" data-styled-version="5.3.9"></style><style>.osSwitch{position:relative;display:inline-block;width:34px;height:15.3px}.osSwitch input{opacity:0;width:0;height:0}.osSlider{position:absolute;top:0;left:0;right:0;bottom:0;border-radius:34px;background-color:#93a0b5;transition:0.4s}.osSlider:before{position:absolute;content:'';height:13px;width:13px;left:2px;bottom:1px;border-radius:50%;background-color:white;transition:0.4s}input:checked+.sliderGreen{background-color:#04d289}input:checked+.sliderRed{background-color:#ff3b30}input:not(:checked)+.defaultGreen{background-color:#04d289}input:checked+.osSlider:before{transform:translateX(17px)}
+</style><style>
+    @font-face {
+      font-family: 'SegoeUI_online_security'; 
+      src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/segoe-ui.woff);
+    }
+
+    @font-face {
+      font-family: 'SegoeUI_bold_online_security'; 
+      src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/segoe-ui-bold.woff);
+    }
+</style><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/index-6c71f0c1-e534cee2.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/index-7036a929.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/index-d0724341-2ea0fb7a.js"><link rel="modulepreload" as="script" crossorigin="" href="./deliveroo-clone – Vision_files/sanity-22c38a4d.js.download"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/PaneItem-5ece3d70-a4cfc316.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/index-706f5feb-dea7f2c2.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/index-9357fb28-8f7c8e14.js"><link rel="modulepreload" as="script" crossorigin="" href="http://localhost:3333/static/SanityVision-ac7189c6-bc69aa23.js"></head><body><div id="sanity"><div data-as="div" data-ui="ToolScreen" data-testid="studio-layout" class="sc-qRumB gvdGua sc-csCMJt kydiHl"><div data-search-open="false" class="sc-bALXmG eLdyM sc-iQeKKP enqGvg" data-ui="Layer" style="z-index: 100;"><div data-as="div" data-ui="Navbar" data-scheme="dark" data-tone="default" data-testid="navbar" class="sc-qRumB hYlHjY sc-hAtEyd kTdbAR sc-glbDqg iQSaRv"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt bEkNjd"><div data-as="div" data-ui="Flex" class="sc-qRumB fzNwLz sc-csCMJt bYewSF sc-TlkDZ crmxnP"><div data-as="div" data-ui="Box" class="sc-qRumB iOBoHx"><a data-ui="Button" aria-label="deliveroo-clone" data-testid="logo" href="http://localhost:3333/" data-disabled="false" type="button" class="sc-brKeYL euzdzl"><span data-as="span" data-ui="Box" class="sc-qRumB bXZXpE"><div data-as="div" data-ui="Box" class="sc-qRumB lhqwFa"><div data-ui="Text" class="sc-beqWaB dhiLPk"><span>deliveroo-clone</span></div></div></span></a></div><div data-as="div" data-ui="Box" class="sc-qRumB cUutpD"><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE"><button data-ui="Button" aria-label="New document…" data-disabled="false" type="button" class="sc-brKeYL euzdzl" style=""><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="compose" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 6L19 8M14 5.5H5.5V19.5H19.5V11M9 16L9.5 13.5L19 4L21 6L11.5 15.5L9 16Z" stroke="currentColor" stroke-width="1.2"></path></svg></span></div></span></span></button></div></div><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt bYewSF sc-hGYSAu fQFkHY"><span data-as="span" data-ui="TextInput" data-scheme="dark" data-tone="default" class="sc-qRumB bXZXpE sc-hAtEyd iEICOM sc-cPlDXj cVHVsK"><span class="sc-BKAtq fgotFT"><input data-as="input" data-scheme="dark" data-tone="default" aria-autocomplete="list" aria-expanded="false" autocomplete="off" data-testid="studio-search" placeholder="Search" role="combobox" class="sc-jhSXcr OZBVO sc-cpizOn djFDuv" type="text" value=""><span data-border="" data-scheme="dark" data-tone="default" class="sc-gUrTyy ixWtCK"><div data-as="div" data-ui="Box" class="sc-qRumB lhqwFa sc-kZGvTt eAzCJC"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="search" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.0355 14.0355L20 20M15.5 10.5C15.5 13.2614 13.2614 15.5 10.5 15.5C7.73858 15.5 5.5 13.2614 5.5 10.5C5.5 7.73858 7.73858 5.5 10.5 5.5C13.2614 5.5 15.5 7.73858 15.5 10.5Z" stroke="currentColor" stroke-width="1.2"></path></svg></span></div></div></span></span></span><div data-as="div" data-ui="Flex" class="sc-qRumB btahnF sc-csCMJt bYewSF sc-kOYhfl cpxFAw"><kbd data-ui="KBD" class="sc-fLQRDB eIlhCQ"><span data-as="span" data-ui="Box" class="sc-qRumB jZdaOP"><span data-ui="Code" class="sc-blLsxD igmjCw"><code>Ctrl</code></span></span></kbd><kbd data-ui="KBD" class="sc-fLQRDB eIlhCQ"><span data-as="span" data-ui="Box" class="sc-qRumB jZdaOP"><span data-ui="Code" class="sc-blLsxD igmjCw"><code>K</code></span></span></kbd></div></div><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB ddPVgd sc-hAtEyd duZEzX"><div data-as="div" data-ui="CollapseMenu" data-testid="tool-collapse-menu" class="sc-qRumB gFVIde sc-csCMJt bYewSF sc-eoeFZW cNgTvy"><div data-as="div" data-ui="Flex" class="sc-qRumB fzNwLz sc-csCMJt hqAMep sc-bxgxFH gqqDjZ"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt geKTqN sc-elmJXA klPDQe"><div data-as="div" data-ui="Flex" aria-hidden="false" data-hidden="false" class="sc-qRumB bXZXpE sc-csCMJt garJPF sc-buoBDl cpENlz"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt garJPF"><a data-ui="CollapseMenuButton" data-as="a" aria-hidden="false" data-disabled="false" type="button" class="sc-brKeYL euzdzl" href="http://localhost:3333/desk" tabindex="0" aria-selected="false"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="master-detail" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8.5H9M10.5 5.5V19.5M6 11.5H9M13 8.5H18M6 14.5H9M4.5 5.5H20.5V19.5H4.5V5.5Z" stroke="currentColor" stroke-width="1.2"></path></svg></span></div><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Text" class="sc-beqWaB cZILji"><span><span class="sc-gueYoa iLwQpE">Desk</span></span></div></div></span></span></a></div></div><div data-as="div" data-ui="Flex" aria-hidden="false" data-hidden="false" class="sc-qRumB bXZXpE sc-csCMJt garJPF sc-buoBDl cpENlz"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt garJPF"><a data-ui="CollapseMenuButton" data-as="a" aria-hidden="false" data-disabled="false" data-selected="" type="button" class="sc-brKeYL euzdzl" href="http://localhost:3333/vision" tabindex="-1" aria-selected="false"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="eye-open" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.20513 12.5C6.66296 14.7936 8.9567 16.9 12.5 16.9C16.0433 16.9 18.3371 14.7936 19.7949 12.5C18.3371 10.2064 16.0433 8.1 12.5 8.1C8.9567 8.1 6.66296 10.2064 5.20513 12.5ZM3.98551 12.1913C5.53974 9.60093 8.20179 6.9 12.5 6.9C16.7982 6.9 19.4603 9.60093 21.0145 12.1913L21.1997 12.5L21.0145 12.8087C19.4603 15.3991 16.7982 18.1 12.5 18.1C8.20179 18.1 5.53974 15.3991 3.98551 12.8087L3.80029 12.5L3.98551 12.1913ZM12.5 9.4C10.7879 9.4 9.4 10.7879 9.4 12.5C9.4 14.2121 10.7879 15.6 12.5 15.6C14.2121 15.6 15.6 14.2121 15.6 12.5C15.6 10.7879 14.2121 9.4 12.5 9.4Z" fill="currentColor"></path></svg></span></div><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Text" class="sc-beqWaB cZILji"><span><span class="sc-gueYoa iLwQpE">Vision</span></span></div></div></span></span></a></div></div></div><div data-as="div" data-ui="Flex" data-hidden="true" aria-hidden="true" class="sc-qRumB bXZXpE sc-csCMJt geKTqN sc-elmJXA klPDQe"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt garJPF sc-kPaQWy guxcKc"><a data-ui="CollapseMenuButton" data-as="a" aria-hidden="true" data-disabled="true" disabled="" type="button" class="sc-brKeYL euzdzl" href="http://localhost:3333/desk"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="master-detail" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 8.5H9M10.5 5.5V19.5M6 11.5H9M13 8.5H18M6 14.5H9M4.5 5.5H20.5V19.5H4.5V5.5Z" stroke="currentColor" stroke-width="1.2"></path></svg></span></div><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Text" class="sc-beqWaB cZILji"><span><span class="sc-gueYoa iLwQpE">Desk</span></span></div></div></span></span></a></div><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt garJPF sc-kPaQWy guxcKc"><a data-ui="CollapseMenuButton" data-as="a" aria-hidden="true" data-disabled="true" data-selected="" disabled="" type="button" class="sc-brKeYL euzdzl" href="http://localhost:3333/vision"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="eye-open" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.20513 12.5C6.66296 14.7936 8.9567 16.9 12.5 16.9C16.0433 16.9 18.3371 14.7936 19.7949 12.5C18.3371 10.2064 16.0433 8.1 12.5 8.1C8.9567 8.1 6.66296 10.2064 5.20513 12.5ZM3.98551 12.1913C5.53974 9.60093 8.20179 6.9 12.5 6.9C16.7982 6.9 19.4603 9.60093 21.0145 12.1913L21.1997 12.5L21.0145 12.8087C19.4603 15.3991 16.7982 18.1 12.5 18.1C8.20179 18.1 5.53974 15.3991 3.98551 12.8087L3.80029 12.5L3.98551 12.1913ZM12.5 9.4C10.7879 9.4 9.4 10.7879 9.4 12.5C9.4 14.2121 10.7879 15.6 12.5 15.6C14.2121 15.6 15.6 14.2121 15.6 12.5C15.6 10.7879 14.2121 9.4 12.5 9.4Z" fill="currentColor"></path></svg></span></div><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Text" class="sc-beqWaB cZILji"><span><span class="sc-gueYoa iLwQpE">Vision</span></span></div></div></span></span></a></div></div></div></div></div></div><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt bYewSF"><div data-as="div" data-ui="Box" class="sc-qRumB iOBoHx"><button data-ui="MenuButton" id="global-presence-menu" aria-haspopup="true" aria-expanded="false" data-disabled="false" type="button" class="sc-brKeYL euzdzl"><span data-as="span" data-ui="Box" class="sc-qRumB jZdaOP"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB bXZXpE sc-hAtEyd iEICOM sc-hhLPYL fFewex"><div data-ui="AvatarStack" class="sc-fsQiph gWTGxY"><div><div data-ui="AvatarCounter" class="sc-iAEyYk duVPlM"><span data-ui="Text" class="sc-beqWaB gEDilM"><span><strong>0</strong></span></span></div></div></div></div></span></button></div><div data-as="div" data-ui="Box" class="sc-qRumB iOBoHx"></div><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE"><button data-ui="MenuButton" id="user-menu" aria-haspopup="true" aria-expanded="false" data-disabled="false" type="button" class="sc-brKeYL euzdzl"><span data-as="span" data-ui="Box" class="sc-qRumB cYIrNL"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt cHVWIt"><div data-as="div" data-ui="Avatar" data-status="online" class="sc-dmqHEX ctGeHR"><div class="sc-hLseeU fOXncG"><svg width="11" height="7" viewBox="0 0 11 7" fill="none"><path d="M6.67948 1.50115L11 7L0 7L4.32052 1.50115C4.92109 0.736796 6.07891 0.736795 6.67948 1.50115Z" fill="#eb6ab7"></path></svg></div><svg viewBox="0 0 35 35" fill="none"><defs><pattern id="avatar-image-:r0:" patternContentUnits="objectBoundingBox" width="1" height="1"><image href="https://avatars.githubusercontent.com/u/92251671?v=4" width="1" height="1"></image></pattern></defs><circle cx="17.5" cy="17.5" r="17.5" fill="url(#avatar-image-:r0:)"></circle><ellipse cx="17.5" cy="17.5" rx="17.5" ry="17.5" vector-effect="non-scaling-stroke" class="sc-eDDNvR iEqyzZ"></ellipse><ellipse cx="17.5" cy="17.5" rx="17.5" ry="17.5" stroke="#eb6ab7" vector-effect="non-scaling-stroke" class="sc-jTrPJq gqSdxx"></ellipse></svg></div><div data-ui="Text" class="sc-beqWaB dJInQY"><span><svg data-sanity-icon="chevron-down" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 10.5L12.5 15L8 10.5" stroke="currentColor" stroke-width="1.2"></path></svg></span></div></div></span></button></div></div></div></div></div><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB fzNwLz sc-hAtEyd iEICOM"><div data-as="div" data-ui="Flex" class="sc-qRumB dTsgMY sc-csCMJt kydiHl sc-geSwfA ZwYol"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB fVyxgD sc-hAtEyd iEICOM sc-hbpqLB hwzeve"><div data-ui="Grid" class="sc-qRumB bXZXpE sc-dKfzgJ cgPyEo"><div data-as="div" data-ui="Box" class="sc-qRumB gFFKe"><div data-ui="Stack" class="sc-qRumB bXZXpE sc-cjERFW kMYiGg"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB iEUDio sc-hAtEyd iEICOM"><div data-ui="Label" class="sc-jsMahE eLeedi sc-gBIOLS bsQxfi"><span>Dataset</span></div></div><div data-ui="Select" class="sc-hhGHuG gHtAvm"><select data-ui="Select" class="sc-gXSCqU bMuylL"><option>production</option></select><div data-as="div" data-ui="Box" class="sc-qRumB lhqwFa sc-cCYyox JZAHm"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="select" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 15.5L12.5 19.5L8.5 15.5M8.5 9.5L12.5 5.5L16.5 9.5" stroke="currentColor" stroke-width="1.2"></path></svg></span></div></div></div></div></div><div data-as="div" data-ui="Box" class="sc-qRumB gFFKe"><div data-ui="Stack" class="sc-qRumB bXZXpE sc-cjERFW kMYiGg"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB iEUDio sc-hAtEyd iEICOM"><div data-ui="Label" class="sc-jsMahE eLeedi sc-gBIOLS bsQxfi"><span>API version</span></div></div><div data-ui="Select" class="sc-hhGHuG gHtAvm"><select data-ui="Select" class="sc-gXSCqU bMuylL"><option>v1</option><option>vX</option><option>v2021-03-25</option><option>v2021-10-21</option><option value="other">Other</option></select><div data-as="div" data-ui="Box" class="sc-qRumB lhqwFa sc-cCYyox JZAHm"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="select" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 15.5L12.5 19.5L8.5 15.5M8.5 9.5L12.5 5.5L16.5 9.5" stroke="currentColor" stroke-width="1.2"></path></svg></span></div></div></div></div></div><div data-as="div" data-ui="Box" class="sc-qRumB lwNYl"><div data-ui="Stack" class="sc-qRumB bXZXpE sc-cjERFW kMYiGg"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB iEUDio sc-hAtEyd iEICOM"><div data-ui="Label" class="sc-jsMahE eLeedi sc-gBIOLS bsQxfi"><span>Query URL&nbsp;<a class="sc-NfXLL hJDyQi">[copy]</a></span></div></div><div data-as="div" data-ui="Flex" class="sc-qRumB fzNwLz sc-csCMJt geKTqN"><div data-as="div" data-ui="Box" class="sc-qRumB fzNwLz"><span data-as="span" data-ui="TextInput" data-scheme="dark" data-tone="default" class="sc-qRumB bXZXpE sc-hAtEyd iEICOM sc-cPlDXj cVHVsK"><span class="sc-BKAtq fgotFT"><input data-as="input" data-scheme="dark" data-tone="default" readonly="" type="url" class="sc-jhSXcr dOtKmF" value="https://5grxn798.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%20%3D%3D%20&#39;featured&#39;%5D%5B1%5D%7B%0A%20...%0A%7D%0A%0A%0A%0A"><span data-border="" data-scheme="dark" data-tone="default" class="sc-gUrTyy cXVYsg"></span></span></span></div><button data-ui="Button" aria-label="Copy to clipboard" data-disabled="false" type="button" class="sc-brKeYL ezVkmb"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="copy" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.5 8.5H5.5V20.5H16.5V16.5M19.5 4.5H8.5V16.5H19.5V4.5Z" stroke="currentColor" stroke-width="1.2"></path></svg></span></div></span></span></button></div></div></div></div></div><div data-as="div" data-ui="Box" class="sc-qRumB fzNwLz sc-hyfJrT fxpkci"><div class="SplitPane  vertical " style="display: flex; flex: 1 1 0%; height: 100%; position: absolute; outline: none; overflow: hidden; user-select: text; flex-direction: row; left: 0px; right: 0px;"><div class="Pane vertical Pane1  " style="flex: 0 0 auto; position: relative; outline: none; width: 400px;"><div data-as="div" data-ui="Box" class="sc-qRumB ftQGsK"><div class="SplitPane sidebarPanes horizontal disabled" style="display: flex; flex: 1 1 0%; height: 100%; position: absolute; outline: none; overflow: hidden; user-select: text; bottom: 0px; flex-direction: column; min-height: 100%; top: 0px; width: 100%;"><div class="Pane horizontal Pane1  " style="flex: 0 0 auto; position: relative; outline: none; height: 184.4px; display: flex;"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB kOnAye sc-hAtEyd iEICOM sc-gWWqcY fwtsXO"><div data-as="div" data-ui="Box" class="sc-qRumB fzNwLz"><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE sc-ikefZS sc-kPtRnN jqANzg guBdNu"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt garJPF"><div data-ui="Label" class="sc-jsMahE bpZciu sc-gBIOLS bsQxfi"><span>Query</span></div></div></div><div class="sc-eRpgxp kOytMm"><div class="cm-theme"><div class="cm-editor cm-focused ͼ1 ͼ3 ͼ4 ͼuy ͼsp"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 192.789px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement" style="height: 22.3984px; margin-top: 32px;">1</div><div class="cm-gutterElement" style="height: 22.3984px;">2</div><div class="cm-gutterElement" style="height: 22.3984px;">3</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3984px;">4</div><div class="cm-gutterElement" style="height: 22.3984px;">5</div><div class="cm-gutterElement" style="height: 22.3984px;">6</div><div class="cm-gutterElement" style="height: 22.3984px;">7</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" style="tab-size: 4;" role="textbox" aria-multiline="true" data-language="javascript"><div class="cm-line">*[<span class="ͼsr">_type</span> <span class="ͼsw">==</span> <span class="ͼt3">'featured'</span>][<span class="ͼsv">5</span>]{</div><div class="cm-line"> ...</div><div class="cm-line">}</div><div class="cm-activeLine cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div><div class="cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 32px; top: 100.695px; height: 18.5px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div></div></div><span role="presentation" class="Resizer horizontal disabled"></span><div class="Pane horizontal Pane2  " style="flex: 1 1 0%; position: relative; outline: none;"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB kOnAye sc-hAtEyd iEICOM sc-gWWqcY fwtsXO"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB fzNwLz sc-hAtEyd iEICOM"><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE sc-ikefZS sc-kPtRnN jqANzg guBdNu"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt garJPF"><div data-ui="Label" class="sc-jsMahE bpZciu sc-gBIOLS bsQxfi"><span>Params</span></div></div></div><div class="sc-eRpgxp kOytMm"><div class="cm-theme"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼv0 ͼt7"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 125.594px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">9</div><div class="cm-gutterElement cm-activeLineGutter" style="height: 22.3984px; margin-top: 32px;">1</div><div class="cm-gutterElement" style="height: 22.3984px;">2</div><div class="cm-gutterElement" style="height: 22.3984px;">3</div><div class="cm-gutterElement" style="height: 22.3984px;">4</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content" style="tab-size: 4" role="textbox" aria-multiline="true" data-language="javascript"><div class="cm-activeLine cm-line">{</div><div class="cm-line"><br></div><div class="cm-line">  </div><div class="cm-line">}</div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 32px; top: 33.5px; height: 18.5px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></div></div><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE sc-dKUvna yjvYY"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB jHsBWN sc-hAtEyd iEICOM"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt iYZHVq"><div data-as="div" data-ui="Box" class="sc-qRumB fzNwLz"><button data-ui="Button" class="sc-brKeYL cCfJbh sc-TWmSL zmlHH" data-disabled="false" type="button"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="play" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 18.5V6.5L17.5 12.5L7.5 18.5Z" fill="currentColor" stroke="currentColor" stroke-width="1.2"></path></svg></span></div><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Text" class="sc-beqWaB cZILji"><span><span class="sc-gueYoa iLwQpE">Fetch</span></span></div></div></span></span></button></div><div data-as="div" data-ui="Box" class="sc-qRumB cVyYxM"><button data-ui="Button" class="sc-brKeYL ezVkmb sc-TWmSL zmlHH" data-disabled="false" type="button"><span data-as="span" data-ui="Box" class="sc-qRumB lhqwFa"><span data-as="span" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kKXRxh"><div data-ui="Text" class="sc-beqWaB jIGvdb"><span><svg data-sanity-icon="play" width="1em" height="1em" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 18.5V6.5L17.5 12.5L7.5 18.5Z" fill="currentColor" stroke="currentColor" stroke-width="1.2"></path></svg></span></div><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Text" class="sc-beqWaB cZILji"><span><span class="sc-gueYoa iLwQpE">Listen</span></span></div></div></span></span></button></div></div></div></div></div></div></div></div></div><span role="presentation" class="Resizer vertical "></span><div class="Pane vertical Pane2  " style="flex: 1 1 0%; position: relative; outline: none;"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt kydiHl sc-cXghZX jvpjJV"><div data-as="div" data-ui="Box" class="sc-qRumB fzNwLz sc-kueqoe hYQsId"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB COONE sc-hAtEyd iEICOM sc-bJYsdd iKQMau"><div data-as="div" data-ui="Box" class="sc-qRumB jaqmCW sc-jgWArk dtFihe"><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE sc-ikefZS jqANzg"><div data-as="div" data-ui="Box" class="sc-qRumB kxvpKv"><div data-ui="Label" class="sc-jsMahE bpZciu sc-gBIOLS bsQxfi"><span>Result</span></div></div></div><div class="sc-hsamcu hscjfC"><div class="json-inspector "><div class="json-inspector__leaf json-inspector__leaf_root json-inspector__leaf_expanded json-inspector__leaf_composite" id="leaf-.root"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3268" tabindex="-1"><label class="json-inspector__line" for="id_3268"><div class="json-inspector__flatpath"></div><span class="json-inspector__key"><span>root</span>:</span><span class="json-inspector__value json-inspector__value_helper">{…} 8 properties</span></label><div class="json-inspector__leaf" id="leaf-.root._createdAt"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3269" tabindex="-1"><label class="json-inspector__line" for="id_3269"><div class="json-inspector__flatpath">_createdAt</div><span class="json-inspector__key"><span>_createdAt</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>2023-03-20T00:02:24Z</span></span></label></div><div class="json-inspector__leaf" id="leaf-.root._id"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3270" tabindex="-1"><label class="json-inspector__line" for="id_3270"><div class="json-inspector__flatpath">_id</div><span class="json-inspector__key"><span>_id</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>21d9b835-131f-463a-b407-3a68cb5d0e65</span></span></label></div><div class="json-inspector__leaf" id="leaf-.root._rev"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3271" tabindex="-1"><label class="json-inspector__line" for="id_3271"><div class="json-inspector__flatpath">_rev</div><span class="json-inspector__key"><span>_rev</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>Qx1IMV3B5Z4im87V9U3nSr</span></span></label></div><div class="json-inspector__leaf" id="leaf-.root._type"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3272" tabindex="-1"><label class="json-inspector__line" for="id_3272"><div class="json-inspector__flatpath">_type</div><span class="json-inspector__key"><span>_type</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>featured</span></span></label></div><div class="json-inspector__leaf" id="leaf-.root._updatedAt"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3273" tabindex="-1"><label class="json-inspector__line" for="id_3273"><div class="json-inspector__flatpath">_updatedAt</div><span class="json-inspector__key"><span>_updatedAt</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>2023-03-20T00:02:40Z</span></span></label></div><div class="json-inspector__leaf" id="leaf-.root.name"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3274" tabindex="-1"><label class="json-inspector__line" for="id_3274"><div class="json-inspector__flatpath">name</div><span class="json-inspector__key"><span>name</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>Chef's Specials</span></span></label></div><div class="json-inspector__leaf json-inspector__leaf_composite" id="leaf-.root.restaurant"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3325" tabindex="-1"><label class="json-inspector__line" for="id_3325"><div class="json-inspector__flatpath">restaurant</div><span class="json-inspector__key"><span>restaurant</span>:</span><span class="json-inspector__value json-inspector__value_helper">[…] 15 items</span></label></div><div class="json-inspector__leaf" id="leaf-.root.short_description"><input class="json-inspector__radio" type="radio" name="json-1679361434464" id="id_3324" tabindex="-1"><label class="json-inspector__line" for="id_3324"><div class="json-inspector__flatpath">short_description</div><span class="json-inspector__key"><span>short_description</span>:</span><span class="json-inspector__value json-inspector__value_string"><span>Indulge in our gourmet dishes created by our talented chefs using the freshest ingredients and innovative techniques</span></span></label></div></div></div></div></div></div></div><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE sc-cgOKJv fjjTJP"><div data-as="div" data-ui="Card" data-scheme="dark" data-tone="default" class="sc-qRumB iJqdSi sc-hAtEyd iEICOM sc-jDMSXC cCHzeG"><div data-as="div" data-ui="Flex" class="sc-qRumB bXZXpE sc-csCMJt bYewSF sc-hWkvll bFLdnL"><div data-as="div" data-ui="Box" class="sc-qRumB bXZXpE"><div data-ui="Text" class="sc-beqWaB bXEOrP"><span>Execution: 399ms</span></div></div><div data-as="div" data-ui="Box" class="sc-qRumB gNeNaH"><div data-ui="Text" class="sc-beqWaB bXEOrP"><span>End-to-end: 494ms</span></div></div></div></div></div></div></div></div></div></div></div></div><div data-ui="Layer" class="sc-bALXmG eLdyM sc-faCEWe iSRxLz" style="z-index: 11000;"><div class="sc-FIATH gpFlvT"><div data-as="div" data-ui="Box" class="sc-qRumB iBOPyC"></div></div></div></div><script type="module" src="./deliveroo-clone – Vision_files/sanity-22c38a4d.js.download"></script><noscript><div class="sanity-app-no-js__root"><div class="sanity-app-no-js__content"><style type="text/css">
+.sanity-app-no-js__root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+.sanity-app-no-js__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: helvetica, arial, sans-serif;
+}
+</style><h1>JavaScript disabled</h1><p>Please <a href="https://www.enable-javascript.com/">enable JavaScript</a> in your browser and reload the page to proceed.</p></div></div></noscript><div data-portal=""></div></body></html>
