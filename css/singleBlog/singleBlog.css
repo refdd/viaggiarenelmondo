@@ -146,3 +146,20 @@
 .next:hover span {
   color: #59815b;
 }
+.reateTourImg img {
+  max-width: 100%;
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+  object-fit: fill;
+}
+.reatedTourContent span {
+  font-size: 18px;
+  color: #1e1e1e;
+  font-weight: 500;
+}
+.reatedTourContent .desc {
+  font-size: 12px;
+  color: #777;
+  font-weight: 400;
+}
