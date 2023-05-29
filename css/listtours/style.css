@@ -248,6 +248,65 @@
   right: 35px;
   width: 571px;
 }
+.cardListTour {
+  background-color: #fff;
+  border-radius: 0px 30px;
+}
+.imageCardList img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 0px 30px;
+  height: 262px;
+}
+.cardListTour .TopRated {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 86px;
+  height: 130px;
+  background-color: var(--secondary-color);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: hide-first-image 0.4s ease;
+}
+.cardListTour .TopRated span {
+  font-family: "Nekolina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+.cardListTour .title {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  height: 52px;
+}
+.cardListTour .desc {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: justify;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+.featureCard span {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
     font-family: "Cairo", sans-serif;
@@ -432,5 +491,14 @@
     font-weight: 700;
     font-size: 55px;
     color: #3d3d3d;
+  }
+  .imageCardList {
+    overflow: hidden;
+  }
+  .imageCardList img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0px 30px;
+    height: 320px;
   }
 }

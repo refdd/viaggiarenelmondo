@@ -36,6 +36,15 @@
   <body>
     <div class="container-sm py-2">
       <nav class="nav_container row py-2 flex-md-nowrap align-items-center">
+        <!-- menue bar icon  -->
+        <div class="col-3 d-block d-md-none">
+          <div
+            class="iconMneu d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-bars"></i>
+            <img src="image/close-x.svg" alt="" />
+          </div>
+        </div>
         <!-- image  -->
         <div class="imgae_logo col-6 col-md-3">
           <img src="./image/newLoge.png" alt="" />
@@ -46,1071 +55,355 @@
             <a href=""> Home </a>
           </li>
           <li>
-            <a href="listCrouse.html"> Crociere Sul Nilo</a>
+            <a href="listCrouse.html">Página Principal</a>
           </li>
           <li>
-            <a href="listTour.html">Tour Egitto</a>
+            <a href="listTour.html">Pacotes</a>
           </li>
           <li>
-            <a href="aboutUs.html"> About us </a>
+            <a href="aboutUs.html">Cruzeiros no Nilo </a>
           </li>
           <li>
-            <a href="listBlog.html"> Blog </a>
+            <a href="listBlog.html">Ofertas Imperdíveis </a>
+          </li>
+          <li>
+            <a href="listBlog.html">Blog </a>
           </li>
         </ul>
 
         <!-- buttom inquery -->
         <div class="buttom_inquri col-3 row-cols-md-2">
-          <button><a href="inquri.html">inqueri</a></button>
+          <button><a href="inquri.html">Solicite</a></button>
         </div>
-        <!-- menue bar icon  -->
-        <div class="col-3 d-block d-md-none">
-          <div
-            class="iconMneu d-flex justify-content-center align-items-center"
-          >
-            <i class="fa fa-bars"></i>
-            <img src="image/close-x.svg" alt="" />
-          </div>
-        </div>
+
         <!-- links menu -->
-        <div
-          class="col-12 menu_Bar d-flex flex-column mt-3 border-top gap-3 d-md-none"
-        >
+        <div class="col-12 menu_Bar d-flex flex-column mt-3 gap-3 d-md-none">
           <ul class="mb-0 linksMenu">
             <li class="border-bottom py-3"><a href="/"> Home</a></li>
             <li class="border-bottom py-3">
-              <a href="listCrouse.html"> Crociere Sul Nilo</a>
+              <a href="listCrouse.html"> Página Principal</a>
             </li>
             <li class="border-bottom py-3">
-              <a href="listTour.html"> Tour Egitto</a>
+              <a href="listTour.html"> Pacotes</a>
             </li>
             <li class="border-bottom py-3">
-              <a href="aboutUs.html"> About us </a>
+              <a href="aboutUs.html">Cruzeiros no Nilo </a>
             </li>
             <li class="border-bottom border-3 py-3">
-              <a href="listBlog.html"> Blog</a>
+              <a href="listBlog.html">Ofertas Imperdíveis</a>
+            </li>
+            <li class="border-bottom border-3 py-3">
+              <a href="listBlog.html">Blog </a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
-
-    <!-- header landPage -->
-    <div class="landing_page position-relative">
-      <div class="w-100 position-relative" style="height: 100%">
-        <video
-          class="w-100 h-100 object-fit-cover"
-          src="image/testVideo.mp4"
-          autoplay
-          loop
-          muted
-        ></video>
-        <div class="lauoutVideo"></div>
-      </div>
-      <div class="ADHeader_container">
-        <div class="Ad_Header">
-          <div class="IqueryAndPrice">
-            <div class="AD-Header_content">crociera sul nilo</div>
-            <div class="price_AD">
-              <div class="Start_From">Da</div>
-              <div class="price_Number">€393 a persona</div>
+    <!-- search section -->
+    <div class="container py-2">
+      <div class="row">
+        <div
+          class="d-flex flex-column align-items-center gap-2 welcome_Section"
+        >
+          <span>Find the best package to Egypt and other Countries </span>
+          <span>Welcome to Pacotes</span>
+          <div class="inputSearch d-flex gap-2 align-content-center">
+            <div class="position-relative">
+              <input
+                type="text"
+                placeholder="Cairo, Muhafazat al Qahirah, Egito"
+              />
+              <div class="iconSearch position-absolute">
+                <i class="fas fa-search"></i>
+              </div>
             </div>
-            <div class="btn_inqure">
-              <button>Inquire Now</button>
+            <div class="buttonSearch">
+              <button>Secrch</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- section tour  -->
-    <div class="container-sm mt-5 mt-md-2">
-      <div class="headerSection">
-        <div class="header">Crociere Sul Nilo</div>
-        <p class="description">Find the best offer suits your budget</p>
-      </div>
-      <!-- card container -->
-      <div class="sectionTour">
-        <!-- left arrow -->
-        <div onclick="handleClick('left')" class="leftArrow">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </div>
-        <div class="cardContainer">
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- left arrow -->
-        <div onclick="handleClick('right')" class="rightArrow">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    <!-- header landPage -->
+    <div class="landing_page position-relative">
+      <div class="containerVideo pt-3">
+        <div
+          class="w-100 position-relative d-flex justify-content-center align-items-center"
+          style="height: 100%"
+        >
+          <video
+            class="w-100 h-100 object-fit-cover"
+            src="image/testVideo.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+          <div class="lauoutVideo"></div>
         </div>
       </div>
     </div>
     <!-- section tour  -->
     <div class="container-sm">
       <div class="headerSection">
-        <div class="header">Tour Egitto</div>
-        <p class="description">Find the best offer suits your budget</p>
+        <p class="description">Para o Egypt</p>
+        <div class="header">Pacotes</div>
       </div>
-      <!-- card container -->
-      <div class="sectionTour">
-        <!-- left arrow -->
-        <div onclick="handleClick('left')" class="leftArrow">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </div>
-        <div class="cardContainer">
+      <!-- tour Section -->
+
+      <div class="row gy-4 tour-Section">
+        <!-- card -->
+        <div class="col-12 col-md-4">
           <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
+          <div class="cardTour d-flex flex-column gap-2 py-3 px-3">
+            <!-- image  -->
+            <div class="ImageCard position-relative">
+              <img src="image/destination1.jpg" class="first-image" alt="" />
+              <img src="image/destination2.jpg" class="second-image" alt="" />
+              <div class="TopRated">
+                <span>top </span>
+                <span> Rated</span>
               </div>
             </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
+            <!-- star -->
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star thin"></i>
             </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
+            <!-- title -->
+            <div class="title pt-2">
+              <span> Cairo, Cruzeiro Nilo e Abu Simbel </span>
             </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
+            <!-- desc -->
+            <div class="desc">
+              <span>
+                Viagens ao Egito são sempre únicas com a viagem de 8 dias ao
+                Egito. O melhor do Cairo, cruzeiro no Nilo e Abu Simbel. Explora
+                as Pirâmides de Gizé, o Museu de Antiguidades, visitar templos
+                antigos em Luxor e Aswan , Vale dos Reis. Com Guia especializado
+                em Língua Portuguesa. Faça já a sua reserva já!
+              </span>
             </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
+            <!-- price and button -->
+            <div class="d-flex align-items-center gap-4 py-3">
               <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
+                class="priceCard d-flex flex-column gap-1 align-items-center"
               >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
+                <span>A Partir De</span>
+                <span>$1117</span>
               </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- card -->
-          <a href="singleTour.html">
-            <div
-              class="tourCard row d-flex flex-column p-2 m-1 gap-3 align-items-center"
-            >
-              <!-- imgae -->
-              <div class="imgTourCard">
-                <img src="image/galary (3).jpg" alt="" />
-              </div>
-              <div class="textTour">
-                Sapa trakking tours _ 2 Days Night Stay At Homestay
-              </div>
-              <div class="descTourCard">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
-                veritatis doloribus delectus alias molestias!
-              </div>
-              <!-- duration and size  -->
-              <div
-                class="d-flex align-items-center justify-content-between py-2 border-top border-bottom"
-              >
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-calendar"></i>
-                  <div class="duration d-flex flex-column">
-                    <span> duration</span>
-                    <span> 2 days</span>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa fa-users-cog"></i>
-                  <div class="size d-flex flex-column">
-                    <span> Group Size</span>
-                    <span> 2 people</span>
-                  </div>
-                </div>
-              </div>
-              <!-- button and price -->
-              <div
-                class="d-flex pb-2 justify-content-between align-items-center"
-              >
-                <div class="price">$ 170.00</div>
-                <div class="butBookNow">
-                  <button>Book Now</button>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- left arrow -->
-        <div onclick="handleClick('right')" class="rightArrow">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </div>
-      </div>
-    </div>
-    <!-- review section -->
-    <div class="container mt-5">
-      <a href="https://www.tripadvisor.it/">
-        <div class="tripAdviser">
-          <img src="image/tripadvisor.jpg" alt="" />
-        </div>
-      </a>
-      <div class="reviewSection p-3 p-md-3">
-        <div class="row gy-3">
-          <div class="col-12 col-md-4">
-            <div
-              class="contentReview d-flex flex-column gap-3 align-items-md-center"
-            >
-              <div class="header">How Good is Egypt Crociera Sul Nilo ?</div>
-              <div class="desc">
-                Crociere Sul Nilo prides itself on being the best travel agency
-                in Egypt as proven by our numerous positive reviews.
-              </div>
-              <div class="buttonExplore">
-                <button>Explore All</button>
+              <div class="buttonViewMore d-flex align-items-center gap-3">
+                <button>ciew moew</button>
+                <i class="fa fa-angle-right"></i>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-8">
-            <div id="new-product" class="splide">
-              <div class="splide__arrows d-none d-md-block">
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <!-- card -->
+          <div class="cardTour d-flex flex-column gap-2 py-3 px-3">
+            <!-- image  -->
+            <div class="ImageCard position-relative">
+              <img src="image/destination3.jpg" class="first-image" alt="" />
+              <img src="image/destination1.jpg" class="second-image" alt="" />
+              <div class="TopRated">
+                <span>top </span>
+                <span> Rated</span>
+              </div>
+            </div>
+            <!-- star -->
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star thin"></i>
+            </div>
+            <!-- title -->
+            <div class="title pt-2">
+              <span> Cairo, Cruzeiro Nilo e Abu Simbel </span>
+            </div>
+            <!-- desc -->
+            <div class="desc">
+              <span>
+                Viagens ao Egito são sempre únicas com a viagem de 8 dias ao
+                Egito. O melhor do Cairo, cruzeiro no Nilo e Abu Simbel. Explora
+                as Pirâmides de Gizé, o Museu de Antiguidades, visitar templos
+                antigos em Luxor e Aswan , Vale dos Reis. Com Guia especializado
+                em Língua Portuguesa. Faça já a sua reserva já!
+              </span>
+            </div>
+            <!-- price and button -->
+            <div class="d-flex align-items-center gap-4 py-3">
+              <div
+                class="priceCard d-flex flex-column gap-1 align-items-center"
+              >
+                <span>A Partir De</span>
+                <span>$1117</span>
+              </div>
+              <div class="buttonViewMore d-flex align-items-center gap-3">
+                <button>ciew moew</button>
+                <i class="fa fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <!-- card -->
+          <div class="cardTour d-flex flex-column gap-2 py-3 px-3">
+            <!-- image  -->
+            <div class="ImageCard position-relative">
+              <img src="image/destination2.jpg" class="first-image" alt="" />
+              <img src="image/destination3.jpg" class="second-image" alt="" />
+              <div class="TopRated">
+                <span>top </span>
+                <span> Rated</span>
+              </div>
+            </div>
+            <!-- star -->
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star thin"></i>
+            </div>
+            <!-- title -->
+            <div class="title pt-2">
+              <span> Cairo, Cruzeiro Nilo e Abu Simbel </span>
+            </div>
+            <!-- desc -->
+            <div class="desc">
+              <span>
+                Viagens ao Egito são sempre únicas com a viagem de 8 dias ao
+                Egito. O melhor do Cairo, cruzeiro no Nilo e Abu Simbel. Explora
+                as Pirâmides de Gizé, o Museu de Antiguidades, visitar templos
+                antigos em Luxor e Aswan , Vale dos Reis. Com Guia especializado
+                em Língua Portuguesa. Faça já a sua reserva já!
+              </span>
+            </div>
+            <!-- price and button -->
+            <div class="d-flex align-items-center gap-4 py-3">
+              <div
+                class="priceCard d-flex flex-column gap-1 align-items-center"
+              >
+                <span>A Partir De</span>
+                <span>$1117</span>
+              </div>
+              <div class="buttonViewMore d-flex align-items-center gap-3">
+                <button>ciew moew</button>
+                <i class="fa fa-angle-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end py-3 py-md-5">
+        <div
+          class="buttonViewAll d-flex align-items-center justify-content-center"
+        >
+          <button>Ver Mais</button>
+        </div>
+      </div>
+    </div>
+    <!-- offer Section -->
+    <div class="container">
+      <div class="OfferSection p-4">
+        <div class="row">
+          <div class="col-12">
+            <div
+              class="headerOffer d-flex justify-content-center align-items-center"
+            >
+              <div class="scroller">
+                <span>
+                  OFERTAS IMPERDÍVEIS<br />
+                  Top Rated<br />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <section
+              class="splide pb-5 mb-5"
+              aria-labelledby="carousel-heading"
+            >
+              <div class="splide__pagination"></div>
+              <div class="splide__arrows">
                 <button class="splide__arrow splide__arrow--prev">
-                  <i class="fas fa-chevron-left"></i>
+                  <i class="fas fa-long-arrow-alt-left"></i>
                 </button>
                 <button class="splide__arrow splide__arrow--next">
-                  <i class="fas fa-chevron-right"></i>
+                  <i class="fas fa-long-arrow-alt-right"></i>
                 </button>
               </div>
               <div class="splide__track">
                 <ul class="splide__list">
                   <li class="splide__slide">
-                    <div
-                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
-                    >
-                      <div class="reviewContent">
-                        <p class="testi__desc">
-                          Ho effettuato il viaggio con mio marito e la bambina
-                          di 9anni e pertanto era importante trovare il giusto
-                          equilibrio che rendesse il tour sc...<a
-                            rel="nofollow"
-                            href="https://www.tripadvisor.it/"
-                            >Read More</a
-                          >
-                        </p>
-                      </div>
-                      <div
-                        class="author_content d-flex align-items-center gap-4"
-                      >
-                        <div class="author_img">
-                          <img src="image/athor (1).jpg" alt="" />
+                    <div class="cardOffer pt-5">
+                      <div class="ImageOffer">
+                        <img src="image/galary (1).jpg" alt="" />
+                        <div class="layoutOffer"></div>
+                        <div class="reateOffer">
+                          <span>Top </span>
+                          <span> Rated</span>
                         </div>
-                        <div class="autthor-bio d-flex flex-column gap-2">
-                          <div class="name">Timmy Lovett</div>
-                          <div class="author_mate"></div>
-                          <div class="reate d-flex align-items-center gap-2">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                        <div class="contentOffer d-flex flex-column gap-3">
+                          <div class="title">Cruzeiro Egito em Promoção</div>
+                          <div
+                            class="buttonOffer d-flex justify-content-center"
+                          >
+                            <div
+                              class="buttonViewMore d-flex align-items-center gap-3"
+                            >
+                              <button>ver mais</button>
+                              <i class="fa fa-angle-right"></i>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li class="splide__slide">
-                    <div
-                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
-                    >
-                      <div class="reviewContent">
-                        <p class="testi__desc">
-                          Ho effettuato il viaggio con mio marito e la bambina
-                          di 9anni e pertanto era importante trovare il giusto
-                          equilibrio che rendesse il tour sc...<a
-                            rel="nofollow"
-                            href="https://www.tripadvisor.it/"
-                            >Read More</a
+                    <div class="cardOffer pt-5">
+                      <div class="ImageOffer">
+                        <img src="image/galary (1).jpg" alt="" />
+                        <div class="layoutOffer"></div>
+                        <div class="contentOffer d-flex flex-column gap-3">
+                          <div class="title">Cruzeiro Egito em Promoção</div>
+                          <div
+                            class="buttonOffer d-flex justify-content-center"
                           >
-                        </p>
-                      </div>
-                      <div
-                        class="author_content d-flex align-items-center gap-4"
-                      >
-                        <div class="author_img">
-                          <img src="image/athor (1).jpg" alt="" />
-                        </div>
-                        <div class="autthor-bio d-flex flex-column gap-2">
-                          <div class="name">Timmy Lovett</div>
-                          <div class="author_mate"></div>
-                          <div class="reate d-flex align-items-center gap-2">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <div
+                              class="buttonViewMore d-flex align-items-center gap-3"
+                            >
+                              <button>ver mais</button>
+                              <i class="fa fa-angle-right"></i>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li class="splide__slide">
-                    <div
-                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
-                    >
-                      <div class="reviewContent">
-                        <p class="testi__desc">
-                          Ho effettuato il viaggio con mio marito e la bambina
-                          di 9anni e pertanto era importante trovare il giusto
-                          equilibrio che rendesse il tour sc...<a
-                            rel="nofollow"
-                            href="https://www.tripadvisor.it/"
-                            >Read More</a
+                    <div class="cardOffer pt-5">
+                      <div class="ImageOffer">
+                        <img src="image/galary (1).jpg" alt="" />
+                        <div class="layoutOffer"></div>
+
+                        <div class="contentOffer d-flex flex-column gap-3">
+                          <div class="title">Cruzeiro Egito em Promoção</div>
+                          <div
+                            class="buttonOffer d-flex justify-content-center"
                           >
-                        </p>
-                      </div>
-                      <div
-                        class="author_content d-flex align-items-center gap-4"
-                      >
-                        <div class="author_img">
-                          <img src="image/athor (1).jpg" alt="" />
-                        </div>
-                        <div class="autthor-bio d-flex flex-column gap-2">
-                          <div class="name">Timmy Lovett</div>
-                          <div class="author_mate"></div>
-                          <div class="reate d-flex align-items-center gap-2">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="splide__slide">
-                    <div
-                      class="reviewCard d-flex flex-column gap-4 align-items-center mb-3"
-                    >
-                      <div class="reviewContent">
-                        <p class="testi__desc">
-                          Ho effettuato il viaggio con mio marito e la bambina
-                          di 9anni e pertanto era importante trovare il giusto
-                          equilibrio che rendesse il tour sc...<a
-                            rel="nofollow"
-                            href="https://www.tripadvisor.it/"
-                            >Read More</a
-                          >
-                        </p>
-                      </div>
-                      <div
-                        class="author_content d-flex align-items-center gap-4"
-                      >
-                        <div class="author_img">
-                          <img src="image/athor (1).jpg" alt="" />
-                        </div>
-                        <div class="autthor-bio d-flex flex-column gap-2">
-                          <div class="name">Timmy Lovett</div>
-                          <div class="author_mate"></div>
-                          <div class="reate d-flex align-items-center gap-2">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
+                            <div
+                              class="buttonViewMore d-flex align-items-center gap-3"
+                            >
+                              <button>ver mais</button>
+                              <i class="fa fa-angle-right"></i>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -1118,426 +411,207 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
     </div>
-    <!-- post section -->
-    <div class="container mt-4">
-      <div class="headerSection">
-        <div class="header">Latest Blog Posts</div>
-        <p class="description">Places to go, Things to do</p>
-      </div>
-
-      <div class="row">
-        <div id="blogContainer" class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post-2.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide">
-                <a href="singleBolg.html">
-                  <div
-                    class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-                  >
-                    <!-- image  -->
-                    <div class="imageBlog position-relative">
-                      <img src="image/blog-post.jpg" alt="" />
-                      <div class="layoutBlog position-absolute"></div>
-                      <div class="marktAuter position-absolute">
-                        <span>Adventure</span>
-                      </div>
-                    </div>
-                    <!-- content blog -->
-                    <div class="contentBlog d-flex flex-column gap-2">
-                      <div
-                        class="d-flex align-items-center justify-content-between"
-                      >
-                        <div class="duration">
-                          <i class="fa fa-calendar"></i>
-                          <span class="hover-underline-animation">
-                            October 8 , 2019</span
-                          >
-                        </div>
-                        <div class="autherBy">
-                          <i class="fa fa-pen"></i>
-                          <span class="hover-underline-animation">
-                            by Monhamed refat</span
-                          >
-                        </div>
-                      </div>
-                      <div class="descBlog">
-                        My Favorite Hiking Trails Around Reykjavík
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+    <!-- feature section -->
+    <div class="container pt-5">
+      <div class="row gy-3">
+        <div class="col-6 ps-0">
+          <div class="imageFeature position-relative">
+            <img src="image/blog-post-2.jpg" alt="" />
+            <div class="layoutFeatureImg"></div>
           </div>
         </div>
-      </div>
-    </div>
-    <div
-      class="buttonSeeMore my-4 d-flex justify-content-center align-items-center"
-    >
-      <button><a href="listBlog.html"> See More</a></button>
-    </div>
-    <!-- articles and News -->
-    <div class="container-sm">
-      <div
-        class="articelsHeader mt-3 d-flex justify-content-center align-items-center flex-column"
-      >
-        <div class="headerSection pt-3">
-          <div class="header">ARTICLES & NEWS</div>
-          <p class="description">Find the best offer suits your budget</p>
+        <div class="col-6 d-block d-md-none">
+          <div class="headerFeature d-flex flex-column gap-3">
+            <span> POR QUE ESCOLHER O PACOTES PARA EGITO? </span>
+            <span>
+              O Pacotes para Egito é um portal de viagens, oferece vários
+              Pacotes Para o Egito e outros países como: Jordânia, Turquia,
+              Marrocos, Dubai e Jerusalém com melhor preço e visitas guiadas em
+              Português.
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <!-- card -->
-        <div
-          class="col-12 col-sm-6 col0 articles d-flex flex-column flex-md-row px-3 gy-2 mb-md-3"
-        >
-          <div class="imgArticle">
-            <img src="image/galary (1).jpg" alt="" />
+        <div class="col-12 col-md-6">
+          <div class="headerFeature flex-column gap-3 py-md-5 d-none d-md-flex">
+            <span> POR QUE ESCOLHER O PACOTES PARA EGITO? </span>
+            <span>
+              O Pacotes para Egito é um portal de viagens, oferece vários
+              Pacotes Para o Egito e outros países como: Jordânia, Turquia,
+              Marrocos, Dubai e Jerusalém com melhor preço e visitas guiadas em
+              Português.
+            </span>
           </div>
           <div
-            class="col d-flex flex-column gap-2 py-3 border p-2 p-md-3 justify-content-md-center gap-md-3 p-md-4"
+            class="accordion accordion-flush d-flex flex-column gap-4 mt-md-4"
+            id="accordionFlushExample"
           >
-            <div class="mainTitle">Boat Excursions</div>
-            <div class="artDesc">
-              Phasellus enim libero, blandit vel sapien vitae, condimentum
-              ultricies magna et. Quisque euismod orci ut et lobortis.
+            <div class="accordion-item">
+              <h2
+                class="accordion-header d-flex align-items-center px-2"
+                id="flush-headingOne"
+              >
+                <i class="far fa-map"></i>
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  45 anos de experiência
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
             </div>
-            <div class="reedMore">
-              <button>Read More</button>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header d-flex align-items-center px-2"
+                id="flush-headingOne"
+              >
+                <img src="image/mapBoy.svg" alt="" />
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Pacotes feitos para você
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the second item's accordion body. Let's imagine this being
+                  filled with some actual content.
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- card -->
-        <div
-          class="col-12 col-sm-6 col0 articles d-flex flex-column flex-md-row px-3 gy-2 mb-md-3"
-        >
-          <div class="imgArticle">
-            <img src="image/galary (1).jpg" alt="" />
-          </div>
-          <div
-            class="col d-flex flex-column gap-2 py-3 border p-2 p-md-3 justify-content-md-center gap-md-3 p-md-4"
-            style="background-color: #01a8c3"
-          >
-            <div class="mainTitle" style="color: #ffff">Boat Excursions</div>
-            <div class="artDesc" style="color: #ffff">
-              Phasellus enim libero, blandit vel sapien vitae, condimentum
-              ultricies magna et. Quisque euismod orci ut et lobortis.
+            <div class="accordion-item">
+              <h2
+                class="accordion-header d-flex align-items-center px-2"
+                id="flush-headingOne"
+              >
+                <img src="image/Transfer.svg" alt="" />
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Pagamento online seguro
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
             </div>
-            <div class="reedMore" style="color: #ffff">
-              <button>Read More</button>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header d-flex align-items-center px-2"
+                id="flush-headingOne"
+              >
+                <img src="image/Globe.svg" alt="" />
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Pagamento online seguro
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- card -->
-        <div
-          class="col-12 col-sm-6 col0 articles d-flex flex-column flex-md-row-reverse px-3 gy-2"
-        >
-          <div class="imgArticle down">
-            <img src="image/galary (1).jpg" alt="" />
-          </div>
-          <div
-            class="col d-flex flex-column gap-2 py-3 border p-2 p-md-3 justify-content-md-center gap-md-3 p-md-4"
-            style="background-color: #01a8c3"
-          >
-            <div class="mainTitle" style="color: #ffff">Boat Excursions</div>
-            <div class="artDesc" style="color: #ffff">
-              Phasellus enim libero, blandit vel sapien vitae, condimentum
-              ultricies magna et. Quisque euismod orci ut et lobortis.
-            </div>
-            <div class="reedMore">
-              <button>Read More</button>
-            </div>
-          </div>
-        </div>
-        <!-- card -->
-        <div
-          class="col-12 col-sm-6 col0 articles d-flex flex-column flex-md-row-reverse px-3 gy-2"
-        >
-          <div class="imgArticle down">
-            <img src="image/galary (1).jpg" alt="" />
-          </div>
-          <div
-            class="col d-flex flex-column gap-2 py-3 border p-2 p-md-3 justify-content-md-center gap-md-3 p-md-4"
-          >
-            <div class="mainTitle">Boat Excursions</div>
-            <div class="artDesc">
-              Phasellus enim libero, blandit vel sapien vitae, condimentum
-              ultricies magna et. Quisque euismod orci ut et lobortis.
-            </div>
-            <div class="reedMore">
-              <button>Read More</button>
+            <div class="accordion-item">
+              <h2
+                class="accordion-header d-flex align-items-center px-2"
+                id="flush-headingOne"
+              >
+                <img src="image/Call.svg" alt="" />
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-five"
+                  aria-expanded="false"
+                  aria-controls="flush-five"
+                >
+                  Pagamento online seguro
+                </button>
+              </h2>
+              <div
+                id="flush-five"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1548,180 +622,153 @@
     >
       <button><a href="listBlog.html"> See More</a></button>
     </div>
-    <!-- F and Q -->
-    <div class="container-sm">
-      <div class="headerSection">
-        <div class="header">FREQUENTLY ASKED QUESTIONS</div>
-      </div>
-      <!-- faq section -->
-      <div class="accordion mt-5" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
+    <!-- blog section  -->
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="headerbolg d-flex flex-column gap-3 py-3">
+            <span
+              >Personalize a sua viagem com o portal Pacotes para Egito.</span
             >
-              Can I travel safely with confidence to the middle east?
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
+            <span
+              >Você pode personalizar a sua viagem dos sonhos para a Terra dos
+              Faraós, é super fácil?</span
+            >
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Can I travel safely with confidence to the middle east?
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+        <div class="col-12 col-md-8">
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="blogCard d-flex flex-column gap-3">
+                <div class="imageBlogCard px-3">
+                  <img src="image/blog-post-img-7.jpg" alt="" />
+                </div>
+                <div
+                  class="contentCardBlog d-flex align-items-center gap-2 px-3"
+                >
+                  <div class="iconblog">
+                    <img src="image/Eyes.svg" alt="" />
+                  </div>
+                  <span>Visualize a sua viagem dos sonhos</span>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Can I travel safely with confidence to the middle east?
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+            <div class="col-12 col-md-6">
+              <div class="blogCard d-flex flex-column gap-3">
+                <div class="imageBlogCard px-3">
+                  <img src="image/destination2.jpg" alt="" />
+                </div>
+                <div
+                  class="contentCardBlog d-flex align-items-center gap-2 px-3"
+                >
+                  <div class="iconblog">
+                    <img src="image/Type.svg" alt="" />
+                  </div>
+                  <span>Visualize a sua viagem dos sonhos</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="blogCard d-flex flex-column gap-3">
+                <div class="imageBlogCard px-3">
+                  <img src="image/blog-post-2.jpg" alt="" />
+                </div>
+                <div
+                  class="contentCardBlog d-flex align-items-center gap-2 px-3"
+                >
+                  <div class="iconblog">
+                    <img src="image/Type.svg" alt="" />
+                  </div>
+                  <span>Visualize a sua viagem dos sonhos</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="blogCard d-flex flex-column gap-3">
+                <div class="imageBlogCard px-3">
+                  <img src="image/blog-post-img-7.jpg" alt="" />
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="buttonViewAll d-flex align-items-center justify-content-center"
+                  >
+                    <button>Solicite aqui</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- interActive map  -->
 
     <!-- footer section -->
-    <div class="container-sm" id="footer">
-      <div class="footerSection">
-        <div class="footer row">
-          <!-- logo footer -->
-          <div class="logoFooter col">
-            <img src="image/newLoge.png" alt="" />
-          </div>
-          <div class="linksAndcontactUs col">
-            <div class="row px-2">
-              <!-- links -->
-              <div class="footerLinks col-6">
-                <ul class="links">
-                  <li>Home</li>
-                  <li>Crociere Sul Nilo</li>
-                  <li>Tour Egitto</li>
-                  <li><a href="aboutUs.html"> About us </a></li>
-                  <li>Blog</li>
-                </ul>
+    <div class="footerSection">
+      <div class="" id="footer">
+        <div class="">
+          <div class="footer row gy-3">
+            <!-- logo footer -->
+            <div class="col-12 col-md-4">
+              <div class="d-flex flex-column gap-2 gap-md-5">
+                <div class="logoFooter">
+                  <img src="image/newLoge.png" alt="" />
+                </div>
+                <div class="d-flex align-items-center footerFollow gap-4">
+                  <span>Follow us</span>
+                  <div class="d-flex align-items-center gap-2">
+                    <img src="image/facebookIcon.svg" alt="" />
+                    <img src="image/insigramIcon (1).svg" alt="" />
+                  </div>
+                </div>
               </div>
-              <!-- contact us footer -->
-              <div class="contactUsFooter col-6">
-                <div>contact us</div>
-                <ul class="coutactUs">
-                  <li class="">
-                    <div class="iconSocil">
-                      <img
-                        src="https://www.svgrepo.com/show/488278/mail.svg"
-                        width="15px"
-                        height="15px"
-                        alt=""
-                      />
-                    </div>
-                    <p>mohamedrefat@gmail.com</p>
-                  </li>
-                  <li class="">
-                    <div class="iconSocil">
-                      <img
-                        src="https://www.svgrepo.com/show/473600/facebook.svg"
-                        width="15px"
-                        height="15px"
-                        alt=""
-                      />
-                    </div>
-                    <span>Crociere Sul Nilo Travel</span>
-                  </li>
-                  <li class="">
-                    <div class="iconSocil">
-                      <img
-                        src="https://www.svgrepo.com/show/474324/instagram.svg"
-                        width="15px"
-                        height="15px"
-                        alt=""
-                      />
-                    </div>
-                    <span>CrociereSulNilo.</span>
-                  </li>
-                </ul>
+            </div>
+            <div class="linksAndcontactUs col-12 col-md-8">
+              <div class="row px-2">
+                <!-- links -->
+                <div class="footerLinks col-6">
+                  <div class="headerLinkes py-3">Useful links</div>
+                  <ul class="links">
+                    <li>Página Principal</li>
+                    <li>Pacotes</li>
+                    <li>Cruzeiros no Nilo</li>
+                    <li><a href="aboutUs.html"> Ofertas Imperdíveis </a></li>
+                    <li>Blog</li>
+                  </ul>
+                </div>
+                <!-- contact us footer -->
+                <div class="contactUsFooter col-6">
+                  <div class="headerLinkes py-3">Contact us</div>
+                  <ul class="coutactUs">
+                    <li class="">
+                      <div class="iconSocil">
+                        <i class="fas fa-envelope"></i>
+                      </div>
+                      <p>mohamedrefat@gmail.com</p>
+                    </li>
+                    <li class="">
+                      <div class="iconSocil">
+                        <i class="fas fa-phone-alt"></i>
+                      </div>
+                      <span>+01 1122 444 67</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="copyRightSection">
-      <div>Copyright © CrociereSulNilo 2021. All right reserved.</div>
-      <div>Terms and Privacy Policy</div>
+      <div>© Pacotes Para Egito 2023.</div>
+      <div class="text-decoration-underline">Terms and Privacy Policy</div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script src="js/main.js"></script>
+    <script src="js/offerSlider.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>

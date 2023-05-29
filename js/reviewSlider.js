@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     pagination: false,
   }).mount(window.splide.Extensions);
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   new Splide("#blogContainer", {
     type: "loop",

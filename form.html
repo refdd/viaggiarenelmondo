@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css"
       rel="stylesheet"
     />
@@ -25,91 +29,74 @@
   <body>
     <div class="banner">
       <!-- header buttom -->
-      <div class="header_From">
-        <div class="header">TAILOR MAKE YOUR TRIP</div>
-        <div class="description">
-          With Nile Cruise Vacation you can customize your trip as you prefer.
-        </div>
-      </div>
+
       <!-- from  -->
-      <div class="container">
-        <div class="from-container">
-          <div class="from">
+      <div class="container pt-5">
+        <div class="formCustomiz">
+          <div class="row">
             <!-- steps -->
-            <div class="stepsSection">
-              <div class="singelStep">
-                <div class="lauStep active"><span>1</span></div>
-                <div class="contentStep">Trip Details</div>
-              </div>
-              <div class="stepLiner active"></div>
+            <div class="col-12">
+              <!-- steps -->
+              <div
+                class="stepsSection d-flex align-items-center justify-content-center py-3"
+              >
+                <div class="singelStep">
+                  <div class="lauStep active"><span>1</span></div>
+                </div>
+                <div class="stepLiner"></div>
 
-              <div class="singelStep">
-                <div class="lauStep active"><span>2</span></div>
-                <div class="contentStep">Your budget</div>
-              </div>
-              <div class="stepLiner"></div>
+                <div class="singelStep">
+                  <div class="lauStep active"><span>2</span></div>
+                </div>
+                <div class="stepLiner"></div>
 
-              <div class="singelStep">
-                <div class="lauStep"><span>3</span></div>
-                <div class="contentStep">Your Details</div>
+                <div class="singelStep">
+                  <div class="lauStep"><span>3</span></div>
+                </div>
               </div>
             </div>
-            <!-- liner -->
-            <div class="line_from"></div>
-            <!-- form input -->
-            <div class="fromInput">
-              <div class="inputcontainter">
-                <p class="fromTitle">Let’s plan your trip now!</p>
-                <!-- budget -->
-                <div class="budgets">
-                  <label>your budget *</label>
 
-                  <select
-                    id="select-budget"
-                    placeholder="Natioality .."
-                    autocomplete="off"
-                  >
-                    <option value="">Select a person...</option>
-                    <option value="4">Thomas Edison</option>
-                    <option value="1">Nikola</option>
-                    <option value="3">Nikola Tesla</option>
-                    <option value="5">Arnold Schwarzenegger</option>
-                  </select>
-                </div>
-                <div class="budgets">
-                  <label>Accommodation Type*</label>
-
-                  <select
-                    id="select-Accommodation"
-                    placeholder="Accommodation .."
-                    autocomplete="off"
-                  >
-                    <option value="">Select a person...</option>
-                    <option value="4">Thomas Edison</option>
-                    <option value="1">Nikola</option>
-                    <option value="3">Nikola Tesla</option>
-                    <option value="5">Arnold Schwarzenegger</option>
-                  </select>
-                </div>
-                <div class="budgets">
-                  <label
-                    >Add flight offer to your vacation package (Optional)</label
-                  >
-
-                  <div class="DepartureAirport">
-                    <label>name</label>
-                    <input type="text" placeholder="Departure Airport" />
+            <div class="col-12">
+              <!-- form input -->
+              <div class="fromInput p-3">
+                <div class="row">
+                  <div class="col-12">
+                      <div class="d-flex flex-column gap-2">
+                        <label class="lableInput" >Your budget</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected>Nacionalidade</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
                   </div>
-                  <!-- button -->
-                  <div class="nextButtom">
-                    <a href="final.html">
-                      <button>
-                        <span>Next</span>
-                      </button>
-                    </a>
+                  <div class="col-12">
+                      <div class="d-flex flex-column gap-2">
+                        <label class="lableInput"  >Accommodation type</label>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                          <option selected>Nacionalidade</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="col-12">
+                      <div class="d-flex flex-column gap-2">
+                        <label  class="lableInput" >Add flight offer to your vacation package (optional)</label>
+                        <input class="form-control form-control-lg mb-3" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+
+                      </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="nextButtom">
+                      <a href="final.html">
+                        <button><span>Next</span></button>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>

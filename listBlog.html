@@ -25,7 +25,7 @@
       href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
     />
 
-    <link rel="stylesheet" href="css/listtours/style.css" />
+    <link rel="stylesheet" href="css/listBlog/listBlog.css" />
     <link rel="stylesheet" href="css/singleTour/style.css" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -38,10 +38,19 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="container-sm py-4">
-      <nav class="nav_container row gx-1 flex-nowrap py-2">
+    <div class="container-sm py-2">
+      <nav class="nav_container row py-2 flex-md-nowrap align-items-center">
+        <!-- menue bar icon  -->
+        <div class="col-3 d-block d-md-none">
+          <div
+            class="iconMneu d-flex justify-content-center align-items-center"
+          >
+            <i class="fa fa-bars"></i>
+            <img src="image/close-x.svg" alt="" />
+          </div>
+        </div>
         <!-- image  -->
-        <div class="imgae_logo col-4 col-md-2">
+        <div class="imgae_logo col-6 col-md-3">
           <img src="./image/newLoge.png" alt="" />
         </div>
         <!-- links -->
@@ -50,534 +59,432 @@
             <a href=""> Home </a>
           </li>
           <li>
-            <a href="listCrouse.html"> Crociere Sul Nilo</a>
+            <a href="listCrouse.html">Página Principal</a>
           </li>
           <li>
-            <a href="listTour.html">Tour Egitto</a>
+            <a href="listTour.html">Pacotes</a>
           </li>
           <li>
-            <a href="aboutUs.html"> About us </a>
+            <a href="aboutUs.html">Cruzeiros no Nilo </a>
           </li>
           <li>
-            <a href="listBlog.html"> Blog </a>
+            <a href="listBlog.html">Ofertas Imperdíveis </a>
+          </li>
+          <li>
+            <a href="listBlog.html">Blog </a>
           </li>
         </ul>
-        <!-- buttom inquery -->
-        <div class="buttom_inquri col col-md-3">
-          <button>inqueri</button>
-        </div>
-        <!-- menue bar icon  -->
-        <div class="menu_bar col">
-          <i
-            class="fa fa-bars"
-            aria-hidden="true"
-            id="menu"
-            style="font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-times"
-            aria-hidden="true"
-            id="close"
-            style="font-size: 27px"
-          ></i>
-        </div>
-        <!-- menue bar box -->
-        <ul class="menu_container">
-          <li class="active">
-            <a href="/"> Home </a>
-          </li>
-          <li>
-            <a href="listCrouse.html">Crociere Sul Nilo </a>
-          </li>
-          <li>
-            <a href="listTour.html">Tour Egitto </a>
-          </li>
 
-          <li>
-            <a href="aboutUs.html"> About us </a>
-          </li>
-          <li>
-            <a href="listBlog.html"> Blog </a>
-          </li>
-        </ul>
+        <!-- buttom inquery -->
+        <div class="buttom_inquri col-3 row-cols-md-2">
+          <button><a href="inquri.html">Solicite</a></button>
+        </div>
+
+        <!-- links menu -->
+        <div class="col-12 menu_Bar d-flex flex-column mt-3 gap-3 d-md-none">
+          <ul class="mb-0 linksMenu">
+            <li class="border-bottom py-3"><a href="/"> Home</a></li>
+            <li class="border-bottom py-3">
+              <a href="listCrouse.html"> Página Principal</a>
+            </li>
+            <li class="border-bottom py-3">
+              <a href="listTour.html"> Pacotes</a>
+            </li>
+            <li class="border-bottom py-3">
+              <a href="aboutUs.html">Cruzeiros no Nilo </a>
+            </li>
+            <li class="border-bottom border-3 py-3">
+              <a href="listBlog.html">Ofertas Imperdíveis</a>
+            </li>
+            <li class="border-bottom border-3 py-3">
+              <a href="listBlog.html">Blog </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-
-    <!-- header landPage -->
-    <div class="landPageHeader">
-      <div class="laoutListBlog"></div>
-      <div class="textBlog">
-        <div class="contentListBlog">Egypt travel blog</div>
+    <!-- header blog  -->
+    <div class="container py-2">
+      <div class="row">
+        <div
+          class="d-flex flex-column align-items-center gap-2 welcome_Section"
+        >
+          <span
+            >Variedade de Pacotes para Egito com Cairo, cruzeiro Nilo, Abu
+            Simbel, Luxor, Assuã, Hurghada e outras opções. Escolha o seu ou
+            customize-o do seu jeito!</span
+          >
+          <span>Blogs </span>
+        </div>
       </div>
     </div>
-    <!-- header list -->
+    <!-- list blog  -->
     <div class="container">
-      <div class="headerList py-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eos, essas
-        e nihil quasi molesti Lorem ipsum dolor
+      <div class="row gy-5">
+        <div class="col-12">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12 col-md-5">
+                  <div class="imageListBlog">
+                    <img src="image/blog-post-2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-7">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12">
+                  <div class="imageListBlog">
+                    <img src="image/blog-post-img-7.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12">
+                  <div class="imageListBlog">
+                    <img src="image/destination1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12">
+                  <div class="imageListBlog">
+                    <img src="image/destination3.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12">
+                  <div class="imageListBlog">
+                    <img src="image/blog-post-img-7.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12">
+                  <div class="imageListBlog">
+                    <img src="image/destination1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- card -->
+        <div class="col-12 col-md-4">
+          <a href="singleBolg.html">
+            <div class="blogListCard">
+              <div class="row gy-md-0 gx-md-0">
+                <div class="col-12">
+                  <div class="imageListBlog">
+                    <img src="image/destination3.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div
+                    class="contentListBlog d-flex flex-column gap-3 py-2 px-3 h-100 justify-content-md-center"
+                  >
+                    <div class="header">
+                      <span>BLOG DE VIAGEM PARA O EGITO</span>
+                    </div>
+                    <!-- desc -->
+                    <div class="desc">
+                      Egypt, a country linking northeast Africa with the Middle
+                      East, dates to the time of the pharaohs. Millennia-old
+                      monuments sit along the fertile Nile River Valley,
+                      including Giza's colossal Pyramids and Great Sphinx as
+                      well as Luxor's hieroglyph-lined Karnak Temple and Valley
+                      of the Kings tombs. The capital, Cairo, is home to Ottoman
+                      landmarks like Muhammad Ali Mosque and the Egyptian
+                      Museum, a trove of antiquities.
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="btn d-flex align-items-center gap-2">
+                        <button>See More</button>
+                        <i class="fas fa-chevron-circle-right"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
-    <!-- list blog Section  -->
+    <!-- header wiki  -->
+    <div class="container py-3 mt-4">
+      <div class="row">
+        <div
+          class="d-flex flex-column align-items-center gap-2 welcome_Section"
+        >
+          <span></span>
+          <span>Countries </span>
+        </div>
+      </div>
+    </div>
+    <!-- wikis -->
     <div class="container">
-      <div class="row gy-3">
+      <div class="row g-4">
+        <!-- card wiki -->
         <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
+          <div class="cardWikis">
+            <div class="imageWikis">
+              <img src="image/blog-post-img-7.jpg" alt="" />
+              <div class="contentWiki">
+                <span>Blog de Viagem para Marrocos</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
+        <!-- card wiki -->
         <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
+          <div class="cardWikis">
+            <div class="imageWikis">
+              <img src="image/hotel-room-g1103ad521_640.jpg" alt="" />
+              <div class="contentWiki">
+                <span>Blog de Viagem para Dubai</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
+        <!-- card wiki -->
         <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
+          <div class="cardWikis">
+            <div class="imageWikis">
+              <img src="image/hotel-gb2373a34c_640.jpg" alt="" />
+              <div class="contentWiki">
+                <span>Blog de Viagem para Australia</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
+        <!-- card wiki -->
         <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
+          <div class="cardWikis">
+            <div class="imageWikis">
+              <img src="image/slider1.jpg" alt="" />
+              <div class="contentWiki">
+                <span>Blog de Viagem para Turquia</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
+        <!-- card wiki -->
         <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
+          <div class="cardWikis">
+            <div class="imageWikis">
+              <img src="image/testimontion.webp" alt="" />
+              <div class="contentWiki">
+                <span>Blog de Viagem para Malaysia</span>
               </div>
             </div>
-          </a>
+          </div>
         </div>
+        <!-- card wiki -->
         <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
+          <div class="cardWikis">
+            <div class="imageWikis">
+              <img src="image/singelTour.webp" alt="" />
+              <div class="contentWiki">
+                <span>Blog de Viagem para Saudi Arabia</span>
               </div>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-md-4">
-          <a href="singleBolg.html">
-            <div
-              class="blogCard d-flex flex-column gap-3 align-items-center p-2"
-            >
-              <!-- image  -->
-              <div class="imageBlog position-relative">
-                <img src="image/blog-post.jpg" alt="" />
-
-                <!-- <div class="layoutBlog position-absolute"></div> -->
-                <div class="highlight"></div>
-                <div class="marktAuter position-absolute">
-                  <span>Adventure</span>
-                </div>
-              </div>
-              <!-- content blog -->
-              <div class="contentBlog d-flex flex-column gap-2">
-                <div class="d-flex align-items-center justify-content-between">
-                  <div class="duration">
-                    <i class="fa fa-calendar"></i>
-                    <span class="hover-underline-animation">
-                      October 8 , 2019</span
-                    >
-                  </div>
-                  <div class="autherBy">
-                    <i class="fa fa-pen"></i>
-                    <span class="hover-underline-animation">
-                      by Monhamed refat</span
-                    >
-                  </div>
-                </div>
-                <div class="descBlog">
-                  My Favorite Hiking Trails Around Reykjavík
-                </div>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>
+
     <!-- F and Q -->
     <div class="container-sm">
       <div class="headerSection">
