@@ -48,7 +48,7 @@ li {
 body {
   /* font-family: "Cairo", sans-serif; */
   overflow-x: hidden;
-  background-color: #f5f5f5;
+  background-color: #fff;
 }
 /* nav bar */
 .nav_container {
@@ -196,7 +196,7 @@ body {
 /* landing header */
 .landPageHeader {
   position: relative;
-  background-image: url(../image/Nile-Cruises.webp);
+  background-image: url(../image/headerPages.jpg);
   background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
@@ -1222,7 +1222,7 @@ div#accordionExample {
 .buttonSeeMore:hover {
   transform: scale(1.1);
 }
-.welcome_Section span:nth-of-type(1) {
+.welcome_Section span:nth-of-type(2) {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -1232,7 +1232,7 @@ div#accordionExample {
   letter-spacing: -0.02em;
   color: #3d3d3d;
 }
-.welcome_Section span:nth-of-type(2) {
+.welcome_Section span:nth-of-type(1) {
   font-family: "Nekolina";
   font-style: normal;
   font-weight: 400;
@@ -1390,6 +1390,7 @@ div#accordionExample {
 .cardTour {
   background-color: #fff;
   border-radius: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .cardTour i {
   font-size: 22px;
@@ -1616,8 +1617,8 @@ div#accordionExample {
 }
 .blogCard {
   border-width: 0px 1px;
-  border-style: solid;
-  border-color: #001f3d;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 15px;
 }
 .imageBlogCard img {
   max-width: 100%;
@@ -1871,11 +1872,11 @@ div#accordionExample {
 /* responsev landing header */
 @media only screen and (min-width: 786px) {
   .landPageHeader {
-    background-image: url(../image/Nile-Cruises.webp);
+    background-image: url(../image/headerPages.jpg);
     background-position: center;
     height: 100%;
     background-size: cover;
-    height: 644px;
+    height: 412px;
     width: 100%;
   }
   .landingPageContent {
@@ -2141,12 +2142,12 @@ div#accordionExample {
     font-size: 20px;
     line-height: 21px;
   }
-  .welcome_Section span:nth-of-type(1) {
+  .welcome_Section span:nth-of-type(2) {
     font-weight: 400;
     font-size: 17px;
     line-height: 20px;
   }
-  .welcome_Section span:nth-of-type(2) {
+  .welcome_Section span:nth-of-type(1) {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
