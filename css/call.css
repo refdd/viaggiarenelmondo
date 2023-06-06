@@ -1,0 +1,13 @@
+.callBack {
+  width: 50px;
+  height: 60px;
+  background: linear-gradient(
+    186.85deg,
+    #003366 16.59%,
+    rgba(0, 51, 102, 0) 147.03%,
+    #003366 147.03%
+  );
+  border-radius: 0px 20px 20px 0px;
+}
+.callBack img {
+}
