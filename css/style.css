@@ -384,63 +384,12 @@ body {
   color: #3d3d3d;
 }
 .athorImage {
-  position: absolute;
-  z-index: 20;
-  top: -36px;
-  left: 24px;
-  /* z-index: 30;
-    width: 90px;
-    height: 90px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:0.491103px solid #DEDEDE;
-    border-color: #DEDEDE #DEDEDE blue black ; */
 }
 .review_box .athorImage::before {
-  position: absolute;
-  content: "";
-  width: 70px;
-  height: 70px;
-  background-color: white;
-  bottom: -10px;
-  left: -4px;
-  /* border-radius: 50%; */
-  z-index: -1;
-  border-top-left-radius: 32px;
-  border: 1px solid;
-  border-bottom-right-radius: 32px;
-  border-top-right-radius: 43px;
-  border-color: #dedede #dedede transparent transparent;
-  transform: rotate(135deg);
 }
 .review_box .athorImage::before {
-  /* position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  bottom: -10px;
-  left: -4px;
-  border-top-right-radius: 20px;
-  z-index: -1; */
-  /* border: 1px solid; */
-  /* border-color: #DEDEDE #DEDEDE transparent transparent; */
-  /* transform: rotate(135deg); */
 }
-/* .review_box .athorImage::after {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  bottom: -10px;
-  right: -4px;
-  border-top-right-radius: 20px;
-  z-index: -1;
-} */
+
 .athorImage img {
   max-width: 100%;
   width: 60.92px;
@@ -1155,6 +1104,80 @@ div#accordionExample {
 .hover-underline-animation:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+.reviewsLayout {
+  background-image: url(../image/lauoutReviws.jpg);
+}
+.imageTureAdvisor {
+  position: relative;
+  margin-top: -83px;
+}
+.imageTureAdvisor img {
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+  object-fit: fill;
+}
+.trueAdvisorContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.trueAdvisorContent p {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.reviewContainer {
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: -81px;
+  margin-top: 68px;
+}
+.headerReviewBox {
+  color: #363636;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 19px;
+}
+.cardReviews .ContentReviews span {
+  margin: 0 0 2px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #363636;
+}
+.cardReviews .ContentReviews span {
+  margin: 0 0 2px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #363636;
+}
+.cardReviews .ContentReviews i {
+  color: #00bdbb;
+  font-size: 14px;
+}
+.cardReviews .descRviews {
+  font-size: 15px;
+  line-height: 27px;
+  color: #808285;
+  font-weight: 400;
+}
+.cardReviews .nameAthor {
+  font-weight: 700;
+  color: #363636;
+  font-size: 15px;
+  line-height: 23px;
+}
+.cardReviews .athorImage {
+}
+.cardReviews .athorImage img {
 }
 @keyframes changeAnimation {
   from {
