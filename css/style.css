@@ -1,7 +1,7 @@
 /* Start Variables */
 :root {
-  --main-color: #003366;
-  --secondary-color: #f70759;
+  --main-color: #032974;
+  --secondary-color: #009b72;
   --section-padding: 60px;
   --section-background: #f6f6f6;
   --main-duration: 0.5s;
@@ -46,7 +46,7 @@ li {
   list-style: none !important;
 }
 body {
-  /* font-family: "Cairo", sans-serif; */
+  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   background-color: #fff;
 }
@@ -62,7 +62,6 @@ body {
   justify-content: center;
 }
 .links_container li {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -80,7 +79,7 @@ body {
 
 .imgae_logo img {
   width: 100%;
-  max-width: 120px;
+  max-width: 206px;
   height: auto;
 }
 
@@ -94,7 +93,7 @@ body {
   gap: 10px;
   width: 95px;
   height: 40px;
-  background: #003366;
+  background: var(--main-color);
   border-radius: 10px;
 }
 .buttom_inquri:hover {
@@ -102,7 +101,6 @@ body {
   cursor: pointer;
 }
 .buttom_inquri button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -140,7 +138,6 @@ body {
   padding: 16px 21px;
 }
 .AD-Header_content {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -160,7 +157,6 @@ body {
   align-items: center;
 }
 .Start_From {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -168,7 +164,6 @@ body {
   color: #ffffff;
 }
 .price_Number {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -186,7 +181,6 @@ body {
   border-radius: 5px;
 }
 .btn_inqure button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10px;
@@ -210,7 +204,6 @@ body {
   transform: translate(-50%, -50%);
 }
 .landingPageContent p {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -231,7 +224,7 @@ body {
   background: #01a8c3 !important;
   opacity: 0.5;
   border-radius: 5px;
-  font-family: "Cairo", sans-serif;
+
   font-style: normal;
   font-weight: 400;
   font-size: 12.1233px;
@@ -253,16 +246,14 @@ body {
   padding-top: 60px;
 }
 .headerSection .header {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 25px;
   text-align: center;
-  color: var(--secondary-color);
+  color: var(--main-color);
 }
 .headerSection .description {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -323,7 +314,6 @@ body {
 }
 .imagefull_H .image_content span,
 .imageRight .image_content span {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -350,7 +340,6 @@ body {
   align-items: center;
 }
 .titelAndStar .titel {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14.6583px;
@@ -366,7 +355,6 @@ body {
   color: #ffe234;
 }
 .review .place {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.2153px;
@@ -429,7 +417,6 @@ slider css
   transform: scale(0.9);
 }
 .btnAddReview button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.1233px;
@@ -445,7 +432,6 @@ div#accordionExample {
   gap: 26px;
 }
 .accordion-button {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -455,7 +441,6 @@ div#accordionExample {
   color: #3d3d3d;
 }
 .accordion-body {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -495,7 +480,6 @@ div#accordionExample {
   cursor: pointer;
 }
 .footerFollow span {
-  font-family: "Karla";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -507,7 +491,6 @@ div#accordionExample {
 .footerLinks {
 }
 .headerLinkes {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -530,7 +513,6 @@ div#accordionExample {
   padding-left: 0;
 }
 .links li {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -559,7 +541,6 @@ div#accordionExample {
 .coutactUs li p {
   overflow-wrap: break-word;
   width: 100px;
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -580,7 +561,6 @@ div#accordionExample {
   transform: translate(-50%, -50%);
 }
 .carousel-caption.contentHeader.sleiderHome p {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -616,7 +596,6 @@ div#accordionExample {
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
 }
 .copyRightSection div {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -650,7 +629,6 @@ div#accordionExample {
   text-align: center;
 }
 .dateFilter .content-search {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -703,7 +681,6 @@ div#accordionExample {
   display: none;
 }
 .button_moblie button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -753,7 +730,6 @@ div#accordionExample {
   border-radius: 15px;
 }
 .tourCard .descTourCard {
-  font-family: "Cairo", sans-serif;
   font-size: 16px;
   color: #777;
 }
@@ -775,32 +751,29 @@ div#accordionExample {
 }
 .tourCard .price {
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+
   font-weight: 700;
   color: #2c4755;
 }
 .tourCard .butBookNow button {
   font-size: 16px;
-  font-family: "Cairo", sans-serif;
+
   font-weight: 700;
   color: #ffffff;
 }
 .tourCard .duration span:nth-of-type(1),
 .tourCard .size span:nth-of-type(1) {
-  font-family: "Cairo", sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #2c4755;
 }
 .tourCard .duration span:nth-of-type(2),
 .tourCard .size span:nth-of-type(2) {
-  font-family: "Cairo", sans-serif;
   font-size: 14px;
   color: #777;
 }
 
 .tourCard .textTour {
-  font-family: "Cairo", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #2c4755;
@@ -828,19 +801,17 @@ div#accordionExample {
 .articles {
 }
 .articles .titel_one {
-  font-family: "Cairo", sans-serif;
   color: #9a9a9a;
   font-size: 14px;
 }
 .articles .mainTitle {
   color: #555555;
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+
   font-weight: 700;
 }
 
 .articles .artDesc {
-  font-family: "Cairo", sans-serif;
   color: #9a9a9a;
   font-size: 14px;
 }
@@ -863,7 +834,6 @@ div#accordionExample {
   color: #fff;
 }
 .articles .reedMore button {
-  font-family: "Cairo", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-transform: capitalize;
@@ -998,7 +968,6 @@ div#accordionExample {
 }
 
 .reviewContent .testi__desc {
-  font-family: "Cairo", sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: 400;
@@ -1023,7 +992,6 @@ div#accordionExample {
   cursor: pointer;
 }
 .author_content .autthor-bio .name {
-  font-family: "Cairo", sans-serif;
   color: #0d233e;
   font-size: 20px;
   font-weight: 500;
@@ -1064,22 +1032,22 @@ div#accordionExample {
 }
 .contentBlog .duration span,
 .contentBlog .autherBy span {
-  color: #878787;
+  color: var(--secondary-color);
   font-style: italic;
   font-weight: 400;
   font-size: 14px;
 }
 .contentBlog .duration i,
 .contentBlog .autherBy i {
-  color: #878787;
+  color: var(--secondary-color);
   font-size: 20px;
 }
 .contentBlog .descBlog {
-  color: #1e1e1e;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 32px;
-  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--main-color);
 }
 .hover-underline-animation {
   display: inline-block;
@@ -1139,7 +1107,7 @@ div#accordionExample {
   margin-top: 68px;
 }
 .headerReviewBox {
-  color: #363636;
+  color: var(--main-color);
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
@@ -1229,7 +1197,7 @@ div#accordionExample {
   left: 0;
 }
 .buttonSeeMore {
-  background-color: #01a8c3;
+  background-color: var(--main-color);
   padding: 14px 20px;
   width: 290px;
   margin: 0 auto;
@@ -1246,7 +1214,6 @@ div#accordionExample {
   transform: scale(1.1);
 }
 .welcome_Section span:nth-of-type(2) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1262,7 +1229,7 @@ div#accordionExample {
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  color: #f70759;
+  color: var(--main-color);
 }
 .welcome_Section .inputSearch input {
   padding: 10px 10px 10px 30px;
@@ -1273,7 +1240,6 @@ div#accordionExample {
   outline: none;
 }
 .welcome_Section .inputSearch input::placeholder {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -1328,10 +1294,9 @@ div#accordionExample {
   line-height: 24px;
   display: flex;
   align-items: center;
-  color: #f70759;
+  color: var(--main-color);
 }
 .headerFeature span:nth-of-type(2) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1424,15 +1389,14 @@ div#accordionExample {
   font-weight: lighter;
 }
 .cardTour .title {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   height: 52px;
+  color: var(--main-color);
 }
 .cardTour .desc {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1440,23 +1404,21 @@ div#accordionExample {
   text-align: justify;
   letter-spacing: -0.02em;
 
-  color: #000000;
+  color: var(--main-color);
 }
 .priceCard span:nth-of-type(1) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: #3d3d3d;
+  color: var(--main-color);
 }
 .priceCard span:nth-of-type(2) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 34px;
-  color: #f70759;
+  color: var(--secondary-color);
 }
 .buttonViewMore {
   padding: 10px 20px;
@@ -1464,7 +1426,6 @@ div#accordionExample {
   border-radius: 8px;
 }
 .buttonViewMore button {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1482,7 +1443,6 @@ div#accordionExample {
   border-radius: 8px;
 }
 .buttonViewAll button {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1523,7 +1483,6 @@ div#accordionExample {
   border-radius: 8px;
 }
 .ImageOffer .contentOffer .title {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -1629,7 +1588,6 @@ div#accordionExample {
   color: #f70759;
 }
 .headerbolg span:nth-of-type(2) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1705,7 +1663,6 @@ div#accordionExample {
     gap: 18px;
   }
   .AD-Header_content {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
@@ -1715,7 +1672,6 @@ div#accordionExample {
     width: 100%;
   }
   .Start_From {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -1734,7 +1690,6 @@ div#accordionExample {
     border-radius: 5px;
   }
   .btn_inqure button {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 15px;
@@ -1743,11 +1698,10 @@ div#accordionExample {
   }
   .imgae_logo img {
     width: 100%;
-    max-width: 82px;
+    max-width: 153px;
     height: auto;
   }
   .price_Number {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -1796,7 +1750,6 @@ div#accordionExample {
     background-color: #fff;
   }
   .menu_container li {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1842,7 +1795,6 @@ div#accordionExample {
     display: block;
   }
   .linksMenu li {
-    font-family: "Cairo", sans-serif;
     font-size: 17px;
     font-weight: 600;
     color: #1e1e1e;
@@ -1906,7 +1858,6 @@ div#accordionExample {
     top: 50%;
   }
   .landingPageContent p {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 52px;
@@ -1982,7 +1933,6 @@ div#accordionExample {
   }
   .imagefull_H .image_content span,
   .imageRight .image_content span {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -2050,7 +2000,6 @@ div#accordionExample {
     font-size: 16px;
   }
   .carousel-caption.contentHeader.sleiderHome p {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -2124,7 +2073,6 @@ div#accordionExample {
     font-size: 16px;
   }
   .reviewContent .testi__desc {
-    font-family: "Cairo", sans-serif;
     font-size: 20px;
     line-height: 31px;
   }

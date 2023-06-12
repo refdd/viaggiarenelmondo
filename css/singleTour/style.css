@@ -5,7 +5,6 @@
 }
 
 .carousel-caption.contentHeader p {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -21,7 +20,6 @@
   color: #ffffff;
 }
 .infoTour ul li span {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -50,7 +48,6 @@
   display: block;
 }
 .tapsTour li {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -75,7 +72,6 @@
   object-fit: cover;
 }
 .content_overview {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -84,7 +80,6 @@
   color: #3d3d3d;
 }
 .header_included {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -93,7 +88,6 @@
 }
 .included_section li span,
 .exincluded_section li span {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -123,7 +117,7 @@
   background: #003366;
   padding: 14px;
   border-radius: 30px 30px 0px 0px;
-  font-family: "Arial";
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -131,7 +125,6 @@
   color: #ffffff;
 }
 .form_inquire label {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -248,7 +241,6 @@
   transform: scale(0.9);
 }
 .buttoncounter button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -257,7 +249,6 @@
   color: #ffffff;
 }
 .contextFormInauire {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -291,7 +282,6 @@
   transform: scale(0.9);
 }
 .bottonInqueryFrom button {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -299,7 +289,6 @@
   color: #ffffff;
 }
 .headerItinerary .content span {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -346,10 +335,9 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #f70759;
+  color: var(--main-color);
 }
 .durationPrice span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -363,7 +351,6 @@
   border-bottom: 0.5px solid #001f3d;
 }
 .pricesList li span:nth-of-type(1) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -372,20 +359,18 @@
   color: #3d3d3d;
 }
 .pricesList li span:nth-of-type(2) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-align: right;
   letter-spacing: -0.02em;
-  color: #f70759;
+  color: var(--main-color);
 }
 .contentAccommmedation {
   padding: 0 12.9715px;
 }
 .contentAccommmedation div:nth-of-type(1) span:nth-of-type(1) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.9715px;
@@ -394,7 +379,6 @@
   color: #3d3d3d;
 }
 .contentAccommmedation div:nth-of-type(1) span:nth-of-type(2) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10.64769px;
@@ -403,7 +387,6 @@
   color: #7a7a7a;
 }
 .tabletext {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.9715px;
@@ -415,7 +398,6 @@
   width: 100%;
 }
 .roomType span {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10.3772px;
@@ -427,7 +409,6 @@
   height: 150px;
 }
 .seconsText span:nth-of-type(1) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.9715px;
@@ -443,7 +424,6 @@ thead tr {
   background: #f5f5f5;
 }
 .seconsText span:nth-of-type(2) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 8.64769px;
@@ -452,7 +432,6 @@ thead tr {
   color: #7a7a7a;
 }
 .priseAccommmedation span {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20.7545px;
@@ -461,7 +440,6 @@ thead tr {
   color: #3d3d3d;
 }
 .headerInfo {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -486,7 +464,6 @@ thead tr {
   color: #a8a8a8;
 }
 .nameHotle span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -524,7 +501,6 @@ thead tr {
   border-radius: 10px;
 }
 .formRview .header {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -532,7 +508,6 @@ thead tr {
   color: #3d3d3d;
 }
 .rateText {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -583,7 +558,6 @@ thead tr {
 
 /* end rate star */
 .ReviewTitle {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -591,7 +565,6 @@ thead tr {
   color: #3d3d3d;
 }
 .recommend {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -613,7 +586,6 @@ thead tr {
   transform: scale(0.9);
 }
 .formRview .buttomSubmit button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -668,7 +640,6 @@ thead tr {
   height: 87px;
 }
 .contentSlider span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 22px;
@@ -676,13 +647,12 @@ thead tr {
   color: #ffffff;
 }
 .priceSingle {
-  background: #f70759;
+  background: var(--main-color);
   border-radius: 30px 5px 5px 5px;
   width: 152px;
   height: 49px;
 }
 .priceSingle span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -701,7 +671,6 @@ thead tr {
   background: #ffffff;
 }
 .boxfeature span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -710,7 +679,6 @@ thead tr {
   color: #3d3d3d;
 }
 .descHeader {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -718,7 +686,6 @@ thead tr {
   color: #3d3d3d;
 }
 .descSingle {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -754,7 +721,7 @@ thead tr {
 #thumbnail-carousel .splide__track::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f70759;
+  background-color: var(--main-color);
 }
 .boxIncluded {
   background: #ffffff;
@@ -764,7 +731,6 @@ thead tr {
   padding: 20px;
 }
 .boxIncluded span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -772,7 +738,6 @@ thead tr {
   color: #3d3d3d;
 }
 .boxIncluded ul li span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -781,7 +746,6 @@ thead tr {
   color: #3d3d3d;
 }
 .itineraryHead span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -789,7 +753,6 @@ thead tr {
   color: #3d3d3d;
 }
 .accordion-button.dayHeader {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -849,7 +812,6 @@ thead tr {
     margin-bottom: 24px;
   }
   .carousel-caption.contentHeader p {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -858,7 +820,6 @@ thead tr {
     color: #ffffff;
   }
   .infoTour ul li span {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
@@ -883,7 +844,6 @@ thead tr {
     line-height: 17px;
   }
   .content_overview {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;

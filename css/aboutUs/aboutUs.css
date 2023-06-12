@@ -20,7 +20,7 @@
   color: #81b8d4;
   font-weight: bold;
   font-size: 30px;
-  font-family: "Cairo", sans-serif;
+
   z-index: 5;
 }
 .headerTow {
@@ -47,7 +47,7 @@
 }
 .howWE .serverAbout .header {
   color: #0274be;
-  font-family: "Cairo", sans-serif;
+
   font-size: 23px;
   font-weight: 500;
   width: fit-content;
@@ -79,14 +79,12 @@
 }
 .howitHeader span:nth-of-type(1) {
   font-size: 35px;
-  font-family: "Cairo", sans-serif;
+
   color: #ffffff;
   line-height: 46px;
   font-weight: 500;
 }
 .howitHeader span:nth-of-type(2) {
-  font-family: "Cairo", sans-serif;
-
   color: #81b8d4;
   font-size: 35px;
   font-weight: 500;

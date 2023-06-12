@@ -137,7 +137,6 @@ body {
 .name label,
 .mail label,
 .nationalty label {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -188,7 +187,6 @@ body {
   outline: none;
 }
 .condNumberConteiner label {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -249,7 +247,6 @@ body {
 }
 
 .counterContainer p {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -313,7 +310,6 @@ body {
   border-radius: 8px;
 }
 .nextButtom button span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -368,7 +364,6 @@ body {
   align-items: center;
 }
 .lauStep span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;

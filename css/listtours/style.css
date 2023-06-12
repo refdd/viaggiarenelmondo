@@ -3,7 +3,6 @@
   gap: 5px;
 }
 .contentfilterChackBox {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -47,7 +46,6 @@
 }
 
 .content-search {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -56,7 +54,6 @@
   cursor: pointer;
 }
 .searchPlaceHolder {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -84,7 +81,6 @@
   box-shadow: 0px 2.02056px 2.02056px rgba(0, 0, 0, 0.1);
 }
 .cardList p {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10.1028px;
@@ -95,7 +91,6 @@
   color: #3d3d3d;
 }
 .titelcard div:nth-of-type(1) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12.1233px;
@@ -109,7 +104,6 @@
   color: #ffe234;
 }
 .duration {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.1233px;
@@ -120,7 +114,6 @@
 }
 
 .priseListCard span:nth-of-type(1) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 10.1028px;
@@ -140,7 +133,6 @@
 }
 
 .priseListCard span:nth-of-type(2) {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20.2056px;
@@ -164,7 +156,6 @@
   transform: scale(0.9);
 }
 .viewButton button {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 12.1233px;
@@ -173,7 +164,6 @@
   color: #ffffff;
 }
 .contentChackBox {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -185,7 +175,6 @@
   border-radius: 1px;
 }
 .headerFilter {
-  font-family: "Cairo", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 19px;
@@ -214,7 +203,6 @@
   display: block;
 }
 .headerTour {
-  font-family: "Cairo", sans-serif;
   font-weight: 700;
   font-size: 30px;
   color: #3d3d3d;
@@ -224,7 +212,7 @@
 }
 .headerList {
   font-size: 24px;
-  font-family: "Cairo", sans-serif;
+
   color: #183153;
   line-height: 35px;
   font-weight: 600;
@@ -233,7 +221,7 @@
   font-size: 32px;
   line-height: 1.12em;
   font-weight: 700;
-  font-family: "cairo", sans-serif;
+
   color: #ffffff;
 }
 .textBlog {
@@ -283,11 +271,11 @@
   color: #ffffff;
 }
 .cardListTour .title span:nth-of-type(1) {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+  color: var(--main-color);
 }
 .cardListTour .title span:nth-of-type(2) {
   font-size: 14px;
@@ -295,42 +283,39 @@
   color: #007bff;
 }
 .cardListTour .desc {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-align: justify;
   letter-spacing: -0.02em;
-  color: #000000;
+  color: var(--main-color);
 }
 .featureCard span {
-  font-family: "Arial";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-  color: #000000;
+  color: var(--main-color);
 }
 .visitedLocation span {
   font-size: 1rem;
   font-weight: 500;
+  color: var(--main-color);
 }
 .visitedLocation ul li span {
   display: inline-block;
   padding: 3px;
-  color: #000;
-
+  color: var(--main-color);
   font-size: 12px;
 }
 .visitedLocation ul li i {
   font-size: 20px;
-  color: #007bff;
+  color: var(--secondary-color);
 }
 
 @media only screen and (min-width: 786px) {
   .landingPageContent p {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -348,7 +333,7 @@
     font-size: 50px;
     line-height: 1.12em;
     font-weight: 700;
-    font-family: "cairo", sans-serif;
+
     color: #ffffff;
   }
   .searchSection {
@@ -406,7 +391,6 @@
     font-size: 21px;
   }
   .filter_search .contentbox span:nth-of-type(1) {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -415,7 +399,6 @@
     text-align: center;
   }
   .filter_search .contentbox span:nth-of-type(2) {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -461,7 +444,6 @@
     display: block;
   }
   .textCounter {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -489,7 +471,6 @@
     transform: scale(0.9);
   }
   .buttoncounter button {
-    font-family: "Cairo", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -508,7 +489,6 @@
     border-radius: 5px;
   }
   .headerTour {
-    font-family: "Cairo", sans-serif;
     font-weight: 700;
     font-size: 55px;
     color: #3d3d3d;
