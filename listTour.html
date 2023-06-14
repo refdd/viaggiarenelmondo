@@ -60,7 +60,28 @@
           </li>
           <li></li>
           <li>
-            <a href="listTour.html">Pacotes</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle buttonNavDropdown py-0"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="listTour.html">Egypt</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listTour.html">Jordan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listTour.html">Dubai</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li></li>
           <li></li>
@@ -157,9 +178,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -243,9 +262,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -329,9 +346,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -415,9 +430,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -501,9 +514,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -587,9 +598,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -673,9 +682,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -759,9 +766,7 @@
                         <!-- Visited location -->
                         <div class="visitedLocation">
                           <span>Luoghi visitati </span>
-                          <ul
-                            class="d-flex flex-column align-items-center gap-2 pt-2"
-                          >
+                          <ul class="d-flex flex-column gap-2 pt-2">
                             <li class="d-flex gap-1 align-items-center">
                               <i class="fas fa-check-circle"></i>
                               <span
@@ -816,203 +821,231 @@
           </div>
         </div>
         <div class="col-md-4">
-          <a href="singleTour.html">
+          <div
+            class="inquireSection overflow-hidden sticky-md-top border"
+            id="formInquery"
+          >
+            <div class="headerInquery text-center">Preencha o formulário</div>
             <div
-              class="inquireSection overflow-hidden sticky-md-top border"
-              id="formInquery"
+              class="form_inquire row gap-2 justify-content-center pb-3 px-3"
             >
-              <div class="headerInquery text-center">Preencha o formulário</div>
-              <div
-                class="form_inquire row gap-2 justify-content-center pb-3 px-3"
-              >
-                <!-- name and email -->
-                <div class="row gy-2 mt-0">
-                  <div class="col-12">
-                    <label class="mb-3" for=""> Nome</label>
-                    <input
-                      class="form-control col"
-                      type="text"
-                      placeholder="Nome"
-                      aria-label="Name example"
-                    />
-                  </div>
-                  <div class="col-12">
-                    <label class="mb-3" for=""> Email</label>
-
-                    <input
-                      class="form-control"
-                      type="email"
-                      placeholder="Email"
-                      aria-label="Email example"
-                    />
-                  </div>
+              <!-- name and email -->
+              <div class="row gy-2 mt-0">
+                <div class="col-12">
+                  <input
+                    class="form-control col"
+                    type="text"
+                    placeholder="Nome"
+                    aria-label="Name example"
+                  />
                 </div>
-                <!-- date -->
-                <div class="row">
-                  <div class="col-6">
-                    <div class="startDate">
-                      <label>Chegada</label>
-                      <div class="date">
-                        <input
-                          type="text"
-                          placeholder="dd/mm/yy"
-                          onfocus="(this.type='date')"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <!-- end date -->
-                    <div class="endDate">
-                      <label>Saida</label>
-                      <div class="date">
-                        <input
-                          type="text"
-                          placeholder="dd/mm/yy"
-                          onfocus="(this.type='date')"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email"
+                    aria-label="Email example"
+                  />
                 </div>
-                <!--  -->
-                <div class="row">
-                  <div class="col-12">
-                    <label class="mb-3" for=""> Nacionalidade</label>
-                    <select
-                      class="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option selected>Nacionalidade</option>
-                      <option value="1">egypt</option>
-                      <option value="2">cairo</option>
-                      <option value="3">paris</option>
-                    </select>
-                  </div>
-                </div>
-                <!-- counter drobdown -->
-                <div class="row drobdownCounter">
-                  <div class="col-6">
-                    <!-- adults -->
-                    <label class="mb-3" for=""> Adolts (+12)</label>
-
-                    <div
-                      class="d-flex gap-2 align-items-center border rounded-2 px-1"
-                    >
-                      <div
-                        class="counterContainer d-flex justify-content-between px-3"
-                      >
-                        <img
-                          onclick="removeCounter('adults')"
-                          src="image/cricilMinse.svg"
-                          id="mins"
-                          alt=""
-                        />
-                        <input
-                          id="adults"
-                          type="text"
-                          name="adults"
-                          class="form-control input-number book_all"
-                          value="0"
-                          min="1"
-                          max="100"
-                          readonly=""
-                        />
-                        <img
-                          onclick="addCounter('adults')"
-                          src="image/circelPlus.svg"
-                          id="plus"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <!-- children -->
-                    <label class="mb-3" for=""> crianças ( 0 - 12 )</label>
-
-                    <div
-                      class="d-flex gap-2 align-items-center border rounded-2 px-1"
-                    >
-                      <div
-                        class="counterContainer d-flex justify-content-between px-3"
-                      >
-                        <img
-                          onclick="removeCounter('Children')"
-                          src="image/cricilMinse.svg"
-                          id="mins"
-                          alt=""
-                        />
-                        <input
-                          id="Children"
-                          type="text"
-                          name="Children"
-                          class="form-control input-number book_all"
-                          value="0"
-                          min="1"
-                          max="100"
-                          readonly=""
-                        />
-                        <img
-                          onclick="addCounter('Children')"
-                          src="image/circelPlus.svg"
-                          id="plus"
-                          alt=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-12">
-                    <label class="mb-3" for=""> Tele ou whatsapp</label>
-                    <div class="d-flex align-items-center">
-                      <select
-                        class="form-select code_selected"
-                        aria-label="Default select example"
-                      >
-                        <option selected>code</option>
-                        <option value="1">+1</option>
-                        <option value="2">+20</option>
-                        <option value="3">+23</option>
-                        <option value="3">+43</option>
-                        <option value="3">+80</option>
-                      </select>
+              </div>
+              <!-- date -->
+              <div class="row">
+                <div class="col-6">
+                  <div class="startDate">
+                    <label>Chegada</label>
+                    <div class="date">
                       <input
-                        class="form-control inputCode"
                         type="text"
-                        placeholder="Number"
-                        aria-label="Name example"
+                        placeholder="dd/mm/yy"
+                        onfocus="(this.type='date')"
                       />
                     </div>
                   </div>
                 </div>
-                <!-- fight chack box -->
-                <div class="row">
-                  <div class="col-12">
-                    <label class="mb-3" for="">
-                      Quel viagem deseja fazer?</label
-                    >
-                    <input
-                      class="form-control"
-                      type="email"
-                      placeholder=""
-                      aria-label="Email example"
-                    />
-                  </div>
-                </div>
-                <!-- button -->
-                <div class="row justify-content-center align-items-center">
-                  <div
-                    class="bottonInqueryFrom d-flex justify-content-center align-items-center"
-                  >
-                    <button>Envier</button>
+                <div class="col-6">
+                  <!-- end date -->
+                  <div class="endDate">
+                    <label>Saida</label>
+                    <div class="date">
+                      <input
+                        type="text"
+                        placeholder="dd/mm/yy"
+                        onfocus="(this.type='date')"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
+              <!--  -->
+              <div class="row">
+                <div class="col-12">
+                  <label class="mb-3" for=""> Nacionalidade</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Nacionalidade</option>
+                    <option value="1">egypt</option>
+                    <option value="2">cairo</option>
+                    <option value="3">paris</option>
+                  </select>
+                </div>
+              </div>
+              <!-- counter drobdown -->
+              <div class="row drobdownCounter">
+                <div class="col-6">
+                  <!-- adults -->
+                  <label class="mb-3" for=""> Adolts (+12)</label>
+
+                  <div
+                    class="d-flex gap-2 align-items-center border rounded-2 px-1"
+                  >
+                    <div
+                      class="counterContainer d-flex justify-content-between px-3"
+                    >
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                        onclick="removeCounter('adults')"
+                      >
+                        <i class="fas fa-minus"></i>
+                      </div>
+
+                      <input
+                        id="adults"
+                        type="text"
+                        name="adults"
+                        class="form-control input-number book_all"
+                        value="0"
+                        min="1"
+                        max="100"
+                        readonly=""
+                      />
+                      <div
+                        onclick="addCounter('adults')"
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <!-- children -->
+                  <label class="mb-3" for=""> crianças ( 0 - 12 )</label>
+
+                  <div
+                    class="d-flex gap-2 align-items-center border rounded-2 px-1"
+                  >
+                    <div
+                      class="counterContainer d-flex justify-content-between px-3"
+                    >
+                      <div
+                        class="d-flex justify-content-center align-items-center"
+                        onclick="removeCounter('Children')"
+                      >
+                        <i class="fas fa-minus"></i>
+                      </div>
+                      <input
+                        id="Children"
+                        type="text"
+                        name="Children"
+                        class="form-control input-number book_all"
+                        value="0"
+                        min="1"
+                        max="100"
+                        readonly=""
+                      />
+                      <div
+                        onclick="addCounter('Children')"
+                        class="d-flex justify-content-center align-items-center"
+                      >
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- name and email -->
+              <div class="row gy-2 mt-0">
+                <div class="col-12">
+                  <input
+                    class="form-control col"
+                    type="text"
+                    placeholder="Children Ages "
+                    aria-label="Name example"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label class="mb-3" for=""> Tele ou whatsapp</label>
+                  <div class="d-flex align-items-center">
+                    <select
+                      class="form-select code_selected"
+                      aria-label="Default select example"
+                    >
+                      <option selected>code</option>
+                      <option value="1">+1</option>
+                      <option value="2">+20</option>
+                      <option value="3">+23</option>
+                      <option value="3">+43</option>
+                      <option value="3">+80</option>
+                    </select>
+                    <input
+                      class="form-control inputCode"
+                      type="text"
+                      placeholder="Number"
+                      aria-label="Name example"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- fight chack box -->
+              <div class="row gy-2">
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label class="form-check-label m" for="flexCheckDefault">
+                      Aggiungi volo
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Your Nearest Airport"
+                    aria-label="Email example"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <label class="mb-3" for="">Your trip details</label>
+                  <div class="">
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <!-- button -->
+              <div class="row justify-content-center align-items-center">
+                <div
+                  class="bottonInqueryFrom d-flex justify-content-center align-items-center"
+                >
+                  <button>Envier</button>
+                </div>
+              </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

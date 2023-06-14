@@ -204,10 +204,12 @@
 .counterbox .counter {
   padding: 15px;
 }
-.counterContainer img,
+.counterContainer i,
 .counterContainer span {
   cursor: pointer;
   transition: ease-in-out 0.2s;
+  color: #003366;
+  font-size: 19px;
 }
 .textCounter {
   font-family: "Roboto";
@@ -227,7 +229,6 @@
   box-shadow: none !important;
 }
 .form-select {
-  background-image: url(../../image/chaverDown.svg);
   background-size: 16px 40px;
 }
 .counterContainer img:hover {
@@ -647,7 +648,7 @@ thead tr {
   color: #ffffff;
 }
 .priceSingle {
-  background: var(--main-color);
+  background: var(--secondary-color);
   border-radius: 30px 5px 5px 5px;
   width: 152px;
   height: 49px;
@@ -768,11 +769,31 @@ thead tr {
   display: none !important;
   visibility: hidden !important;
 }
+.tapsContainer {
+  background-color: #fff;
+}
+.singelTap span {
+  font-size: 14px;
+  color: var(--main-color);
+}
+.singelTap.active {
+  border-bottom: 3px solid #69e230;
+}
+.iconFeature i {
+  color: #69e230;
+  font-size: 30px;
+}
+.iconIncluded {
+  color: #69e230;
+}
+.iconUncluded {
+  color: #69e230;
+}
 @media only screen and (max-width: 786px) {
   .sticky-Section {
     position: -webkit-sticky;
     position: sticky;
-    top: 24px;
+    top: 0;
     z-index: 1020;
   }
   #new-product .splide__arrow {
@@ -799,9 +820,9 @@ thead tr {
   .carousel-item img {
     height: 500px;
   }
-  .sticky-Section {
+  /* .sticky-Section {
     position: relative;
-  }
+  } */
   .carousel-caption.contentHeader {
     top: auto;
     bottom: 114px;

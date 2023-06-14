@@ -74,7 +74,28 @@
           </li>
           <li></li>
           <li>
-            <a href="listTour.html">Pacotes</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle buttonNavDropdown py-0"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Destinations
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="listTour.html">Egypt</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listTour.html">Jordan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="listTour.html">Dubai</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li></li>
           <li></li>
@@ -161,12 +182,55 @@
     <div class="button_moblie">
       <button>INQUIRE NOW!</button>
     </div>
+    <!-- taps -->
+    <div class="container sticky-Section pb-4">
+      <div class="tapsContainer border-top border-bottom py-3">
+        <div class="row g-0">
+          <div class="col-3">
+            <div
+              class="singelTap active d-flex justify-content-center align-items-center"
+            >
+              <a href="#Overview">
+                <span>Tabella</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="singelTap d-flex justify-content-center align-items-center"
+            >
+              <a href="#itneary">
+                <span>Itinerario</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="singelTap d-flex justify-content-center align-items-center"
+            >
+              <a href="#Accommodation">
+                <span>Prezzi</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-3">
+            <div
+              class="singelTap d-flex justify-content-center align-items-center"
+            >
+              <a href="#info">
+                <span>Informazioni</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- overview -->
-    <div class="container mt-4">
+    <div class="container">
       <div class="row">
         <div class="col-12 col-md-8">
           <!-- price and info tour  -->
-          <div class="row gy-md-2">
+          <div class="row gy-md-2" id="Overview">
             <div class="col-12">
               <div class="d-flex justify-content-end">
                 <div
@@ -183,7 +247,7 @@
                     class="boxfeature border_notbutton gap-3 d-flex flex-column justify-content-center align-items-center"
                   >
                     <div class="iconFeature">
-                      <img src="image/feature (2).svg" alt="" />
+                      <i class="fas fa-calendar-alt"></i>
                     </div>
                     <span class="d-inline text-center"
                       >Cada Dia (exceto segunda e quinta Feira)</span
@@ -195,7 +259,7 @@
                     class="boxfeature border_notbutton gap-3 d-flex flex-column justify-content-center align-items-center"
                   >
                     <div class="iconFeature">
-                      <img src="image/feature (3).svg" alt="" />
+                      <i class="fas fa-clock"></i>
                     </div>
                     <span class="d-inline text-center">8 Dias</span>
                   </div>
@@ -205,7 +269,7 @@
                     class="boxfeature border_notbutton gap-3 d-flex flex-column justify-content-center align-items-center"
                   >
                     <div class="iconFeature">
-                      <img src="image/feature (4).svg" alt="" />
+                      <i class="fas fa-users"></i>
                     </div>
                     <span class="d-inline text-center"
                       >Tour em Grupo Pequeno</span
@@ -217,7 +281,7 @@
                     class="boxfeature border_notbutton gap-3 d-flex flex-column justify-content-center align-items-center"
                   >
                     <div class="iconFeature">
-                      <img src="image/feature (1).svg" alt="" />
+                      <i class="fas fa-user-edit"></i>
                     </div>
                     <span class="d-inline text-center">Guia em Português</span>
                   </div>
@@ -246,7 +310,7 @@
                 <ul class="mt-2 d-flex flex-column gap-3">
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span
                       >Chegada e assistência no aeroporto ou estação de trem
@@ -255,7 +319,7 @@
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span
                       >Assistência da nossa equipe durante sua estadia e
@@ -264,7 +328,7 @@
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span
                       >Traslados em carro moderno de luxe com
@@ -273,13 +337,13 @@
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span>Passeios em grupo durante o cruzeiro</span>
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span
                       >Acomodação por 3 noites a bordo do cruzeiro (pensão
@@ -288,7 +352,7 @@
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span
                       >Ingressos para todas as atrações entre Luxor e Aswan
@@ -297,7 +361,7 @@
                   </li>
                   <li class="d-flex align-items-center gap-2">
                     <div class="iconIncluded">
-                      <img src="image/Check.svg" alt="" />
+                      <i class="far fa-check-circle"></i>
                     </div>
                     <span>Taxas de serviços e impostos</span>
                   </li>
@@ -309,20 +373,20 @@
                 <span>Exclusions</span>
                 <ul class="mt-2 d-flex flex-column gap-3">
                   <li class="d-flex align-items-center gap-2">
-                    <div class="iconIncluded">
-                      <img src="image/unCheck.svg" alt="" />
+                    <div class="iconUncluded">
+                      <i class="far fa-times-circle"></i>
                     </div>
                     <span>Despesas pessoais</span>
                   </li>
                   <li class="d-flex align-items-center gap-2">
-                    <div class="iconIncluded">
-                      <img src="image/unCheck.svg" alt="" />
+                    <div class="iconUncluded">
+                      <i class="far fa-times-circle"></i>
                     </div>
                     <span>Gorjetas</span>
                   </li>
                   <li class="d-flex align-items-center gap-2">
-                    <div class="iconIncluded">
-                      <img src="image/unCheck.svg" alt="" />
+                    <div class="iconUncluded">
+                      <i class="far fa-times-circle"></i>
                     </div>
                     <span>Bebidas</span>
                   </li>
@@ -330,7 +394,7 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" id="itneary">
             <div class="col-12">
               <div class="itineraryHead py-3">
                 <span>Roteiro Cairo</span>
@@ -435,7 +499,7 @@
         <div class="col-12 col-md-4">
           <div
             class="inquireSection overflow-hidden sticky-md-top border"
-            id="formInquery"
+            id="from"
           >
             <div class="headerInquery text-center">Preencha o formulário</div>
             <div
@@ -629,13 +693,11 @@
         </div>
       </div>
     </div>
-    <!-- included and excluded -->
-
     <!-- itneary  -->
     <div class="container mt-4"></div>
     <!-- accommodation -->
     <div class="container mt-4">
-      <div class="row gy-4">
+      <div class="row gy-4" id="Accommodation">
         <div class="col-12 col-md-4">
           <div class="border-start px-2">
             <!-- header -->
@@ -1096,6 +1158,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script type="text/javascript" src="js/singel.js"></script>
     <script type="text/javascript" src="mapdata.js"></script>
     <script type="text/javascript" src="countrymap.js"></script>
     <script src="js/listTour.js"></script>

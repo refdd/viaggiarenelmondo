@@ -35,64 +35,87 @@
     <title>Title</title>
   </head>
   <body>
-    <div class="container-sm py-2">
-      <nav class="nav_container row py-2 flex-md-nowrap align-items-center">
-        <!-- menue bar icon  -->
-        <div class="col-3 d-block d-md-none">
-          <div
-            class="iconMneu d-flex justify-content-center align-items-center"
-          >
-            <i class="fa fa-bars"></i>
-            <img src="image/close-x.svg" alt="" />
+    <div class="navlayout">
+      <div class="container-sm py-2">
+        <nav class="nav_container row py-2 flex-md-nowrap align-items-center">
+          <!-- menue bar icon  -->
+          <div class="col-3 d-block d-md-none">
+            <div
+              class="iconMneu d-flex justify-content-center align-items-center"
+            >
+              <i class="fa fa-bars"></i>
+              <img src="image/close-x.svg" alt="" />
+            </div>
           </div>
-        </div>
-        <!-- image  -->
-        <div class="imgae_logo col-6 col-md-3">
-          <img src="./image/mainLogo.svg" alt="" />
-        </div>
-        <!-- links -->
-        <ul class="links_container col-md-7">
-          <li class="active">
-            <a href=""> Home </a>
-          </li>
-          <li></li>
-          <li>
-            <a href="listTour.html">Pacotes</a>
-          </li>
-          <li></li>
-          <li></li>
-          <li>
-            <a href="listBlog.html">Blog </a>
-          </li>
-        </ul>
-
-        <!-- buttom inquery -->
-        <div class="buttom_inquri col-3 row-cols-md-2">
-          <button><a href="inquri.html">Solicite</a></button>
-        </div>
-
-        <!-- links menu -->
-        <div class="col-12 menu_Bar d-flex flex-column mt-3 gap-3 d-md-none">
-          <ul class="mb-0 linksMenu">
-            <li class="border-bottom py-3"><a href="/"> Home</a></li>
-            <li class="border-bottom py-3">
-              <a href="listCrouse.html"> Página Principal</a>
+          <!-- image  -->
+          <div class="imgae_logo col-6 col-md-3">
+            <img src="./image/mainLogo.svg" alt="" />
+          </div>
+          <!-- links -->
+          <ul class="links_container col-md-7">
+            <li class="active">
+              <a href=""> Home </a>
             </li>
-            <li class="border-bottom py-3">
-              <a href="listTour.html"> Pacotes</a>
+            <li></li>
+            <li>
+              <!-- <a href="listTour.html">Pacotes</a> -->
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle buttonNavDropdown py-0"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Destinations
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item" href="listTour.html">Egypt</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="listTour.html">Jordan</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="listTour.html">Dubai</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li class="border-bottom py-3"></li>
-            <li class="border-bottom border-3 py-3">
-              <a href="listBlog.html">Ofertas Imperdíveis</a>
-            </li>
-            <li class="border-bottom border-3 py-3">
+            <li></li>
+            <li></li>
+            <li>
               <a href="listBlog.html">Blog </a>
             </li>
           </ul>
-        </div>
-      </nav>
-    </div>
 
+          <!-- buttom inquery -->
+          <div class="buttom_inquri col-3 row-cols-md-2">
+            <button><a href="inquri.html">Solicite</a></button>
+          </div>
+
+          <!-- links menu -->
+          <div class="col-12 menu_Bar d-flex flex-column mt-3 gap-3 d-md-none">
+            <ul class="mb-0 linksMenu">
+              <li class="border-bottom py-3"><a href="/"> Home</a></li>
+              <li class="border-bottom py-3">
+                <a href="listCrouse.html"> Página Principal</a>
+              </li>
+              <li class="border-bottom py-3">
+                <a href="listTour.html"> Pacotes</a>
+              </li>
+              <li class="border-bottom py-3"></li>
+              <li class="border-bottom border-3 py-3">
+                <a href="listBlog.html">Ofertas Imperdíveis</a>
+              </li>
+              <li class="border-bottom border-3 py-3">
+                <a href="listBlog.html">Blog </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
     <!-- header landPage -->
     <div class="landing_page position-relative">
       <div class="containerVideo pt-3">
@@ -118,7 +141,6 @@
           class="d-flex flex-column align-items-center gap-2 welcome_Section"
         >
           <span>Find the best package to Egypt and other Countries </span>
-          <span>Welcome to Pacotes</span>
           <div class="inputSearch d-flex gap-2 align-content-center">
             <div class="position-relative">
               <input
@@ -136,155 +158,96 @@
         </div>
       </div>
     </div>
-    <!-- section tour  -->
-    <div class="container-sm">
-      <div class="headerSection">
-        <p class="description">Para o Egypt</p>
-        <div class="header">Pacotes</div>
-      </div>
-      <!-- tour Section -->
-
-      <div class="row gy-4 tour-Section">
-        <!-- card -->
-        <div class="col-12 col-md-4">
-          <!-- card -->
-          <div class="cardTour d-flex flex-column gap-2 py-3 px-3">
-            <!-- image  -->
-            <div class="ImageCard position-relative">
-              <img src="image/destination1.jpg" class="first-image" alt="" />
-              <img src="image/destination2.jpg" class="second-image" alt="" />
-              <div class="TopRated">
-                <span>top </span>
-                <span> Rated</span>
-              </div>
-            </div>
-            <!-- star -->
-
-            <!-- title -->
-            <div class="title pt-2">
-              <span> Cairo, Cruzeiro Nilo e Abu Simbel </span>
-            </div>
-            <!-- desc -->
-            <div class="desc">
-              <span>
-                Viagens ao Egito são sempre únicas com a viagem de 8 dias ao
-                Egito. O melhor do Cairo, cruzeiro no Nilo e Abu Simbel. Explora
-              </span>
-            </div>
-            <!-- price and button -->
-            <div class="d-flex align-items-center gap-4 py-3">
-              <div
-                class="priceCard d-flex flex-column gap-1 align-items-center"
-              >
-                <span>Da</span>
-                <span>$1117</span>
-              </div>
-              <div class="buttonViewMore d-flex align-items-center gap-3">
-                <button>ciew moew</button>
-                <i class="fa fa-angle-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- card -->
-        <div class="col-12 col-md-4">
-          <!-- card -->
-          <div class="cardTour d-flex flex-column gap-2 py-3 px-3">
-            <!-- image  -->
-            <div class="ImageCard position-relative">
-              <img src="image/destination3.jpg" class="first-image" alt="" />
-              <img src="image/destination1.jpg" class="second-image" alt="" />
-              <div class="TopRated">
-                <span>top </span>
-                <span> Rated</span>
-              </div>
-            </div>
-            <!-- star -->
-
-            <!-- title -->
-            <div class="title pt-2">
-              <span> Cairo, Cruzeiro Nilo e Abu Simbel </span>
-            </div>
-            <!-- desc -->
-            <div class="desc">
-              <span>
-                Viagens ao Egito são sempre únicas com a viagem de 8 dias ao
-                Egito. O melhor do Cairo, cruzeiro no Nilo e Abu Simbel. Explora
-              </span>
-            </div>
-            <!-- price and button -->
-            <div class="d-flex align-items-center gap-4 py-3">
-              <div
-                class="priceCard d-flex flex-column gap-1 align-items-center"
-              >
-                <span>Da</span>
-                <span>$1117</span>
-              </div>
-              <div class="buttonViewMore d-flex align-items-center gap-3">
-                <button>ciew moew</button>
-                <i class="fa fa-angle-right"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-4">
-          <!-- card -->
-          <div class="cardTour d-flex flex-column gap-2 py-3 px-3">
-            <!-- image  -->
-            <div class="ImageCard position-relative">
-              <img src="image/destination2.jpg" class="first-image" alt="" />
-              <img src="image/destination3.jpg" class="second-image" alt="" />
-              <div class="TopRated">
-                <span>top </span>
-                <span> Rated</span>
-              </div>
-            </div>
-            <!-- star -->
-
-            <!-- title -->
-            <div class="title pt-2">
-              <span> Cairo, Cruzeiro Nilo e Abu Simbel </span>
-            </div>
-            <!-- desc -->
-            <div class="desc">
-              <span>
-                Viagens ao Egito são sempre únicas com a viagem de 8 dias ao
-                Egito. O melhor do Cairo, cruzeiro no Nilo e Abu Simbel. Explora
-              </span>
-            </div>
-            <!-- price and button -->
-            <div class="d-flex align-items-center gap-4 py-3">
-              <div
-                class="priceCard d-flex flex-column gap-1 align-items-center"
-              >
-                <span>Da</span>
-                <span>$1117</span>
-              </div>
-              <div class="buttonViewMore d-flex align-items-center gap-3">
-                <button>ciew moew</button>
-                <i class="fa fa-angle-right"></i>
-              </div>
-            </div>
-          </div>
+    <!-- destination -->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-between">
+        <div class="headerDestnaition">
+          <span>POPULARLY</span>
+          <p>
+            Most popular
+            <br />
+            holiday destinations
+          </p>
         </div>
       </div>
-      <div class="d-flex justify-content-end py-3 py-md-5">
-        <div
-          class="buttonViewAll d-flex align-items-center justify-content-center"
-        >
-          <button>Ver Mais</button>
+      <!-- destanition container -->
+      <div class="row px-4 mt-2">
+        <div class="swiper destnaitonSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="cardDestaniton">
+                <div class="imgDestanition">
+                  <img src="image/destination2.jpg" alt="" />
+                  <div class="laoutImgDestanition"></div>
+                  <div class="contentimgDestanition">
+                    <span>Egypt</span>
+                    <p>10 Tour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cardDestaniton">
+                <div class="imgDestanition">
+                  <img src="image/destination3.jpg" alt="" />
+                  <div class="laoutImgDestanition"></div>
+                  <div class="contentimgDestanition">
+                    <span>Jordan</span>
+                    <p>10 Tour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="cardDestaniton">
+                <div class="imgDestanition">
+                  <img src="image/destination1.jpg" alt="" />
+                  <div class="laoutImgDestanition"></div>
+                  <div class="contentimgDestanition">
+                    <span>Dubai</span>
+                    <p>10 Tour</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- section tour  -->
     <div class="container-sm">
       <div class="headerSection">
-        <p class="description">Para o Dubai</p>
-        <div class="header">Pacotes</div>
+        <p class="description">Top Tours</p>
+      </div>
+      <!-- taps distination -->
+      <div class="container">
+        <div class="TapsDesContainer my-3">
+          <div class="row">
+            <div class="col-4">
+              <div
+                class="tapDestination active d-flex justify-content-center align-items-center py-2 px-4"
+              >
+                <span>Egypt</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div
+                class="tapDestination d-flex justify-content-center align-items-center py-2 px-4"
+              >
+                <span>dubai</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div
+                class="tapDestination d-flex justify-content-center align-items-center py-2 px-4"
+              >
+                <span>gordan</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- tour Section -->
-
       <div class="row gy-4 tour-Section">
         <!-- card -->
         <div class="col-12 col-md-4">
@@ -633,7 +596,7 @@
 
       <div class="row">
         <div class="col-12 col-md-4">
-          <div class="blogCard d-flex flex-column gap-3 align-items-center p-2">
+          <div class="blogCard d-flex flex-column gap-3 align-items-center p-3">
             <!-- image  -->
             <div class="imageBlog position-relative">
               <img src="image/blog-post.jpg" alt="" />
@@ -665,7 +628,7 @@
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="blogCard d-flex flex-column gap-3 align-items-center p-2">
+          <div class="blogCard d-flex flex-column gap-3 align-items-center p-3">
             <!-- image  -->
             <div class="imageBlog position-relative">
               <img src="image/blog-post.jpg" alt="" />
@@ -697,7 +660,7 @@
           </div>
         </div>
         <div class="col-12 col-md-4">
-          <div class="blogCard d-flex flex-column gap-3 align-items-center p-2">
+          <div class="blogCard d-flex flex-column gap-3 align-items-center p-3">
             <!-- image  -->
             <div class="imageBlog position-relative">
               <img src="image/blog-post.jpg" alt="" />
@@ -735,6 +698,7 @@
     >
       <button><a href="listBlog.html"> See More</a></button>
     </div>
+
     <!--reviews -->
     <div class="container mt-5 pt-5 pb-5">
       <div class="reviewsLayout py-5">

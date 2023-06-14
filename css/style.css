@@ -1,9 +1,10 @@
 /* Start Variables */
 :root {
-  --main-color: #032974;
+  --main-color: #3d3d3d;
+  --main-blue: #003366;
   --secondary-color: #009b72;
   --section-padding: 60px;
-  --section-background: #f6f6f6;
+  --deseColor: #777;
   --main-duration: 0.5s;
 }
 /* End Variables */
@@ -79,7 +80,7 @@ body {
 
 .imgae_logo img {
   width: 100%;
-  max-width: 206px;
+  max-width: 173px;
   height: auto;
 }
 
@@ -95,6 +96,12 @@ body {
   height: 40px;
   background: var(--main-color);
   border-radius: 10px;
+}
+.navlayout {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+.buttonNavDropdown {
+  box-shadow: none !important;
 }
 .buttom_inquri:hover {
   transform: scale(0.9);
@@ -392,7 +399,7 @@ slider css
   width: 100%;
   height: auto;
 }
-.swiper {
+.mySwiper {
   padding: 53px 0 30px !important;
 }
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -644,11 +651,11 @@ div#accordionExample {
   align-items: center;
   padding: 8px 24px;
   width: 130px;
-  background: var(--main-color);
+  background: var(--main-blue);
   border-radius: 5px;
 }
 .buttonSearch:hover {
-  transform: scale(0.9);
+  background-color: var(--secondary-color);
 }
 .buttonSearch button {
   font-family: "Roboto";
@@ -670,7 +677,7 @@ div#accordionExample {
   justify-content: center;
   align-items: center;
   height: 75px;
-  background: #01a8c3;
+  background: var(--secondary-color);
   border-radius: 8px 8px 0px 0px;
   width: 100%;
   overflow: hidden;
@@ -688,7 +695,7 @@ div#accordionExample {
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
-  background-color: #003366 !important;
+  background-color: #032974 !important;
   padding: 14px;
   border-radius: 8px;
   animation: 2s 2s infinite wiggle;
@@ -1027,19 +1034,20 @@ div#accordionExample {
   transform-style: preserve-3d;
   transform: rotateY(0) rotateX(0);
   object-fit: cover;
+  border-radius: 14px;
 }
 .contentBlog {
 }
 .contentBlog .duration span,
 .contentBlog .autherBy span {
-  color: var(--secondary-color);
+  color: var(--main-color);
   font-style: italic;
   font-weight: 400;
   font-size: 14px;
 }
 .contentBlog .duration i,
 .contentBlog .autherBy i {
-  color: var(--secondary-color);
+  color: var(--main-color);
   font-size: 20px;
 }
 .contentBlog .descBlog {
@@ -1143,9 +1151,58 @@ div#accordionExample {
   font-size: 15px;
   line-height: 23px;
 }
-.cardReviews .athorImage {
+.headerDestnaition span {
+  color: var(--secondary-color);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }
-.cardReviews .athorImage img {
+.headerDestnaition p {
+  font-size: 29px;
+  line-height: 1.3;
+  color: var(--main-color);
+}
+.imgDestanition {
+  position: relative;
+}
+.imgDestanition img {
+  max-width: 100%;
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+.imgDestanition .laoutImgDestanition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  border-radius: 14px;
+}
+.contentimgDestanition {
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contentimgDestanition span {
+  font-size: 49px;
+  font-weight: bold;
+  letter-spacing: 26px;
+  color: #fff;
+}
+.contentimgDestanition p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
 }
 @keyframes changeAnimation {
   from {
@@ -1197,7 +1254,7 @@ div#accordionExample {
   left: 0;
 }
 .buttonSeeMore {
-  background-color: var(--main-color);
+  background-color: var(--main-blue);
   padding: 14px 20px;
   width: 290px;
   margin: 0 auto;
@@ -1211,7 +1268,7 @@ div#accordionExample {
   color: #ffffff;
 }
 .buttonSeeMore:hover {
-  transform: scale(1.1);
+  background-color: var(--secondary-color);
 }
 .welcome_Section span:nth-of-type(2) {
   font-style: normal;
@@ -1404,14 +1461,14 @@ div#accordionExample {
   text-align: justify;
   letter-spacing: -0.02em;
 
-  color: var(--main-color);
+  color: var(--deseColor);
 }
 .priceCard span:nth-of-type(1) {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
-  color: var(--main-color);
+  color: var(--secondary-color);
 }
 .priceCard span:nth-of-type(2) {
   font-style: normal;
@@ -1437,10 +1494,11 @@ div#accordionExample {
 }
 .buttonViewAll {
   padding: 10px 20px;
-  background: #003366;
+  background: var(--main-blue);
   box-shadow: inset -5px -5px 4px rgba(255, 255, 255, 0.05),
     inset 5px 5px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  transition: background-color ease-in 0.3s;
 }
 .buttonViewAll button {
   font-style: normal;
@@ -1600,6 +1658,7 @@ div#accordionExample {
   border-width: 0px 1px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   padding: 15px;
+  border-radius: 30px;
 }
 .imageBlogCard img {
   max-width: 100%;
@@ -1607,6 +1666,26 @@ div#accordionExample {
   height: 167px;
   object-fit: cover;
 }
+.tapDestination {
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 20px;
+  transition: background-color ease-in 0.2s;
+  cursor: pointer;
+}
+.tapDestination.active {
+  background-color: var(--main-blue);
+}
+.tapDestination:hover {
+  background-color: #003366;
+}
+.tapDestination:hover span {
+  color: #fff;
+}
+.tapDestination.active span {
+  color: #fff;
+}
+
 @keyframes slide {
   0% {
     top: 0;
@@ -2160,5 +2239,14 @@ div#accordionExample {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
+  }
+  .buttonViewAll:hover {
+    background-color: var(--secondary-color);
+  }
+  .headerDestnaition p {
+    font-size: 33px;
+    line-height: 1.3;
+    color: var(--main-color);
+    font-weight: bold;
   }
 }
